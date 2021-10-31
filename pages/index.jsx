@@ -1,5 +1,8 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+
+import { Header } from "../components/header";
+
+import styles from "../styles/home.module.css";
 
 function Home() {
     return (
@@ -10,6 +13,8 @@ function Home() {
                 <meta name="viewport" content="width=device-width,initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+
+            <Header />
 
             <main className={styles.main}></main>
 
