@@ -1,8 +1,8 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-import { Header } from "../components/header";
+import { Header } from '../components/header';
 
-import styles from "../styles/home.module.css";
+import styles from '../styles/home.module.css';
 
 function Home() {
     return (

@@ -15,11 +15,9 @@ function Contacts() {
 
             <Header />
 
-            <main>
-                Страница контактов
-            </main>
+            <main>Страница контактов</main>
         </div>
-    )
+    );
 }
 
 export default Contacts;
