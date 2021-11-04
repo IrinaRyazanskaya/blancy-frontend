@@ -1,10 +1,14 @@
 import Head from 'next/head';
+import { useUserAgent } from 'next-useragent';
 
 import { Header } from '../components/header';
+import { MobileHeader } from '../components/mobile-header';
 
 import styles from '../styles/home.module.css';
 
-function Home() {
+function Home({ userAgent }) {
+    const { isMobile } = useUserAgent(userAgent || window.navigator.userAgent);
+
     return (
         <div className={styles.container}>
             <Head>
@@ -13,7 +17,7 @@ function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Header />
+            {isMobile ? <MobileHeader /> : <Header />}
 
             <main className={styles.main}></main>
 
@@ -22,4 +26,13 @@ function Home() {
     );
 }
 
+async function getServerSideProps(context) {
+    return {
+        props: {
+            userAgent: context.req.headers['user-agent'],
+        },
+    };
+}
+
+export { getServerSideProps };
 export default Home;

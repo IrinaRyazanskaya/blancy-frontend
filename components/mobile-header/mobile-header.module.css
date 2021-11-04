@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.toggle {
+    display: none;
+}
+
+.burgerItem {
+    height: 2px;
+    margin-bottom: 6px;
+    background-color: #e64592;
+    border-radius: 30px;
+}
+
+.firstItem {
+    width: 18px;
+}
+
+.secondItem {
+    width: 22px;
+}
+
+.thirdItem {
+    margin-bottom: 0;
+    width: 14px;
+}
