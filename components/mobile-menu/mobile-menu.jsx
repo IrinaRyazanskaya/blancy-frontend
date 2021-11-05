@@ -2,25 +2,13 @@ import cn from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import styles from './header.module.css';
-import logoSrc from './logo.svg';
+import styles from './mobile-menu.module.css';
 import newLabelSrc from './new-label.svg';
 
-function Header() {
+function MobileMenu({ isOpen }) {
     return (
-        <header className={styles.header}>
-            <Link href="#" passHref={true}>
-                <a className={styles.home}>
-                    <Image
-                        className={styles.logo}
-                        src={logoSrc}
-                        alt="blancy"
-                        width={171}
-                        height={40}
-                    />
-                </a>
-            </Link>
-            <nav className={styles.navigation}>
+        <div className={cn(styles.menu, { [styles.menuOpen]: isOpen })}>
+            <nav className={cn(styles.navigation, { [styles.navigationOpen]: isOpen })}>
                 <ul className={styles.items}>
                     <li className={styles.item}>
                         <Link href="#" passHref={true}>
@@ -70,17 +58,23 @@ function Header() {
                     </li>
                 </ul>
             </nav>
-            <div className={styles.contacts}>
-                <a className={styles.phoneNumber} href="tel:+74954773356">
-                    + 7 (495) 477-33-56
-                </a>
-                <a className={styles.email} href="mailto:info@blancy.ru">
-                    info@blancy.ru
-                </a>
+            <div
+                className={cn(styles.communication, {
+                    [styles.communicationOpen]: isOpen,
+                })}
+            >
+                <div className={styles.contacts}>
+                    <a className={styles.phoneNumber} href="tel:+74954773356">
+                        + 7 (495) 477-33-56
+                    </a>
+                    <a className={styles.email} href="mailto:info@blancy.ru">
+                        info@blancy.ru
+                    </a>
+                </div>
+                <button className={styles.startProject}>Начать проект</button>
             </div>
-            <button className={styles.startProject}>Начать проект</button>
-        </header>
+        </div>
     );
 }
 
-export { Header };
+export { MobileMenu };
