@@ -35,7 +35,7 @@ function BurgerButton({
         userSelect: 'none',
         width: `${area}px`,
         appearance: 'none',
-        '-webkit-tap-highlight-color': 'rgba(0, 0, 0, 0)',
+        WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)',
     };
 
     const barStyles = {
