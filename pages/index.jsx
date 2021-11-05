@@ -3,6 +3,7 @@ import { useUserAgent } from 'next-useragent';
 
 import { Header } from '../components/header';
 import { MobileHeader } from '../components/mobile-header';
+import { HomeBanner } from '../components/home-banner';
 
 import styles from '../styles/home.module.css';
 
@@ -19,7 +20,7 @@ function Home({ userAgent }) {
 
             {isMobile ? <MobileHeader /> : <Header />}
 
-            <main className={styles.main}></main>
+            <HomeBanner />
 
             <footer className={styles.footer}></footer>
         </div>
