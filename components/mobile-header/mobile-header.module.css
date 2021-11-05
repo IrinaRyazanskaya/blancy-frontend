@@ -1,32 +1,16 @@
 .header {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 60px;
     width: 100%;
-    padding: 0 10px;
+    box-sizing: border-box;
+    padding: 0 0 0 14px;
+    z-index: 2;
+    background-color: #fff;
 }
 
-.toggle {
-    display: none;
-}
-
-.burgerItem {
-    height: 2px;
-    margin-bottom: 6px;
-    background-color: #e64592;
-    border-radius: 30px;
-}
-
-.firstItem {
-    width: 18px;
-}
-
-.secondItem {
-    width: 22px;
-}
-
-.thirdItem {
-    margin-bottom: 0;
-    width: 14px;
+.home {
+    display: inline-flex;
 }

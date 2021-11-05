@@ -1,13 +1,25 @@
 import cn from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 
 import { MobileMenu } from '../mobile-menu';
+import { BurgerButton } from '../burger-button';
 
 import styles from './mobile-header.module.css';
 import mobileLogoSrc from './mobile-logo.svg';
 
-function MobileHeader() {
+function MobileHeader({}) {
+    const [isMenuOpen, setMenuOpen] = useState(false);
+
+    const handleMenuToggle = () => {
+        if (isMenuOpen) {
+            setMenuOpen(false);
+        } else {
+            setMenuOpen(true);
+        }
+    };
+
     return (
         <div className={styles.headerContainer}>
             <header className={styles.header}>
@@ -22,21 +34,15 @@ function MobileHeader() {
                         />
                     </a>
                 </Link>
-                <div className={styles.burgerMenu}>
-                    <input
-                        className={styles.toggle}
-                        type="checkbox"
-                        id="menu-toggle"
-                        name="menu-toggle"
-                    />
-                    <label className={styles.button} htmlFor="menu-toggle">
-                        <div className={cn(styles.burgerItem, styles.firstItem)}></div>
-                        <div className={cn(styles.burgerItem, styles.secondItem)}></div>
-                        <div className={cn(styles.burgerItem, styles.thirdItem)}></div>
-                    </label>
-                </div>
+                <BurgerButton
+                    size={22}
+                    label="Menu"
+                    color="#E64592"
+                    isToggled={isMenuOpen}
+                    onToggle={handleMenuToggle}
+                />
             </header>
-            <MobileMenu />
+            <MobileMenu isOpen={isMenuOpen} />
         </div>
     );
 }

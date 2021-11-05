@@ -20,7 +20,7 @@ function BurgerButton({
     const barHeight = Math.round(barHeightRaw);
 
     const space = distance === 'lg' ? 0.25 : distance === 'sm' ? 0.75 : 0.5;
-    const marginRaw = width / (lines * (space + (lines === 3 ? 1 : 1.25)));
+    const marginRaw = width / (lines * (space + (lines === 3 ? 0.82 : 1.25)));
     const margin = Math.round(marginRaw);
 
     const height = barHeight * lines + margin * (lines - 1);
@@ -29,12 +29,13 @@ function BurgerButton({
     const time = Math.max(0, duration);
 
     const burgerStyles = {
-        cursor: 'pointer',
         height: `${area}px`,
         position: 'relative',
         transition: `${time}s ${easing}`,
         userSelect: 'none',
         width: `${area}px`,
+        appearance: 'none',
+        '-webkit-tap-highlight-color': 'rgba(0, 0, 0, 0)',
     };
 
     const barStyles = {

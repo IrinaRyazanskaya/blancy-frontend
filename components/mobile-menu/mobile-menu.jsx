@@ -5,10 +5,10 @@ import Link from 'next/link';
 import styles from './mobile-menu.module.css';
 import newLabelSrc from './new-label.svg';
 
-function MobileMenu() {
+function MobileMenu({ isOpen }) {
     return (
-        <div className={styles.menu}>
-            <nav className={styles.navigation}>
+        <div className={cn(styles.menu, { [styles.menuOpen]: isOpen })}>
+            <nav className={cn(styles.navigation, { [styles.navigationOpen]: isOpen })}>
                 <ul className={styles.items}>
                     <li className={styles.item}>
                         <Link href="#" passHref={true}>
@@ -58,7 +58,11 @@ function MobileMenu() {
                     </li>
                 </ul>
             </nav>
-            <div className={styles.communication}>
+            <div
+                className={cn(styles.communication, {
+                    [styles.communicationOpen]: isOpen,
+                })}
+            >
                 <div className={styles.contacts}>
                     <a className={styles.phoneNumber} href="tel:+74954773356">
                         + 7 (495) 477-33-56
