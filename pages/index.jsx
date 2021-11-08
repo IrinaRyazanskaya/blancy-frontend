@@ -4,11 +4,15 @@ import { useUserAgent } from 'next-useragent';
 import { Header } from '../components/header';
 import { MobileHeader } from '../components/mobile-header';
 import { HomeBanner } from '../components/home-banner';
+import { AboutComany } from '../components/about-company';
 
 import styles from '../styles/home.module.css';
 
 function Home({ userAgent }) {
-    const { isMobile } = useUserAgent(userAgent || window.navigator.userAgent);
+    const { isMobile, isTablet } = useUserAgent(
+        userAgent || window.navigator.userAgent,
+    );
+    const isPhone = isMobile && !isTablet;
 
     return (
         <div className={styles.container}>
@@ -21,6 +25,7 @@ function Home({ userAgent }) {
             {isMobile ? <MobileHeader /> : <Header />}
 
             <HomeBanner />
+            <AboutComany isPhone={isPhone} />
 
             <footer className={styles.footer}></footer>
         </div>
