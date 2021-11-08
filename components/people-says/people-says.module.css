@@ -1,0 +1,74 @@
+.peopleSays {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 175px 160px;
+    height: 666px;
+    border-radius: 20px;
+    background: linear-gradient(
+        79.63deg,
+        rgba(243, 200, 224, 0.7) 1.09%,
+        rgba(242, 240, 242, 0.7) 51.57%,
+        rgba(209, 231, 243, 0.7) 100%
+    );
+}
+
+.header {
+    margin: 0 0 40px 0;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 56px;
+    color: #191919;
+}
+
+.wrap {
+    margin: 0 auto;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1530px) {
+    .peopleSays {
+        padding: 0 100px;
+        height: 768px;
+    }
+
+    .reviews {
+        flex-wrap: wrap;
+    }
+
+    .header {
+        margin: 0 auto 40px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .peopleSays {
+        margin: 90px 30px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .peopleSays {
+        margin: 60px 10px;
+        padding: 0 20px;
+        height: 650px;
+        background: linear-gradient(
+            66.34deg,
+            #f3c8e0 19.49%,
+            #f2f0f2 72.17%,
+            #d1e7f3 122.7%
+        );
+        border-radius: 20px;
+    }
+
+    .header {
+        margin: 0 auto 26px;
+        font-size: 36px;
+    }
+}
