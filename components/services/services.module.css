@@ -1,0 +1,31 @@
+.services {
+    margin: auto;
+    width: 1200px;
+    color: #222222;
+}
+
+.headerWrap {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.header {
+    margin: 0;
+    font-size: 60px;
+    line-height: 56px;
+    font-weight: 800;
+}
+
+.caption {
+    margin: 0 0 0 120px;
+    width: 600px;
+    font-size: 36px;
+    font-weight: 350;
+    line-height: 48px;
+}
+
+.serviceCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
