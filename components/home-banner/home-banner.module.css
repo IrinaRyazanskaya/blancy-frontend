@@ -83,3 +83,65 @@
         width: 350px;
     }
 }
+
+@media (max-width: 1024px) {
+    .banner {
+        flex-direction: column;
+        width: 700px;
+        height: 680px;
+    }
+
+    .content {
+        margin: 0 auto;
+    }
+
+    .header {
+        width: 510px;
+        font-size: 54px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .text {
+        margin: 20px auto 0;
+        width: 450px;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .imageWrap {
+        margin: 30px auto 0;
+    }
+}
+
+@media (max-width: 730px) {
+    .banner {
+        width: 416px;
+    }
+
+    .header {
+        width: 257px;
+    }
+
+    .text {
+        width: 257px;
+    }
+
+    .imageWrap {
+        width: 230px;
+    }
+}
+
+@media (max-width: 424px) {
+    .banner {
+        width: 350px;
+        height: 610px;
+    }
+}
+
+@media (max-width: 374px) {
+    .banner {
+        width: 300px;
+    }
+}
