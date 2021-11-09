@@ -26,7 +26,7 @@ function Home({ userAgent }) {
             {isMobile ? <MobileHeader /> : <Header />}
 
             <HomeBanner />
-            <Cases />
+            <Cases isMobile={isMobile} />
             <AboutCompany isPhone={isPhone} />
 
             <footer className={styles.footer}></footer>

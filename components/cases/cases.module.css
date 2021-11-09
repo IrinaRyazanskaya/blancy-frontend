@@ -23,10 +23,54 @@
     border-radius: 36px;
     box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
     border: none;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background-color: #fff;
+    color: #e64592;
+    box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
 }
 
 @media (max-width: 1320px) {
     .cases {
-        margin: 0 0 0 80px;
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .cases {
+        width: 800px;
+    }
+}
+
+@media (max-width: 880px) {
+    .cases {
+        width: 700px;
+    }
+}
+
+@media (max-width: 720px) {
+    .cases {
+        width: 400px;
+    }
+}
+
+@media (max-width: 425px) {
+    .cases {
+        width: 300px;
+    }
+
+    .header {
+        margin: 0 0 10px 0;
+        font-size: 36px;
+    }
+
+    .button {
+        margin-top: 30px;
+        width: 240px;
+        height: 58px;
+        font-size: 16px;
     }
 }

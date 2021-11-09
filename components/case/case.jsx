@@ -4,7 +4,15 @@ import Link from 'next/link';
 import styles from './case.module.css';
 import arrowSrc from './arrow.svg';
 
-function Case({ header, description, link, caseImageSrc, caseImageAlt }) {
+function Case({
+    header,
+    description,
+    link,
+    caseImageSrc,
+    caseImageAlt,
+    mobileCaseImageSrc,
+    isMobile,
+}) {
     return (
         <div className={styles.case}>
             <h3 className={styles.header}>{header}</h3>
@@ -25,13 +33,23 @@ function Case({ header, description, link, caseImageSrc, caseImageAlt }) {
                     </Link>
                 </div>
                 <div className={styles.imageWrap}>
-                    <Image
-                        className={styles.image}
-                        src={caseImageSrc}
-                        alt={caseImageAlt}
-                        width={880}
-                        height={380}
-                    />
+                    {isMobile ? (
+                        <Image
+                            className={styles.image}
+                            src={mobileCaseImageSrc}
+                            alt={caseImageAlt}
+                            width={300}
+                            height={300}
+                        />
+                    ) : (
+                        <Image
+                            className={styles.image}
+                            src={caseImageSrc}
+                            alt={caseImageAlt}
+                            width={880}
+                            height={380}
+                        />
+                    )}
                 </div>
             </div>
         </div>
