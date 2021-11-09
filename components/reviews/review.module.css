@@ -50,7 +50,7 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 620px) {
     .review {
         width: 260px;
         height: 230px;
