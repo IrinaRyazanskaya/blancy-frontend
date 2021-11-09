@@ -1,0 +1,17 @@
+@media (max-width: 1290px) {
+    .logoWrap {
+        width: 186px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .logoWrap {
+        width: 150px;
+    }
+}
+
+@media (max-width: 500px) {
+    .logoWrap {
+        width: 100px;
+    }
+}
