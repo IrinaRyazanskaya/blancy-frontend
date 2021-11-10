@@ -1,0 +1,36 @@
+.card {
+    margin-bottom: 30px;
+    width: 585px;
+    color: #222222;
+    background-color: #fff;
+    box-shadow: 0px 0px 70px rgba(216, 216, 216, 0.3);
+    border-radius: 20px;
+}
+
+.cardLines2 {
+    height: 260px;
+}
+
+.cardLines4 {
+    height: 340px;
+}
+
+.header {
+    margin: 51px 0 10px 66px;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.services {
+    padding: 0;
+    margin: 0 0 0 66px;
+    list-style: none;
+}
+
+.service {
+    margin-bottom: 12px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+}

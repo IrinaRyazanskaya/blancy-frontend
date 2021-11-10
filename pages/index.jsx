@@ -8,6 +8,7 @@ import { Cases } from '../components/cases';
 import { AboutCompany } from '../components/about-company';
 import { PeopleSays } from '../components/people-says';
 import { PeopleTrust } from '../components/people-trust';
+import { Services } from '../components/services';
 
 import styles from '../styles/home.module.css';
 
@@ -32,6 +33,10 @@ function Home({ userAgent }) {
             <AboutCompany isPhone={isPhone} />
             <PeopleSays isMobile={isMobile} />
             <PeopleTrust />
+            <Services
+                title="Услуги"
+                caption="Мы относимся к бизнесу своих партнеров, как к своему!"
+            />
 
             <footer className={styles.footer}></footer>
         </div>
