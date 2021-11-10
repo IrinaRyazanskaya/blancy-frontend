@@ -7,6 +7,7 @@ import { HomeBanner } from '../components/home-banner';
 import { Cases } from '../components/cases';
 import { AboutCompany } from '../components/about-company';
 import { PeopleSays } from '../components/people-says';
+import { PeopleTrust } from '../components/people-trust';
 
 import styles from '../styles/home.module.css';
 
@@ -30,6 +31,7 @@ function Home({ userAgent }) {
             <Cases isMobile={isMobile} />
             <AboutCompany isPhone={isPhone} />
             <PeopleSays isMobile={isMobile} />
+            <PeopleTrust />
 
             <footer className={styles.footer}></footer>
         </div>
