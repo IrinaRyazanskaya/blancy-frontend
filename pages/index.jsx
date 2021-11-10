@@ -6,6 +6,7 @@ import { MobileHeader } from '../components/mobile-header';
 import { HomeBanner } from '../components/home-banner';
 import { Cases } from '../components/cases';
 import { AboutCompany } from '../components/about-company';
+import { PeopleSays } from '../components/people-says';
 
 import styles from '../styles/home.module.css';
 
@@ -28,6 +29,7 @@ function Home({ userAgent }) {
             <HomeBanner />
             <Cases isMobile={isMobile} />
             <AboutCompany isPhone={isPhone} />
+            <PeopleSays isMobile={isMobile} />
 
             <footer className={styles.footer}></footer>
         </div>
