@@ -4,7 +4,8 @@ import { useUserAgent } from 'next-useragent';
 import { Header } from '../components/header';
 import { MobileHeader } from '../components/mobile-header';
 import { HomeBanner } from '../components/home-banner';
-import { AboutComany } from '../components/about-company';
+import { Cases } from '../components/cases';
+import { AboutCompany } from '../components/about-company';
 
 import styles from '../styles/home.module.css';
 
@@ -25,7 +26,8 @@ function Home({ userAgent }) {
             {isMobile ? <MobileHeader /> : <Header />}
 
             <HomeBanner />
-            <AboutComany isPhone={isPhone} />
+            <Cases isMobile={isMobile} />
+            <AboutCompany isPhone={isPhone} />
 
             <footer className={styles.footer}></footer>
         </div>

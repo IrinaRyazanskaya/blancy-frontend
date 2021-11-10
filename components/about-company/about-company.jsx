@@ -6,7 +6,7 @@ import styles from './about-company.module.css';
 import officeSrc from './office.png';
 import mobileOfficeSrc from './mobile-office.png';
 
-function AboutComany({ isPhone }) {
+function AboutCompany({ isPhone }) {
     return (
         <section className={styles.aboutCompany}>
             <h3 className={styles.header}>О компании</h3>
@@ -47,4 +47,4 @@ function AboutComany({ isPhone }) {
     );
 }
 
-export { AboutComany };
+export { AboutCompany };
