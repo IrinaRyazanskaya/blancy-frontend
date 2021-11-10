@@ -10,6 +10,7 @@ import { PeopleSays } from '../components/people-says';
 import { PeopleTrust } from '../components/people-trust';
 import { Services } from '../components/services';
 import { Articles } from '../components/articles';
+import { Questions } from '../components/questions';
 
 import styles from '../styles/home.module.css';
 
@@ -39,6 +40,15 @@ function Home({ userAgent }) {
                 caption="Мы относимся к бизнесу своих партнеров, как к своему!"
             />
             <Articles title="Полезные статьи" linkText="Все статьи →" />
+            <Questions
+                question="Есть вопросы?"
+                description={
+                    <span>
+                        Оставьте свой номер телефона и получите{' '}
+                        <strong>Бесплатную консультацию</strong> от наших специалистов
+                    </span>
+                }
+            />
 
             <footer className={styles.footer}></footer>
         </div>

@@ -1,0 +1,32 @@
+.questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 1600px;
+    height: 700px;
+    background: linear-gradient(79.63deg, #d4358f 1.08%, #51a3d6 100%);
+    border-radius: 20px;
+    color: #fff;
+    user-select: none;
+}
+
+.content {
+    margin-left: 36px;
+    width: 580px;
+}
+
+.header {
+    margin: 0 0 18px 0;
+    font-size: 60px;
+    line-height: 56px;
+    font-weight: 800;
+}
+
+.description {
+    margin: 0;
+    width: 512px;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+}
