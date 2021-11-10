@@ -9,6 +9,7 @@ import { AboutCompany } from '../components/about-company';
 import { PeopleSays } from '../components/people-says';
 import { PeopleTrust } from '../components/people-trust';
 import { Services } from '../components/services';
+import { Articles } from '../components/articles';
 
 import styles from '../styles/home.module.css';
 
@@ -37,6 +38,7 @@ function Home({ userAgent }) {
                 title="Услуги"
                 caption="Мы относимся к бизнесу своих партнеров, как к своему!"
             />
+            <Articles title="Полезные статьи" linkText="Все статьи →" />
 
             <footer className={styles.footer}></footer>
         </div>
