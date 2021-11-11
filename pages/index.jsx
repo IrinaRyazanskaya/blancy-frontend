@@ -11,6 +11,7 @@ import { PeopleTrust } from '../components/people-trust';
 import { Services } from '../components/services';
 import { Articles } from '../components/articles';
 import { Questions } from '../components/questions';
+import { PartnershipProposal } from '../components/partnership-proposal';
 
 import styles from '../styles/home.module.css';
 
@@ -35,11 +36,6 @@ function Home({ userAgent }) {
             <AboutCompany isPhone={isPhone} />
             <PeopleSays isMobile={isMobile} />
             <PeopleTrust />
-            <Services
-                title="Услуги"
-                caption="Мы относимся к бизнесу своих партнеров, как к своему!"
-            />
-            <Articles title="Полезные статьи" linkText="Все статьи →" />
             <Questions
                 question="Есть вопросы?"
                 description={
@@ -49,6 +45,12 @@ function Home({ userAgent }) {
                     </span>
                 }
             />
+            <Services
+                title="Услуги"
+                caption="Мы относимся к бизнесу своих партнеров, как к своему!"
+            />
+            <Articles title="Полезные статьи" linkText="Все статьи →" />
+            <PartnershipProposal />
 
             <footer className={styles.footer}></footer>
         </div>
