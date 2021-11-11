@@ -32,10 +32,10 @@ function Home({ userAgent }) {
 
             {isMobile ? <MobileHeader /> : <Header />}
 
-            <HomeBanner />
-            <Cases isMobile={isMobile} />
-            <AboutCompany isPhone={isPhone} />
-            <PeopleSays isMobile={isMobile} />
+            <HomeBanner className={styles.banner} />
+            <Cases isPhone={isPhone} className={styles.cases} />
+            <AboutCompany isPhone={isPhone} className={styles.aboutCompany} />
+            <PeopleSays isPhone={isPhone} className={styles.peopleSays} />
             <PeopleTrust />
             <Questions
                 question="Есть вопросы?"

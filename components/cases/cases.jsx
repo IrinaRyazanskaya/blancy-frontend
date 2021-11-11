@@ -1,3 +1,5 @@
+import cn from 'classnames';
+
 import { Case } from '../case/case';
 
 import styles from './cases.module.css';
@@ -12,9 +14,9 @@ import mobileVeterinaryClinicSrc from './mobile-veterinary-clinic.png';
 import mobileLawFirmSrc from './mobile-law-firm.png';
 import mobileRobinaniSrc from './mobile-robinani.png';
 
-function Cases({ isMobile }) {
+function Cases({ isPhone, className }) {
     return (
-        <section className={styles.cases}>
+        <section className={cn(className, styles.cases)}>
             <h2 className={styles.header}>Кейсы</h2>
             <Case
                 header={'Логотип для фабрики\nмороженого «Чистая Линия»'}
@@ -25,7 +27,7 @@ function Cases({ isMobile }) {
                 caseImageSrc={cleanLineSrc}
                 mobileCaseImageSrc={mobileCleanLineSrc}
                 caseImageAlt="Мороженное Лакомка"
-                isMobile={isMobile}
+                isPhone={isPhone}
             />
             <Case
                 header="Интернет-магазин светильников Lumina Deco"
@@ -35,7 +37,7 @@ function Cases({ isMobile }) {
                 caseImageSrc={luminaDecoSrc}
                 mobileCaseImageSrc={mobileLuminaDecoSrc}
                 caseImageAlt="Светильник"
-                isMobile={isMobile}
+                isPhone={isPhone}
             />
             <Case
                 header="Разработка сайта ветеринарной клиники"
@@ -46,7 +48,7 @@ function Cases({ isMobile }) {
                 caseImageSrc={veterinaryClinicSrc}
                 mobileCaseImageSrc={mobileVeterinaryClinicSrc}
                 caseImageAlt="Кот обнимается с собакой"
-                isMobile={isMobile}
+                isPhone={isPhone}
             />
             <Case
                 header="Корпоративный сайт для юридической компании"
@@ -56,7 +58,7 @@ function Cases({ isMobile }) {
                 caseImageSrc={lawFirmSrc}
                 mobileCaseImageSrc={mobileLawFirmSrc}
                 caseImageAlt="Шахматная доска"
-                isMobile={isMobile}
+                isPhone={isPhone}
             />
             <Case
                 header="SMM-продвижение интернет-магазина итальянской обуви “Robinani”"
@@ -66,7 +68,7 @@ function Cases({ isMobile }) {
                 caseImageSrc={robinaniSrc}
                 mobileCaseImageSrc={mobileRobinaniSrc}
                 caseImageAlt="Женские ноги в босоножках на каблуке"
-                isMobile={isMobile}
+                isPhone={isPhone}
             />
             <button className={styles.button}>Посмотреть все работы →</button>
         </section>

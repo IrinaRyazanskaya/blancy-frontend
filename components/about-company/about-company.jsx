@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import Image from 'next/image';
 
 import { Facts } from '../facts/facts';
@@ -6,9 +7,9 @@ import styles from './about-company.module.css';
 import officeSrc from './office.png';
 import mobileOfficeSrc from './mobile-office.png';
 
-function AboutCompany({ isPhone }) {
+function AboutCompany({ isPhone, className }) {
     return (
-        <section className={styles.aboutCompany}>
+        <section className={cn(className, styles.aboutCompany)}>
             <h3 className={styles.header}>О компании</h3>
             <div className={styles.content}>
                 <div className={styles.factsWrap}>

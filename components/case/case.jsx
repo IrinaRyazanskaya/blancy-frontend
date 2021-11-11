@@ -11,7 +11,7 @@ function Case({
     caseImageSrc,
     caseImageAlt,
     mobileCaseImageSrc,
-    isMobile,
+    isPhone,
 }) {
     return (
         <div className={styles.case}>
@@ -33,7 +33,7 @@ function Case({
                     </Link>
                 </div>
                 <div className={styles.imageWrap}>
-                    {isMobile ? (
+                    {isPhone ? (
                         <Image
                             className={styles.image}
                             src={mobileCaseImageSrc}

@@ -2,11 +2,11 @@ import Image from 'next/image';
 
 import styles from './review.module.css';
 
-function Review({ name, reviewImageSrc, reviewImageAlt, isMobile }) {
+function Review({ name, reviewImageSrc, reviewImageAlt, isPhone }) {
     return (
         <div className={styles.review}>
             <div className={styles.logoWrap}>
-                {isMobile ? (
+                {isPhone ? (
                     <Image
                         className={styles.logo}
                         src={reviewImageSrc}

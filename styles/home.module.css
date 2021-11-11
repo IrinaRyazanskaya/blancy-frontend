@@ -1,8 +1,43 @@
-.container {
+.banner,
+.cases,
+.aboutCompany,
+.peopleSays {
+    margin: 0 auto 175px;
 }
 
-.main {
+@media (max-width: 1600px) {
+    .banner,
+    .cases,
+    .aboutCompany,
+    .peopleSays {
+        margin-bottom: 100px;
+    }
 }
 
-.footer {
+@media (max-width: 1200px) {
+    .banner,
+    .cases,
+    .aboutCompany,
+    .peopleSays {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .banner,
+    .cases,
+    .aboutCompany,
+    .peopleSays {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .aboutCompany {
+        margin-bottom: 0;
+    }
+
+    .peopleSays {
+        margin-top: -20px;
+    }
 }
