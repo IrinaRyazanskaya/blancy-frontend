@@ -1,0 +1,102 @@
+.footer {
+    width: 1600px;
+    margin: auto;
+    color: #222;
+}
+
+.navigation,
+.contacts {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation {
+    padding: 78px 0 71px 0;
+    height: 456px;
+    box-sizing: border-box;
+}
+
+.contacts {
+    padding: 44px 0 39px 0;
+    height: 168px;
+    box-sizing: border-box;
+}
+
+.divider {
+    height: 3px;
+    background: linear-gradient(79.63deg, #d4358f 1.08%, #51a3d6 100%);
+}
+
+.column {
+    width: 234px;
+}
+
+.column + .column {
+    margin-left: 70px;
+}
+
+.column:first-child {
+    margin-right: 70px;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.socialLink + .socialLink {
+    margin-left: 20px;
+}
+
+.header {
+    margin: 18px 0 18px 0;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 800;
+}
+
+.items {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.item {
+    margin-bottom: 22px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.itemLink,
+.contact {
+    text-decoration: none;
+    color: #222222;
+}
+
+.itemLink:hover,
+.contact:hover {
+    color: #e64592;
+}
+
+.security,
+.invite {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.security {
+    margin: 0 0 14px 0;
+}
+
+.invite {
+    margin: 0 0 8px 0;
+}
+
+.contact {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+}

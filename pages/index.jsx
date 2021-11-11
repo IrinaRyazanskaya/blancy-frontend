@@ -12,6 +12,7 @@ import { Services } from '../components/services';
 import { Articles } from '../components/articles';
 import { Questions } from '../components/questions';
 import { PartnershipProposal } from '../components/partnership-proposal';
+import { Footer } from '../components/footer';
 
 import styles from '../styles/home.module.css';
 
@@ -52,7 +53,7 @@ function Home({ userAgent }) {
             <Articles title="Полезные статьи" linkText="Все статьи →" />
             <PartnershipProposal />
 
-            <footer className={styles.footer}></footer>
+            <Footer />
         </div>
     );
 }
