@@ -36,7 +36,7 @@ function Home({ userAgent }) {
             <Cases isPhone={isPhone} className={styles.cases} />
             <AboutCompany isPhone={isPhone} className={styles.aboutCompany} />
             <PeopleSays isPhone={isPhone} className={styles.peopleSays} />
-            <PeopleTrust />
+            <PeopleTrust className={styles.peopleTrust} />
             <Questions
                 question="Есть вопросы?"
                 description={
@@ -45,13 +45,19 @@ function Home({ userAgent }) {
                         <strong>Бесплатную консультацию</strong> от наших специалистов
                     </span>
                 }
+                className={styles.questions}
             />
             <Services
                 title="Услуги"
                 caption="Мы относимся к бизнесу своих партнеров, как к своему!"
+                className={styles.services}
             />
-            <Articles title="Полезные статьи" linkText="Все статьи →" />
-            <PartnershipProposal />
+            <Articles
+                title="Полезные статьи"
+                linkText="Все статьи →"
+                className={styles.articles}
+            />
+            <PartnershipProposal className={styles.proposal} />
 
             <Footer />
         </div>

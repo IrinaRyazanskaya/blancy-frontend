@@ -1,4 +1,5 @@
 import cn from 'classnames';
+import Link from 'next/link';
 
 import styles from './service-card.module.css';
 
@@ -16,9 +17,11 @@ function ServiceCard({ lines, header, services }) {
             <ul className={styles.services}>
                 {services.map((service) => {
                     return (
-                        <li key={service} className={styles.service}>
-                            {service}
-                        </li>
+                        <Link key={service.title} href={service.href}>
+                            <a className={styles.link}>
+                                <li className={styles.service}>{service.title}</li>
+                            </a>
+                        </Link>
                     );
                 })}
             </ul>

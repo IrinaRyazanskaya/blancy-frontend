@@ -2,6 +2,7 @@
     width: 1600px;
     margin: auto;
     color: #222;
+    user-select: none;
 }
 
 .navigation,

@@ -42,37 +42,45 @@
     margin-top: 30px;
 }
 
-@media (max-width: 1630px) {
+@media (max-width: 1600px) {
     .proposal {
-        width: 1400px;
-        height: 918px;
+        width: 1380px;
+        height: 906px;
     }
 
     .content {
-        margin-top: 118px;
+        margin-top: 110px;
         margin-right: -24px;
         width: 586px;
     }
+
+    .imageWrap {
+        margin-top: 26px;
+    }
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1400px) {
     .proposal {
-        width: 1240px;
-        height: 814px;
+        width: 1180px;
+        height: 774px;
     }
 
     .content {
-        margin-top: 95px;
+        margin-top: 86px;
         margin-right: -24px;
-        width: 510px;
+        width: 488px;
+    }
+
+    .header {
+        margin: 0 0 20px 0;
     }
 
     .imageWrap {
-        width: 500px;
+        width: 480px;
     }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1200px) {
     .proposal {
         width: 1000px;
         height: 656px;

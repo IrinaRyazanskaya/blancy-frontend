@@ -1,7 +1,12 @@
 .banner,
 .cases,
 .aboutCompany,
-.peopleSays {
+.peopleSays,
+.peopleTrust,
+.questions,
+.services,
+.articles,
+.proposal {
     margin: 0 auto 175px;
 }
 
@@ -9,7 +14,12 @@
     .banner,
     .cases,
     .aboutCompany,
-    .peopleSays {
+    .peopleSays,
+    .peopleTrust,
+    .questions,
+    .services,
+    .articles,
+    .proposal {
         margin-bottom: 100px;
     }
 }
@@ -18,7 +28,12 @@
     .banner,
     .cases,
     .aboutCompany,
-    .peopleSays {
+    .peopleSays,
+    .peopleTrust,
+    .questions,
+    .services,
+    .articles,
+    .proposal {
         margin-bottom: 80px;
     }
 }
@@ -27,7 +42,12 @@
     .banner,
     .cases,
     .aboutCompany,
-    .peopleSays {
+    .peopleSays,
+    .peopleTrust,
+    .questions,
+    .services,
+    .articles,
+    .proposal {
         margin-bottom: 60px;
     }
 }

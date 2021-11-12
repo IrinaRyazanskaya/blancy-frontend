@@ -1,5 +1,6 @@
 .aboutCompany {
     width: 1200px;
+    user-select: none;
 }
 
 .header {
@@ -13,7 +14,7 @@
 .imageWrap {
     position: absolute;
     left: 224px;
-    top: 54px;
+    top: 50px;
     z-index: 1;
 }
 
