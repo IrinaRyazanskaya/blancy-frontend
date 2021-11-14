@@ -1,5 +1,4 @@
 .aboutCompany {
-    margin: 0 auto 175px;
     width: 1200px;
 }
 
@@ -11,38 +10,62 @@
     color: #191919;
 }
 
-.imageWrap {
+.image {
+    width: 980px;
+    height: 620px;
     position: absolute;
-    left: 211px;
-    top: 54px;
+    left: 224px;
+    top: 50px;
     z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 14px;
 }
 
 .content {
     position: relative;
 }
 
-@media (max-width: 1270px) {
+@media (max-width: 1400px) {
     .aboutCompany {
         width: 1000px;
     }
 
-    .imageWrap {
-        top: 114px;
+    .image {
+        top: 94px;
+        width: 770px;
+        height: 530px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .aboutCompany {
+        width: 800px;
+    }
+
+    .image {
+        top: 80px;
+        left: 146px;
+        width: 654px;
+        height: 404px;
     }
 }
 
 @media (max-width: 1024px) {
     .aboutCompany {
-        width: 760px;
+        width: 700px;
     }
 
-    .imageWrap {
-        top: 146px;
+    .image {
+        top: 70px;
+        left: 128px;
+        width: 570px;
+        height: 378px;
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 767px) {
     .aboutCompany {
         display: flex;
         flex-direction: column;
@@ -58,9 +81,13 @@
         line-height: 56px;
     }
 
-    .imageWrap {
+    .image {
+        position: relative;
         left: 0px;
-        top: 620px;
+        top: -96px;
         margin-right: 0px;
+        width: 300px;
+        height: 480px;
+        background-position: right 10% top 10%;
     }
 }

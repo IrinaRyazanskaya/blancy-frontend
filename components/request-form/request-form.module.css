@@ -37,7 +37,7 @@
 }
 
 .flagWrap {
-    height: 21px;
+    height: 20px;
     margin: 6px 28px 0px 0;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
 }
@@ -51,8 +51,8 @@
     font-weight: 300;
     border: none;
     outline: none;
-    -webkit-appearance: none;
     background-color: transparent;
+    -webkit-appearance: none;
 }
 
 .field:focus,
@@ -78,8 +78,8 @@
     font-weight: 300;
     border: none;
     outline: none;
-    -webkit-appearance: none;
     resize: none;
+    -webkit-appearance: none;
 }
 
 .fileWrap {
@@ -115,6 +115,7 @@
     border: 1px solid #222;
     border-radius: 6px;
     cursor: pointer;
+    user-select: none;
 }
 
 .sendButton {
@@ -134,6 +135,8 @@
     transition: all 0.2s ease-in-out;
     border: none;
     cursor: pointer;
+    user-select: none;
+    -webkit-appearance: none;
 }
 
 @media (hover: none) {
@@ -168,7 +171,7 @@
     text-decoration: none;
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1400px) {
     .requestForm {
         padding: 0 0 10px 47px;
         width: 530px;
@@ -200,7 +203,7 @@
     }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1200px) {
     .requestForm {
         padding: 0 0 4px 32px;
         width: 434px;
@@ -253,5 +256,119 @@
         width: 375px;
         font-size: 13px;
         line-height: 26px;
+    }
+}
+
+@media (max-width: 767px) {
+    .requestForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 376px;
+        height: 520px;
+        padding: 0;
+    }
+
+    .inputWrap,
+    .textareaWrap {
+        width: 316px;
+        height: 46px;
+    }
+
+    .field,
+    .comment {
+        width: 256px;
+    }
+
+    .inputWrap {
+        padding-bottom: 0;
+    }
+
+    .iconWrap,
+    .flagWrap {
+        margin-right: 16px;
+    }
+
+    .inputWrap + .inputWrap {
+        margin-top: 14px;
+    }
+
+    .textareaWrap {
+        height: 46px;
+        margin-top: 14px;
+        padding-bottom: 6px;
+    }
+
+    .fileWrap {
+        height: 68px;
+    }
+
+    .comment {
+        padding-top: 0;
+    }
+
+    .fileTitle {
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+
+    .fileWrap {
+        width: 316px;
+        height: 110px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text {
+        width: 314px;
+        font-size: 11px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 426px) {
+    .requestForm {
+        width: 320px;
+        height: 540px;
+    }
+
+    .inputWrap,
+    .textareaWrap,
+    .fileWrap {
+        width: 254px;
+    }
+
+    .field,
+    .comment {
+        width: 176px;
+    }
+
+    .sendButton {
+        width: 235px;
+        height: 58px;
+        font-size: 16px;
+    }
+
+    .text {
+        margin: 14px 0 0 0;
+        width: 230px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 374px) {
+    .requestForm {
+        width: 280px;
+    }
+
+    .inputWrap,
+    .textareaWrap,
+    .fileWrap {
+        width: 230px;
+    }
+
+    .field,
+    .comment {
+        width: 170px;
     }
 }

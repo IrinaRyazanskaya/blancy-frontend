@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import Link from 'next/link';
 import { ArticleCard } from '../article-card/article-card';
 
@@ -6,12 +7,13 @@ import secondArticleSrc from './second-article.png';
 import thirdArticleSrc from './third-article.png';
 import styles from './articles.module.css';
 
-function Articles({ title, linkText }) {
+function Articles({ title, linkText, className }) {
     return (
-        <section className={styles.articles}>
+        <section className={cn(styles.articles, className)}>
             <h2 className={styles.header}>{title}</h2>
             <div className={styles.cards}>
                 <ArticleCard
+                    href="#"
                     articleImageSrc={firstArticleSrc}
                     articleImageAlt="Телефон на фоне стены"
                     width={380}
@@ -22,6 +24,7 @@ function Articles({ title, linkText }) {
                     date="2021-10-22T16:51:05.767Z"
                 />
                 <ArticleCard
+                    href="#"
                     articleImageSrc={secondArticleSrc}
                     articleImageAlt="Телефон на фоне компьютера"
                     width={380}
@@ -32,6 +35,7 @@ function Articles({ title, linkText }) {
                     date="2021-10-22T16:51:05.767Z"
                 />
                 <ArticleCard
+                    href="#"
                     articleImageSrc={thirdArticleSrc}
                     articleImageAlt="Телефон в руке"
                     width={380}
@@ -43,7 +47,7 @@ function Articles({ title, linkText }) {
                 />
             </div>
             {linkText ? (
-                <Link href="#">
+                <Link href="#" passHref={true}>
                     <a className={styles.allArticles}>
                         <span className={styles.linkText}>{linkText}</span>
                     </a>

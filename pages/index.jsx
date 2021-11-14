@@ -13,6 +13,7 @@ import { Articles } from '../components/articles';
 import { Questions } from '../components/questions';
 import { PartnershipProposal } from '../components/partnership-proposal';
 import { Footer } from '../components/footer';
+import { MobileFooter } from '../components/mobile-footer';
 
 import styles from '../styles/home.module.css';
 
@@ -30,13 +31,13 @@ function Home({ userAgent }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            {isMobile ? <MobileHeader /> : <Header />}
+            {isMobile ? <MobileHeader /> : <Header className={styles.header} />}
 
-            <HomeBanner />
-            <Cases isMobile={isMobile} />
-            <AboutCompany isPhone={isPhone} />
-            <PeopleSays isMobile={isMobile} />
-            <PeopleTrust />
+            <HomeBanner className={styles.banner} />
+            <Cases className={styles.cases} />
+            <AboutCompany className={styles.aboutCompany} />
+            <PeopleSays isPhone={isPhone} className={styles.peopleSays} />
+            <PeopleTrust className={styles.peopleTrust} />
             <Questions
                 question="Есть вопросы?"
                 description={
@@ -45,15 +46,21 @@ function Home({ userAgent }) {
                         <strong>Бесплатную консультацию</strong> от наших специалистов
                     </span>
                 }
+                className={styles.questions}
             />
             <Services
                 title="Услуги"
                 caption="Мы относимся к бизнесу своих партнеров, как к своему!"
+                className={styles.services}
             />
-            <Articles title="Полезные статьи" linkText="Все статьи →" />
-            <PartnershipProposal />
+            <Articles
+                title="Полезные статьи"
+                linkText="Все статьи →"
+                className={styles.articles}
+            />
+            <PartnershipProposal className={styles.proposal} />
 
-            <Footer />
+            {isMobile ? <MobileFooter /> : <Footer className={styles.footer} />}
         </div>
     );
 }

@@ -1,11 +1,12 @@
+import cn from 'classnames';
 import Image from 'next/image';
 
 import styles from './home-banner.module.css';
 import homeBannerImageSrc from './home-banner-image.png';
 
-function HomeBanner() {
+function HomeBanner({ className }) {
     return (
-        <div className={styles.banner}>
+        <div className={cn(className, styles.banner)}>
             <div className={styles.content}>
                 <h1 className={styles.header}>Digital-агентство Blancy</h1>
                 <p className={styles.text}>

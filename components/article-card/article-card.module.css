@@ -1,12 +1,17 @@
+.cardLink {
+    color: #191919;
+    text-decoration: none;
+}
+
+.cardLink + .cardLink {
+    margin-left: 30px;
+}
+
 .card {
     width: 380px;
     height: 460px;
     box-shadow: 0px 0px 70px rgba(216, 216, 216, 0.3);
     border-radius: 20px;
-}
-
-.card + .card {
-    margin-left: 30px;
 }
 
 .category {
@@ -60,4 +65,104 @@
 
 .date {
     margin-left: 28px;
+}
+
+@media (max-width: 1400px) {
+    .cardLink + .cardLink {
+        margin-left: 20px;
+    }
+
+    .card {
+        width: 320px;
+        height: 420px;
+    }
+
+    .category {
+        margin: 24px 0 0 24px;
+    }
+
+    .title {
+        margin: 24px 0 36px 24px;
+        width: 280px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cardLink + .cardLink {
+        margin-left: 12px;
+    }
+
+    .card {
+        width: 258px;
+        height: 366px;
+    }
+
+    .category {
+        margin: 18px 0 0 20px;
+    }
+
+    .title {
+        margin: 20px 0 18px 20px;
+        width: 238px;
+        height: 80px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cardLink + .cardLink {
+        margin: 20px 0 0 0;
+    }
+
+    .card {
+        width: 380px;
+        height: 460px;
+    }
+
+    .category {
+        margin: 24px 0 0 28px;
+    }
+
+    .title {
+        margin: 24px 0 24px 28px;
+        width: 298px;
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .card {
+        width: 320px;
+        height: 420px;
+    }
+
+    .category {
+        margin: 24px 0 0 24px;
+    }
+
+    .title {
+        margin: 24px 0 18px 24px;
+        width: 280px;
+    }
+}
+
+@media (max-width: 426px) {
+    .card {
+        width: 300px;
+        height: 400px;
+    }
+
+    .category {
+        margin: 26px 0 0 18px;
+    }
+
+    .title {
+        margin: 14px 0 18px 18px;
+        width: 260px;
+        height: 76px;
+        font-size: 20;
+        line-height: 26px;
+    }
 }

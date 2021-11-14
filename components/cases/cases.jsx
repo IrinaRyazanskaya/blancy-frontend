@@ -1,3 +1,5 @@
+import cn from 'classnames';
+
 import { Case } from '../case/case';
 
 import styles from './cases.module.css';
@@ -6,15 +8,10 @@ import luminaDecoSrc from './lumina-deco.png';
 import veterinaryClinicSrc from './veterinary-clinic.png';
 import lawFirmSrc from './law-firm.png';
 import robinaniSrc from './robinani.png';
-import mobileCleanLineSrc from './mobile-clean-line.png';
-import mobileLuminaDecoSrc from './mobile-lumina-deco.png';
-import mobileVeterinaryClinicSrc from './mobile-veterinary-clinic.png';
-import mobileLawFirmSrc from './mobile-law-firm.png';
-import mobileRobinaniSrc from './mobile-robinani.png';
 
-function Cases({ isMobile }) {
+function Cases({ className }) {
     return (
-        <section className={styles.cases}>
+        <section className={cn(className, styles.cases)}>
             <h2 className={styles.header}>Кейсы</h2>
             <Case
                 header={'Логотип для фабрики\nмороженого «Чистая Линия»'}
@@ -23,9 +20,7 @@ function Cases({ isMobile }) {
                 без ГМО."
                 link="#"
                 caseImageSrc={cleanLineSrc}
-                mobileCaseImageSrc={mobileCleanLineSrc}
                 caseImageAlt="Мороженное Лакомка"
-                isMobile={isMobile}
             />
             <Case
                 header="Интернет-магазин светильников Lumina Deco"
@@ -33,9 +28,7 @@ function Cases({ isMobile }) {
                 оборудования. Компания представлена в Польше, Италии и России."
                 link="#"
                 caseImageSrc={luminaDecoSrc}
-                mobileCaseImageSrc={mobileLuminaDecoSrc}
                 caseImageAlt="Светильник"
-                isMobile={isMobile}
             />
             <Case
                 header="Разработка сайта ветеринарной клиники"
@@ -44,9 +37,7 @@ function Cases({ isMobile }) {
                 обустроен для выгула и содержания животных."
                 link="#"
                 caseImageSrc={veterinaryClinicSrc}
-                mobileCaseImageSrc={mobileVeterinaryClinicSrc}
                 caseImageAlt="Кот обнимается с собакой"
-                isMobile={isMobile}
             />
             <Case
                 header="Корпоративный сайт для юридической компании"
@@ -54,9 +45,7 @@ function Cases({ isMobile }) {
                 объединивших лучшие компетенции для эффективного достижения поставленных целей."
                 link="#"
                 caseImageSrc={lawFirmSrc}
-                mobileCaseImageSrc={mobileLawFirmSrc}
                 caseImageAlt="Шахматная доска"
-                isMobile={isMobile}
             />
             <Case
                 header="SMM-продвижение интернет-магазина итальянской обуви “Robinani”"
@@ -64,9 +53,7 @@ function Cases({ isMobile }) {
                 фирменные сумки и аксессуары."
                 link="#"
                 caseImageSrc={robinaniSrc}
-                mobileCaseImageSrc={mobileRobinaniSrc}
                 caseImageAlt="Женские ноги в босоножках на каблуке"
-                isMobile={isMobile}
             />
             <button className={styles.button}>Посмотреть все работы →</button>
         </section>

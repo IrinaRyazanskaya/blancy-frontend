@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -7,9 +8,9 @@ import emailIconSrc from './email.svg';
 import chatIconSrc from './chat.svg';
 import styles from './request-form.module.css';
 
-function RequestForm({ clientName, clientPhone, clientEmail, comment }) {
+function RequestForm({ className, clientName, clientPhone, clientEmail, comment }) {
     return (
-        <form className={styles.requestForm}>
+        <form className={cn(className, styles.requestForm)}>
             <div className={styles.inputWrap}>
                 <div className={styles.iconWrap}>
                     <Image
@@ -109,7 +110,7 @@ function RequestForm({ clientName, clientPhone, clientEmail, comment }) {
             <p className={styles.text}>
                 Нажимая на кнопку, я даю согласие на обработку персональных данных в
                 соответствии с&nbsp;
-                <Link href="">
+                <Link href="#" passHref={true}>
                     <a className={styles.link}>Политикой конфиденциальности</a>
                 </Link>
             </p>

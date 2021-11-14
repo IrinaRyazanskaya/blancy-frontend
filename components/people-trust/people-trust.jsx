@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import { CompanyLogo } from '../company-logo';
 
 import styles from './people-trust.module.css';
@@ -11,9 +12,9 @@ import panoramaLogoSrc from './panorama-logo.png';
 import damiDomoLogoSrc from './dami-domo-logo.png';
 import gaLogoSrc from './ga-logo.png';
 
-function PeopleTrust() {
+function PeopleTrust({ className }) {
     return (
-        <section className={styles.peopleTrust}>
+        <section className={cn(className, styles.peopleTrust)}>
             <h2 className={styles.header}>Нам доверяют</h2>
             <p className={styles.description}>
                 Более 100 компаний доверили нам свои коммуникации. Со многими

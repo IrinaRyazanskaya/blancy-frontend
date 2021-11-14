@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 175px;
     width: 1600px;
     height: 680px;
     background: linear-gradient(79.63deg, #d4358f 1.08%, #51a3d6 100%);
@@ -34,52 +33,65 @@
     margin-right: 30px;
 }
 
-@media (max-width: 1630px) {
+@media (max-width: 1600px) {
     .banner {
-        width: 1400px;
-        height: 620px;
-    }
-}
-
-@media (max-width: 1450px) {
-    .banner {
-        width: 1240px;
-        height: 570px;
+        width: 1380px;
+        height: 587px;
     }
 
     .content {
-        margin: 0 24px 0 50px;
-    }
-
-    .header {
-        width: 614px;
+        margin: 0 0 0 20px;
     }
 
     .imageWrap {
-        margin-right: 50px;
         width: 500px;
     }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1400px) {
+    .banner {
+        width: 1180px;
+        height: 502px;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    .header {
+        font-size: 74px;
+        width: 614px;
+    }
+
+    .imageWrap {
+        margin-top: 22px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 1200px) {
     .banner {
         width: 1000px;
-        height: 470px;
+        height: 425px;
+    }
+
+    .content {
+        margin-left: 42px;
     }
 
     .header {
         width: 510px;
-        font-size: 66px;
+        font-size: 62px;
     }
 
     .text {
-        margin: 20px 0 0 0;
+        margin: 10px 0 0 0;
         width: 488px;
-        font-size: 28px;
+        font-size: 26px;
+        line-height: 40px;
     }
 
     .imageWrap {
-        margin-right: 50px;
         width: 350px;
     }
 }
@@ -87,7 +99,7 @@
 @media (max-width: 1024px) {
     .banner {
         flex-direction: column;
-        width: 700px;
+        width: 740px;
         height: 680px;
     }
 
@@ -97,15 +109,15 @@
 
     .header {
         width: 510px;
-        font-size: 54px;
-        line-height: 50px;
+        font-size: 66px;
+        line-height: 66px;
         text-align: center;
     }
 
     .text {
         margin: 20px auto 0;
-        width: 450px;
-        font-size: 18px;
+        width: 500px;
+        font-size: 22px;
         line-height: 30px;
         text-align: center;
     }
@@ -115,17 +127,22 @@
     }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 767px) {
     .banner {
         width: 416px;
     }
 
     .header {
+        margin-top: 10px;
         width: 257px;
+        font-size: 54px;
+        line-height: 50px;
     }
 
     .text {
         width: 257px;
+        font-size: 18px;
+        line-height: 30px;
     }
 
     .imageWrap {
@@ -133,15 +150,23 @@
     }
 }
 
-@media (max-width: 424px) {
+@media (max-width: 426px) {
     .banner {
         width: 350px;
         height: 610px;
+    }
+
+    .header {
+        margin-top: 24px;
     }
 }
 
 @media (max-width: 374px) {
     .banner {
         width: 300px;
+    }
+
+    .header {
+        margin-top: 14px;
     }
 }

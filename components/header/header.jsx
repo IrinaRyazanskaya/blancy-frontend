@@ -6,9 +6,9 @@ import styles from './header.module.css';
 import logoSrc from './logo.svg';
 import newLabelSrc from './new-label.svg';
 
-function Header() {
+function Header({ className }) {
     return (
-        <header className={styles.header}>
+        <header className={cn(styles.header, className)}>
             <Link href="#" passHref={true}>
                 <a className={styles.home}>
                     <Image

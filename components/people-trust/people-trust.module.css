@@ -7,9 +7,7 @@
 
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 60px 172px 1fr;
-    margin: auto;
     width: 1200px;
-    user-select: none;
 }
 
 .header {
@@ -42,13 +40,9 @@
     border-radius: 36px;
     box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
     border: none;
-    user-select: none;
     cursor: pointer;
+    user-select: none;
     transition: all 0.2s ease-in-out;
-    /* backface-visibility: hidden; */
-    /* will-change: background-color; */
-    /* overflow: hidden; */
-    /* -webkit-tap-highlight-color: 'rgba(0, 0, 0, 0)'; */
 }
 
 @media (hover: none) {
@@ -75,31 +69,31 @@
     flex-wrap: wrap;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1400px) {
     .peopleTrust {
-        width: 1160px;
+        width: 1000px;
     }
-}
 
-@media (max-width: 1290px) {
-    .peopleTrust {
-        width: 980px;
-    }
     .companyLogos {
         width: 560px;
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     .peopleTrust {
-        width: 874px;
+        width: 800px;
     }
+
     .companyLogos {
-        width: 456px;
+        width: 450px;
+    }
+
+    .header {
+        font-size: 58px;
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     .peopleTrust {
         grid-template-areas:
             'header'
@@ -108,9 +102,21 @@
             'button';
 
         grid-template-columns: 1fr;
-        grid-template-rows: 60px 150px 1fr 1fr;
-        margin: auto;
-        width: 440px;
+        grid-template-rows: 72px 100px 1fr 98px;
+        width: 700px;
+    }
+
+    .header {
+        font-size: 60px;
+    }
+
+    .description {
+        width: 500px;
+    }
+
+    .companyLogos {
+        width: 700px;
+        justify-content: center;
     }
 
     .button {
@@ -118,10 +124,10 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
     .peopleTrust {
-        width: 300px;
-        grid-template-rows: 42px 142px 1fr 1fr;
+        width: 400px;
+        grid-template-rows: 42px 142px 1fr 88px;
     }
 
     .header {
@@ -137,6 +143,16 @@
         width: 200px;
         height: 58px;
         font-size: 16px;
+    }
+
+    .companyLogos {
+        width: 400px;
+    }
+}
+
+@media (max-width: 426px) {
+    .peopleTrust {
+        width: 300px;
     }
 
     .companyLogos {

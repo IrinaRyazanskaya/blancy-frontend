@@ -1,6 +1,5 @@
 .footer {
     width: 1600px;
-    margin: auto;
     color: #222;
 }
 
@@ -72,11 +71,12 @@
 .itemLink,
 .contact {
     text-decoration: none;
-    color: #222222;
+    color: #222;
 }
 
 .itemLink:hover,
-.contact:hover {
+.contact:hover,
+.security:hover {
     color: #e64592;
 }
 
@@ -88,7 +88,10 @@
 }
 
 .security {
+    display: block;
     margin: 0 0 14px 0;
+    text-decoration: none;
+    color: #222;
 }
 
 .invite {
@@ -99,4 +102,93 @@
     font-size: 20px;
     line-height: 28px;
     font-weight: 700;
+}
+
+@media (max-width: 1600px) {
+    .footer {
+        width: 1380px;
+    }
+
+    .navigation {
+        padding: 70px 0 64px 0;
+        height: 442px;
+    }
+
+    .contacts {
+        padding: 40px 0 34px 0;
+        height: 162px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .footer {
+        width: 1180px;
+    }
+
+    .column + .column {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer {
+        width: 1000px;
+    }
+
+    .navigation {
+        padding: 50px 0 44px 0;
+        height: 414px;
+    }
+
+    .contacts {
+        padding: 40px 0 34px 0;
+        height: 162px;
+    }
+
+    .column {
+        width: 224px;
+    }
+
+    .column:first-child {
+        margin-right: 50px;
+    }
+
+    .contact {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        width: 740px;
+    }
+
+    .column {
+        width: 174px;
+    }
+
+    .item {
+        margin-bottom: 16px;
+    }
+
+    .invite,
+    .text,
+    .item,
+    .contact {
+        font-size: 14px;
+    }
+
+    .security {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .navigation {
+        padding: 36px 0 28px 0;
+        height: 354px;
+    }
+
+    .contacts {
+        padding: 34px 0 38px 0;
+    }
 }

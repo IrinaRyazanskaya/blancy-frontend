@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import Image from 'next/image';
 
 import { RequestForm } from '../request-form';
@@ -5,9 +6,9 @@ import { RequestForm } from '../request-form';
 import employeeSrc from './employee.png';
 import styles from './partnership-proposal.module.css';
 
-function PartnershipProposal() {
+function PartnershipProposal({ className }) {
     return (
-        <section className={styles.proposal}>
+        <section className={cn(styles.proposal, className)}>
             <div className={styles.content}>
                 <h2 className={styles.header}>Хотите с нами работать?</h2>
                 <p className={styles.description}>
@@ -16,16 +17,16 @@ function PartnershipProposal() {
                         info@blancy.ru
                     </a>
                 </p>
-                <div className={styles.imageWrap}>
-                    <Image
-                        src={employeeSrc}
-                        alt="Мужчина в очках Memoji"
-                        width={656}
-                        height={626}
-                    />
-                </div>
             </div>
-            <RequestForm />
+            <div className={styles.imageWrap}>
+                <Image
+                    src={employeeSrc}
+                    alt="Мужчина в очках Memoji"
+                    width={656}
+                    height={626}
+                />
+            </div>
+            <RequestForm className={styles.form} />
         </section>
     );
 }

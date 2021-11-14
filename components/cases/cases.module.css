@@ -1,6 +1,5 @@
 .cases {
     width: 1200px;
-    margin: 0 auto 175px;
 }
 
 .header {
@@ -24,6 +23,7 @@
     box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
     border: none;
     cursor: pointer;
+    user-select: none;
 }
 
 .button:hover,
@@ -33,38 +33,38 @@
     box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 1400px) {
     .cases {
         width: 1000px;
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     .cases {
         width: 800px;
     }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1024px) {
     .cases {
         width: 700px;
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 767px) {
     .cases {
         width: 400px;
-    }
-}
-
-@media (max-width: 425px) {
-    .cases {
-        width: 300px;
     }
 
     .header {
         margin: 0 0 10px 0;
         font-size: 36px;
+    }
+}
+
+@media (max-width: 426px) {
+    .cases {
+        width: 300px;
     }
 
     .button {

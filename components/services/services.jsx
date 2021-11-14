@@ -1,10 +1,11 @@
+import cn from 'classnames';
 import { ServiceCard } from '../service-card';
 
 import styles from './services.module.css';
 
-function Services({ title, caption }) {
+function Services({ title, caption, className }) {
     return (
-        <section className={styles.services}>
+        <section className={cn(styles.services, className)}>
             <div className={styles.headerWrap}>
                 <h2 className={styles.header}>{title}</h2>
                 {caption ? <p className={styles.caption}>{caption}</p> : null}
@@ -14,33 +15,36 @@ function Services({ title, caption }) {
                     lines={4}
                     header="Разработка"
                     services={[
-                        'Разработка лендингов',
-                        'Разработка корпоративных сайтов',
-                        'Разработка интернет-магазинов',
+                        { title: 'Разработка лендингов', href: '#' },
+                        { title: 'Разработка корпоративных сайтов', href: '#' },
+                        { title: 'Разработка интернет-магазинов', href: '#' },
                     ]}
                 />
                 <ServiceCard
                     lines={4}
                     header="Продвижение"
                     services={[
-                        'SEO-продвижение',
-                        'SMM-продвижение',
-                        'Instagram-продвижение',
-                        'SERM-управление репутацией',
+                        { title: 'SEO-продвижение', href: '#' },
+                        { title: 'SMM-продвижение', href: '#' },
+                        { title: 'Instagram-продвижение', href: '#' },
+                        { title: 'SERM-управление репутацией', href: '#' },
                     ]}
                 />
                 <ServiceCard
                     lines={2}
                     header="Реклама"
                     services={[
-                        'Контекстная реклама в Яндекс.Директ',
-                        'Контекстная реклама в Google AdWords',
+                        { title: 'Контекстная реклама в Яндекс.Директ', href: '#' },
+                        { title: 'Контекстная реклама в Google AdWords', href: '#' },
                     ]}
                 />
                 <ServiceCard
                     lines={2}
                     header="Брендинг"
-                    services={['Разработка логотипа', 'Разработка Фирменного стиля']}
+                    services={[
+                        { title: 'Разработка логотипа', href: '#' },
+                        { title: 'Разработка Фирменного стиля', href: '#' },
+                    ]}
                 />
             </div>
         </section>
