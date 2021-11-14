@@ -68,8 +68,8 @@
     transition: all 0.2s ease-in-out;
     border: none;
     cursor: pointer;
-    -webkit-appearance: none;
     user-select: none;
+    -webkit-appearance: none;
 }
 
 @media (hover: none) {
