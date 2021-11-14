@@ -1,6 +1,5 @@
 .articles {
     width: 1200px;
-    user-select: none;
 }
 
 .header {
@@ -30,6 +29,7 @@
     box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
     text-decoration: none;
     transition: all 0.2s ease-in-out;
+    user-select: none;
 }
 
 @media (hover: none) {

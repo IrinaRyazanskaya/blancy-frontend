@@ -1,5 +1,5 @@
 .menu {
-    position: relative;
+    position: absolute;
     padding: 24px 14px;
     width: 100%;
     box-sizing: border-box;
@@ -7,24 +7,13 @@
     font-weight: 700;
     border-top: 1px solid rgba(208, 208, 208, 0.7);
     background-color: #fff;
-    visibility: hidden;
     transform: translateY(-100%);
-    transition: transform 0.8s ease-in-out, opacity 0.3s cubic-bezier(0.9, 0, 0.33, 1);
+    transition: transform 0.8s cubic-bezier(0.9, 0, 0.33, 1);
     z-index: 1;
-    opacity: 0;
 }
 
 .menuOpen {
-    visibility: visible;
     transform: translateY(0);
-    opacity: 1;
-    /* background-color: aquamarine; */
-}
-
-.navigation,
-.communication {
-    transform: translateY(10%);
-    transition: all 0.5s ease-in-out;
 }
 
 .navigationOpen,
@@ -77,6 +66,7 @@
     border-radius: 36px;
     box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
     border: none;
+    user-select: none;
 }
 
 .labelAnchor {
@@ -90,5 +80,11 @@
 }
 
 .communication {
-    margin-top: 30px;
+    margin-top: 56px;
+}
+
+@media (max-width: 374px) {
+    .communication {
+        margin-top: 30px;
+    }
 }

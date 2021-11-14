@@ -34,6 +34,7 @@
     outline: none;
     -webkit-appearance: none;
     background-color: transparent;
+    -webkit-appearance: none;
 }
 
 .field:focus,
@@ -68,6 +69,8 @@
     transition: all 0.2s ease-in-out;
     border: none;
     cursor: pointer;
+    -webkit-appearance: none;
+    user-select: none;
 }
 
 @media (hover: none) {
@@ -163,6 +166,10 @@
         height: 46px;
     }
 
+    .imageWrap {
+        margin-right: 16px;
+    }
+
     .sendButton {
         width: 280px;
         height: 58px;
@@ -182,7 +189,7 @@
     }
 
     .inputWrap {
-        width: 240px;
+        width: 254px;
     }
 
     .sendButton {

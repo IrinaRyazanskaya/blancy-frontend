@@ -1,13 +1,11 @@
 import cn from 'classnames';
-import Image from 'next/image';
 
 import { Facts } from '../facts/facts';
 
+import officeImageSrc from './office.jpeg';
 import styles from './about-company.module.css';
-import officeSrc from './office.png';
-import mobileOfficeSrc from './mobile-office.png';
 
-function AboutCompany({ isPhone, className }) {
+function AboutCompany({ className }) {
     return (
         <section className={cn(className, styles.aboutCompany)}>
             <h3 className={styles.header}>О компании</h3>
@@ -24,25 +22,10 @@ function AboutCompany({ isPhone, className }) {
                         description="Клиентов обращаются к нам через рекомендации"
                     />
                 </div>
-                <div className={styles.imageWrap}>
-                    {isPhone ? (
-                        <Image
-                            className={styles.mobileImage}
-                            src={mobileOfficeSrc}
-                            alt="Офис Digital-агентства Blancy"
-                            width={300}
-                            height={480}
-                        />
-                    ) : (
-                        <Image
-                            className={styles.image}
-                            src={officeSrc}
-                            alt="Офис Digital-агентства Blancy"
-                            width={980}
-                            height={620}
-                        />
-                    )}
-                </div>
+                <div
+                    className={styles.image}
+                    style={{ backgroundImage: `url(${officeImageSrc})` }}
+                />
             </div>
         </section>
     );

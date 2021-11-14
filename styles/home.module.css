@@ -5,9 +5,14 @@
 .peopleTrust,
 .questions,
 .services,
-.articles,
-.proposal {
+.articles {
     margin: 0 auto 175px;
+}
+
+.proposal,
+.header,
+.footer {
+    margin: 0 auto;
 }
 
 @media (max-width: 1600px) {
@@ -18,8 +23,7 @@
     .peopleTrust,
     .questions,
     .services,
-    .articles,
-    .proposal {
+    .articles {
         margin-bottom: 100px;
     }
 }
@@ -32,8 +36,7 @@
     .peopleTrust,
     .questions,
     .services,
-    .articles,
-    .proposal {
+    .articles {
         margin-bottom: 80px;
     }
 }
@@ -46,8 +49,7 @@
     .peopleTrust,
     .questions,
     .services,
-    .articles,
-    .proposal {
+    .articles {
         margin-bottom: 60px;
     }
 }

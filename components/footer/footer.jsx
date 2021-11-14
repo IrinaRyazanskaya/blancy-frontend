@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -7,9 +8,9 @@ import vkIconSrc from './vk.svg';
 import fbIconSrc from './facebook.svg';
 import styles from './footer.module.css';
 
-function Footer() {
+function Footer({ className }) {
     return (
-        <footer className={styles.footer}>
+        <footer className={cn(className, styles.footer)}>
             <section className={styles.navigation}>
                 <div className={styles.column}>
                     <div className={styles.logoWrap}>
@@ -73,22 +74,22 @@ function Footer() {
                     <h2 className={styles.header}>Услуги</h2>
                     <ul className={styles.items}>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" target="_blank" rel="noreferrer">
                                 <a className={styles.itemLink}>→ Разработка</a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
-                                <a className={styles.itemLink}>→ Провижение</a>
+                            <Link href="#" target="_blank" rel="noreferrer">
+                                <a className={styles.itemLink}>→ Продвижение</a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" target="_blank" rel="noreferrer">
                                 <a className={styles.itemLink}>→ Реклама</a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" target="_blank" rel="noreferrer">
                                 <a className={styles.itemLink}>→ Брендинг</a>
                             </Link>
                         </li>
@@ -98,32 +99,32 @@ function Footer() {
                     <h2 className={styles.header}>Агентство</h2>
                     <ul className={styles.items}>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" target="_blank" rel="noreferrer">
                                 <a className={styles.itemLink}>О компании</a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" target="_blank" rel="noreferrer">
                                 <a className={styles.itemLink}>Кейсы</a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" target="_blank" rel="noreferrer">
                                 <a className={styles.itemLink}>Вакансии</a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" target="_blank" rel="noreferrer">
                                 <a className={styles.itemLink}>Онлайн-школа</a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" target="_blank" rel="noreferrer">
                                 <a className={styles.itemLink}>Блог</a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" target="_blank" rel="noreferrer">
                                 <a className={styles.itemLink}>Контакты</a>
                             </Link>
                         </li>
@@ -133,21 +134,21 @@ function Footer() {
                     <h2 className={styles.header}>Блог</h2>
                     <ul className={styles.items}>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" target="_blank" rel="noreferrer">
                                 <a className={styles.itemLink}>
                                     10 советов для ведения социальных сетей
                                 </a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" target="_blank" rel="noreferrer">
                                 <a className={styles.itemLink}>
                                     Чем важна мобильная версия сайта в 2021?
                                 </a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" target="_blank" rel="noreferrer">
                                 <a className={styles.itemLink}>
                                     Создание продающего поста в Instagram - Лайфхак
                                 </a>
@@ -159,8 +160,12 @@ function Footer() {
             <div className={styles.divider}></div>
             <section className={styles.contacts}>
                 <div className={styles.column}>
-                    <p className={styles.security}>Пользовательское соглашение</p>
-                    <p className={styles.security}>Защита персональных данных</p>
+                    <Link href="#" target="_blank" rel="noreferrer">
+                        <a className={styles.security}>Пользовательское соглашение</a>
+                    </Link>
+                    <Link href="#" target="_blank" rel="noreferrer">
+                        <a className={styles.security}>Защита персональных данных</a>
+                    </Link>
                 </div>
                 <div className={styles.column}>
                     <p className={styles.invite}>Звоните:</p>

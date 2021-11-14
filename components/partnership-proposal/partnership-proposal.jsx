@@ -17,16 +17,16 @@ function PartnershipProposal({ className }) {
                         info@blancy.ru
                     </a>
                 </p>
-                <div className={styles.imageWrap}>
-                    <Image
-                        src={employeeSrc}
-                        alt="Мужчина в очках Memoji"
-                        width={656}
-                        height={626}
-                    />
-                </div>
             </div>
-            <RequestForm />
+            <div className={styles.imageWrap}>
+                <Image
+                    src={employeeSrc}
+                    alt="Мужчина в очках Memoji"
+                    width={656}
+                    height={626}
+                />
+            </div>
+            <RequestForm className={styles.form} />
         </section>
     );
 }

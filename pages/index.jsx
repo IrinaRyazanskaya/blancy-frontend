@@ -13,6 +13,7 @@ import { Articles } from '../components/articles';
 import { Questions } from '../components/questions';
 import { PartnershipProposal } from '../components/partnership-proposal';
 import { Footer } from '../components/footer';
+import { MobileFooter } from '../components/mobile-footer';
 
 import styles from '../styles/home.module.css';
 
@@ -30,11 +31,11 @@ function Home({ userAgent }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            {isMobile ? <MobileHeader /> : <Header />}
+            {isMobile ? <MobileHeader /> : <Header className={styles.header} />}
 
             <HomeBanner className={styles.banner} />
-            <Cases isPhone={isPhone} className={styles.cases} />
-            <AboutCompany isPhone={isPhone} className={styles.aboutCompany} />
+            <Cases className={styles.cases} />
+            <AboutCompany className={styles.aboutCompany} />
             <PeopleSays isPhone={isPhone} className={styles.peopleSays} />
             <PeopleTrust className={styles.peopleTrust} />
             <Questions
@@ -59,7 +60,7 @@ function Home({ userAgent }) {
             />
             <PartnershipProposal className={styles.proposal} />
 
-            <Footer />
+            {isMobile ? <MobileFooter /> : <Footer className={styles.footer} />}
         </div>
     );
 }
