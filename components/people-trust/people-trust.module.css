@@ -40,10 +40,9 @@
     border-radius: 36px;
     box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
     border: none;
-    user-select: none;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
     user-select: none;
+    transition: all 0.2s ease-in-out;
 }
 
 @media (hover: none) {
