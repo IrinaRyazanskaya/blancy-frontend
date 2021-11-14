@@ -32,22 +32,22 @@ function MobileFooter() {
                         </summary>
                         <ul className={styles.subMenu}>
                             <li className={styles.subMenuItem}>
-                                <Link href="#" target="_blank" rel="noreferrer">
+                                <Link href="#">
                                     <a className={styles.itemLink}>Разработка</a>
                                 </Link>
                             </li>
                             <li className={styles.subMenuItem}>
-                                <Link href="#" target="_blank" rel="noreferrer">
+                                <Link href="#">
                                     <a className={styles.itemLink}>Продвижение</a>
                                 </Link>
                             </li>
                             <li className={styles.subMenuItem}>
-                                <Link href="#" target="_blank" rel="noreferrer">
+                                <Link href="#">
                                     <a className={styles.itemLink}>Реклама</a>
                                 </Link>
                             </li>
                             <li className={styles.subMenuItem}>
-                                <Link href="#" target="_blank" rel="noreferrer">
+                                <Link href="#">
                                     <a className={styles.itemLink}>Брендинг</a>
                                 </Link>
                             </li>
@@ -63,32 +63,32 @@ function MobileFooter() {
                         </summary>
                         <ul className={styles.subMenu}>
                             <li className={styles.subMenuItem}>
-                                <Link href="#" target="_blank" rel="noreferrer">
+                                <Link href="#">
                                     <a className={styles.itemLink}>О компании</a>
                                 </Link>
                             </li>
                             <li className={styles.subMenuItem}>
-                                <Link href="#" target="_blank" rel="noreferrer">
+                                <Link href="#">
                                     <a className={styles.itemLink}>Кейсы</a>
                                 </Link>
                             </li>
                             <li className={styles.subMenuItem}>
-                                <Link href="#" target="_blank" rel="noreferrer">
+                                <Link href="#">
                                     <a className={styles.itemLink}>Вакансии</a>
                                 </Link>
                             </li>
                             <li className={styles.subMenuItem}>
-                                <Link href="#" target="_blank" rel="noreferrer">
+                                <Link href="#">
                                     <a className={styles.itemLink}>Онлайн-школа</a>
                                 </Link>
                             </li>
                             <li className={styles.subMenuItem}>
-                                <Link href="#" target="_blank" rel="noreferrer">
+                                <Link href="#">
                                     <a className={styles.itemLink}>Блог</a>
                                 </Link>
                             </li>
                             <li className={styles.subMenuItem}>
-                                <Link href="#" target="_blank" rel="noreferrer">
+                                <Link href="#">
                                     <a className={styles.itemLink}>Контакты</a>
                                 </Link>
                             </li>
@@ -104,21 +104,21 @@ function MobileFooter() {
                         </summary>
                         <ul className={styles.subMenu}>
                             <li className={styles.subMenuItem}>
-                                <Link href="#" target="_blank" rel="noreferrer">
+                                <Link href="#">
                                     <a className={styles.itemLink}>
                                         10 советов для ведения социальных сетей
                                     </a>
                                 </Link>
                             </li>
                             <li className={styles.subMenuItem}>
-                                <Link href="#" target="_blank" rel="noreferrer">
+                                <Link href="#">
                                     <a className={styles.itemLink}>
                                         Чем важна мобильная версия сайта в 2021?
                                     </a>
                                 </Link>
                             </li>
                             <li className={styles.subMenuItem}>
-                                <Link href="#" target="_blank" rel="noreferrer">
+                                <Link href="#">
                                     <a className={styles.itemLink}>
                                         Создание продающего поста в Instagram - Лайфхак
                                     </a>
@@ -136,17 +136,17 @@ function MobileFooter() {
                         </summary>
                         <ul className={styles.subMenu}>
                             <li className={styles.subMenuItem}>
-                                <Link href="#" target="_blank" rel="noreferrer">
+                                <Link href="#">
                                     <a className={styles.itemLink}>Звоните</a>
                                 </Link>
                             </li>
                             <li className={styles.subMenuItem}>
-                                <Link href="#" target="_blank" rel="noreferrer">
+                                <Link href="#">
                                     <a className={styles.itemLink}>Пишите</a>
                                 </Link>
                             </li>
                             <li className={styles.subMenuItem}>
-                                <Link href="#" target="_blank" rel="noreferrer">
+                                <Link href="#">
                                     <a className={styles.itemLink}>Приезжайте</a>
                                 </Link>
                             </li>
@@ -200,10 +200,10 @@ function MobileFooter() {
             </div>
             <div className={styles.divider}></div>
             <div className={styles.securityWrap}>
-                <Link href="#" target="_blank" rel="noreferrer">
+                <Link href="#">
                     <a className={styles.security}>Пользовательское соглашение</a>
                 </Link>
-                <Link href="#" target="_blank" rel="noreferrer">
+                <Link href="#">
                     <a className={styles.security}>Защита персональных данных</a>
                 </Link>
                 <p className={styles.text}>
