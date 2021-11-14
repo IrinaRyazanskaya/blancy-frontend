@@ -110,7 +110,7 @@ function RequestForm({ className, clientName, clientPhone, clientEmail, comment 
             <p className={styles.text}>
                 Нажимая на кнопку, я даю согласие на обработку персональных данных в
                 соответствии с&nbsp;
-                <Link href="#">
+                <Link href="#" passHref={true}>
                     <a className={styles.link}>Политикой конфиденциальности</a>
                 </Link>
             </p>

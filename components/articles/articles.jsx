@@ -47,7 +47,7 @@ function Articles({ title, linkText, className }) {
                 />
             </div>
             {linkText ? (
-                <Link href="#">
+                <Link href="#" passHref={true}>
                     <a className={styles.allArticles}>
                         <span className={styles.linkText}>{linkText}</span>
                     </a>

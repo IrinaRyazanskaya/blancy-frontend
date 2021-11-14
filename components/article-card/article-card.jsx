@@ -17,7 +17,7 @@ function ArticleCard({
     date, // '2021-11-09T16:51:05.767Z' (ISO8601)
 }) {
     return (
-        <Link href={href}>
+        <Link href={href} passHref={true}>
             <a className={styles.cardLink}>
                 <div className={styles.card}>
                     <div className={styles.imageWrap}>

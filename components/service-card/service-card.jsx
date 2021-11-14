@@ -17,7 +17,7 @@ function ServiceCard({ lines, header, services }) {
             <ul className={styles.services}>
                 {services.map((service) => {
                     return (
-                        <Link key={service.title} href={service.href}>
+                        <Link key={service.title} href={service.href} passHref={true}>
                             <a className={styles.link}>
                                 <li className={styles.service}>{service.title}</li>
                             </a>

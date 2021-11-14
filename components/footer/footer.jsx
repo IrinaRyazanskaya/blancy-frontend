@@ -74,22 +74,22 @@ function Footer({ className }) {
                     <h2 className={styles.header}>Услуги</h2>
                     <ul className={styles.items}>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" passHref={true}>
                                 <a className={styles.itemLink}>→ Разработка</a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" passHref={true}>
                                 <a className={styles.itemLink}>→ Продвижение</a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" passHref={true}>
                                 <a className={styles.itemLink}>→ Реклама</a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" passHref={true}>
                                 <a className={styles.itemLink}>→ Брендинг</a>
                             </Link>
                         </li>
@@ -99,32 +99,32 @@ function Footer({ className }) {
                     <h2 className={styles.header}>Агентство</h2>
                     <ul className={styles.items}>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" passHref={true}>
                                 <a className={styles.itemLink}>О компании</a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" passHref={true}>
                                 <a className={styles.itemLink}>Кейсы</a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" passHref={true}>
                                 <a className={styles.itemLink}>Вакансии</a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" passHref={true}>
                                 <a className={styles.itemLink}>Онлайн-школа</a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" passHref={true}>
                                 <a className={styles.itemLink}>Блог</a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" passHref={true}>
                                 <a className={styles.itemLink}>Контакты</a>
                             </Link>
                         </li>
@@ -134,21 +134,21 @@ function Footer({ className }) {
                     <h2 className={styles.header}>Блог</h2>
                     <ul className={styles.items}>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" passHref={true}>
                                 <a className={styles.itemLink}>
                                     10 советов для ведения социальных сетей
                                 </a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" passHref={true}>
                                 <a className={styles.itemLink}>
                                     Чем важна мобильная версия сайта в 2021?
                                 </a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="#">
+                            <Link href="#" passHref={true}>
                                 <a className={styles.itemLink}>
                                     Создание продающего поста в Instagram - Лайфхак
                                 </a>
@@ -160,10 +160,10 @@ function Footer({ className }) {
             <div className={styles.divider}></div>
             <section className={styles.contacts}>
                 <div className={styles.column}>
-                    <Link href="#">
+                    <Link href="#" passHref={true}>
                         <a className={styles.security}>Пользовательское соглашение</a>
                     </Link>
-                    <Link href="#">
+                    <Link href="#" passHref={true}>
                         <a className={styles.security}>Защита персональных данных</a>
                     </Link>
                 </div>
