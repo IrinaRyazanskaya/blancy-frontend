@@ -19,6 +19,7 @@ function HomeBanner({ className }) {
                     className={styles.image}
                     src={homeBannerImageSrc}
                     alt="Сотрудники digital-агенства"
+                    loading="eager"
                     width={561}
                     height={479}
                 />
