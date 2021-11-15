@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import logoSrc from './logo.svg';
+import arrowSrc from './arrow.svg';
 import instIconSrc from './instagram.svg';
 import vkIconSrc from './vk.svg';
 import fbIconSrc from './facebook.svg';
@@ -26,9 +27,27 @@ function MobileFooter() {
                 <li className={styles.item}>
                     <details className={styles.subMenuWrap}>
                         <summary className={styles.trigger}>
-                            <div className={styles.arrowWrap}></div>
-                            <div className={styles.triggerContent}>Услуги</div>
-                            <div className={styles.arrowWrap}></div>
+                            <div className={styles.triggerWrap}>
+                                <div className={styles.arrowWrap}>
+                                    <Image
+                                        className={styles.arrow}
+                                        src={arrowSrc}
+                                        alt="Стрелка вниз"
+                                        width={16}
+                                        height={8}
+                                    />
+                                </div>
+                                <div className={styles.triggerContent}>Услуги</div>
+                                <div className={styles.arrowWrap}>
+                                    <Image
+                                        className={styles.arrow}
+                                        src={arrowSrc}
+                                        alt="Стрелка вниз"
+                                        width={16}
+                                        height={8}
+                                    />
+                                </div>
+                            </div>
                         </summary>
                         <ul className={styles.subMenu}>
                             <li className={styles.subMenuItem}>
@@ -57,9 +76,27 @@ function MobileFooter() {
                 <li className={styles.item}>
                     <details className={styles.subMenuWrap}>
                         <summary className={styles.trigger}>
-                            <div className={styles.arrowWrap}></div>
-                            <div className={styles.triggerContent}>Агентство</div>
-                            <div className={styles.arrowWrap}></div>
+                            <div className={styles.triggerWrap}>
+                                <div className={styles.arrowWrap}>
+                                    <Image
+                                        className={styles.arrow}
+                                        src={arrowSrc}
+                                        alt="Стрелка вниз"
+                                        width={16}
+                                        height={8}
+                                    />
+                                </div>
+                                <div className={styles.triggerContent}>Агентство</div>
+                                <div className={styles.arrowWrap}>
+                                    <Image
+                                        className={styles.arrow}
+                                        src={arrowSrc}
+                                        alt="Стрелка вниз"
+                                        width={16}
+                                        height={8}
+                                    />
+                                </div>
+                            </div>
                         </summary>
                         <ul className={styles.subMenu}>
                             <li className={styles.subMenuItem}>
@@ -98,9 +135,27 @@ function MobileFooter() {
                 <li className={styles.item}>
                     <details className={styles.subMenuWrap}>
                         <summary className={styles.trigger}>
-                            <div className={styles.arrowWrap}></div>
-                            <div className={styles.triggerContent}>Блог</div>
-                            <div className={styles.arrowWrap}></div>
+                            <div className={styles.triggerWrap}>
+                                <div className={styles.arrowWrap}>
+                                    <Image
+                                        className={styles.arrow}
+                                        src={arrowSrc}
+                                        alt="Стрелка вниз"
+                                        width={16}
+                                        height={8}
+                                    />
+                                </div>
+                                <div className={styles.triggerContent}>Блог</div>
+                                <div className={styles.arrowWrap}>
+                                    <Image
+                                        className={styles.arrow}
+                                        src={arrowSrc}
+                                        alt="Стрелка вниз"
+                                        width={16}
+                                        height={8}
+                                    />
+                                </div>
+                            </div>
                         </summary>
                         <ul className={styles.subMenu}>
                             <li className={styles.subMenuItem}>
@@ -130,25 +185,54 @@ function MobileFooter() {
                 <li className={styles.item}>
                     <details className={styles.subMenuWrap}>
                         <summary className={styles.trigger}>
-                            <div className={styles.arrowWrap}></div>
-                            <div className={styles.triggerContent}>Контакты</div>
-                            <div className={styles.arrowWrap}></div>
+                            <div className={styles.triggerWrap}>
+                                <div className={styles.arrowWrap}>
+                                    <Image
+                                        className={styles.arrow}
+                                        src={arrowSrc}
+                                        alt="Стрелка вниз"
+                                        width={16}
+                                        height={8}
+                                    />
+                                </div>
+                                <div className={styles.triggerContent}>Контакты</div>
+                                <div className={styles.arrowWrap}>
+                                    <Image
+                                        className={styles.arrow}
+                                        src={arrowSrc}
+                                        alt="Стрелка вниз"
+                                        width={16}
+                                        height={8}
+                                    />
+                                </div>
+                            </div>
                         </summary>
                         <ul className={styles.subMenu}>
                             <li className={styles.subMenuItem}>
-                                <Link href="#" passHref={true}>
-                                    <a className={styles.itemLink}>Звоните</a>
-                                </Link>
+                                <p className={styles.invite}>Звоните</p>
+                                <a className={styles.contact} href="tel:+74954773356">
+                                    + 7 (495) 477-33-56
+                                </a>
                             </li>
                             <li className={styles.subMenuItem}>
-                                <Link href="#" passHref={true}>
-                                    <a className={styles.itemLink}>Пишите</a>
-                                </Link>
+                                <p className={styles.invite}>Пишите</p>
+                                <a
+                                    className={styles.contact}
+                                    href="mailto:info@blancy.ru"
+                                >
+                                    info@blancy.ru
+                                </a>
                             </li>
                             <li className={styles.subMenuItem}>
-                                <Link href="#" passHref={true}>
-                                    <a className={styles.itemLink}>Приезжайте</a>
-                                </Link>
+                                <p className={styles.invite}>Приезжайте</p>
+                                <a
+                                    className={styles.contact}
+                                    href="https://yandex.ru/maps/-/CCUueIf9OA"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    г. Долгопрудный Лихачевский проспект, 18
+                                </a>
                             </li>
                         </ul>
                     </details>
@@ -198,7 +282,7 @@ function MobileFooter() {
                     />
                 </a>
             </div>
-            <div className={styles.divider}></div>
+            <div className={styles.divider} />
             <div className={styles.securityWrap}>
                 <Link href="#" passHref={true}>
                     <a className={styles.security}>Пользовательское соглашение</a>

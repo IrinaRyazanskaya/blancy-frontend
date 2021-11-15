@@ -1,0 +1,124 @@
+.footer {
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-end;
+    height: 114px;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.imageWrap {
+    margin: 24px auto;
+    width: 123px;
+}
+
+.items,
+.subMenu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.trigger {
+    outline: 0;
+}
+
+.trigger::marker {
+    content: '';
+}
+
+.trigger::-webkit-details-marker {
+    display: none;
+}
+
+.triggerWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #222;
+    border-bottom: 1px solid #d0d0d0;
+    outline: none;
+}
+
+.arrowWrap {
+    margin: 0 10px;
+}
+
+.subMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.subMenuItem {
+    margin-bottom: 20px;
+    width: 210px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.subMenuItem:first-child {
+    margin-top: 20px;
+}
+
+.itemLink,
+.contact {
+    color: #222;
+    text-decoration: none;
+}
+
+.invite {
+    margin: 0 0 8px 0;
+}
+
+.contact {
+    font-weight: 700;
+}
+
+.socialNetworks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 78px;
+}
+
+.socialLink + .socialLink {
+    margin-left: 18px;
+}
+
+.divider {
+    height: 2px;
+    background: linear-gradient(79.63deg, #d4358f 1.08%, #51a3d6 100%);
+    border-radius: 20px;
+}
+
+.securityWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 204px;
+}
+
+.security {
+    margin-bottom: 14px;
+    color: #222;
+    line-height: 24px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.text {
+    margin: 2px 0 0 0;
+    width: 222px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 300;
+}
