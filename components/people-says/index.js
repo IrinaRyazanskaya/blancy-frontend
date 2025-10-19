@@ -1,1 +1,1 @@
-export * from './people-says';
+export * from "./people-says";

@@ -1,161 +1,161 @@
 .peopleTrust {
-    display: grid;
-    grid-template-areas:
-        'header images'
-        'text images'
-        'button images';
+  display: grid;
+  grid-template-areas:
+    "header images"
+    "text images"
+    "button images";
 
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60px 172px 1fr;
-    width: 1200px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px 172px 1fr;
+  width: 1200px;
 }
 
 .header {
-    grid-area: header;
-    margin: 0;
-    font-weight: 800;
-    font-size: 60px;
-    line-height: 56px;
-    color: #191919;
+  grid-area: header;
+  margin: 0;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 56px;
+  color: #191919;
 }
 
 .description {
-    grid-area: text;
-    width: 380px;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 36px;
-    color: #222222;
+  grid-area: text;
+  width: 380px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 36px;
+  color: #222222;
 }
 
 .button {
-    grid-area: button;
-    width: 230px;
-    height: 66px;
-    font-family: Circe;
-    font-size: 17px;
-    color: #fff;
-    font-weight: 700;
-    background-color: #e64592;
-    border-radius: 36px;
-    box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
-    border: none;
-    cursor: pointer;
-    user-select: none;
-    transition: all 0.2s ease-in-out;
+  grid-area: button;
+  width: 230px;
+  height: 66px;
+  font-family: Circe;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #e64592;
+  border-radius: 36px;
+  box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease-in-out;
 }
 
 @media (hover: none) {
-    .button:active {
-        color: #e64592;
-        background-color: #fff;
-        box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
-    }
+  .button:active {
+    color: #e64592;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
+  }
 }
 
 @media (hover: hover) {
-    .button:hover,
-    .button:active {
-        color: #e64592;
-        background-color: #fff;
-        box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
-    }
+  .button:hover,
+  .button:active {
+    color: #e64592;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
+  }
 }
 
 .companyLogos {
-    grid-area: images;
-    display: flex;
-    width: 687px;
-    flex-wrap: wrap;
+  grid-area: images;
+  display: flex;
+  width: 687px;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 1400px) {
-    .peopleTrust {
-        width: 1000px;
-    }
+  .peopleTrust {
+    width: 1000px;
+  }
 
-    .companyLogos {
-        width: 560px;
-    }
+  .companyLogos {
+    width: 560px;
+  }
 }
 
 @media (max-width: 1200px) {
-    .peopleTrust {
-        width: 800px;
-    }
+  .peopleTrust {
+    width: 800px;
+  }
 
-    .companyLogos {
-        width: 450px;
-    }
+  .companyLogos {
+    width: 450px;
+  }
 
-    .header {
-        font-size: 58px;
-    }
+  .header {
+    font-size: 58px;
+  }
 }
 
 @media (max-width: 1024px) {
-    .peopleTrust {
-        grid-template-areas:
-            'header'
-            'text'
-            'images'
-            'button';
+  .peopleTrust {
+    grid-template-areas:
+      "header"
+      "text"
+      "images"
+      "button";
 
-        grid-template-columns: 1fr;
-        grid-template-rows: 72px 100px 1fr 98px;
-        width: 700px;
-    }
+    grid-template-columns: 1fr;
+    grid-template-rows: 72px 100px 1fr 98px;
+    width: 700px;
+  }
 
-    .header {
-        font-size: 60px;
-    }
+  .header {
+    font-size: 60px;
+  }
 
-    .description {
-        width: 500px;
-    }
+  .description {
+    width: 500px;
+  }
 
-    .companyLogos {
-        width: 700px;
-        justify-content: center;
-    }
+  .companyLogos {
+    width: 700px;
+    justify-content: center;
+  }
 
-    .button {
-        margin-top: 30px;
-    }
+  .button {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 767px) {
-    .peopleTrust {
-        width: 400px;
-        grid-template-rows: 42px 142px 1fr 88px;
-    }
+  .peopleTrust {
+    width: 400px;
+    grid-template-rows: 42px 142px 1fr 88px;
+  }
 
-    .header {
-        font-size: 36px;
-    }
+  .header {
+    font-size: 36px;
+  }
 
-    .description {
-        width: 300px;
-        font-size: 18px;
-    }
+  .description {
+    width: 300px;
+    font-size: 18px;
+  }
 
-    .button {
-        width: 200px;
-        height: 58px;
-        font-size: 16px;
-    }
+  .button {
+    width: 200px;
+    height: 58px;
+    font-size: 16px;
+  }
 
-    .companyLogos {
-        width: 400px;
-    }
+  .companyLogos {
+    width: 400px;
+  }
 }
 
 @media (max-width: 426px) {
-    .peopleTrust {
-        width: 300px;
-    }
+  .peopleTrust {
+    width: 300px;
+  }
 
-    .companyLogos {
-        width: 300px;
-    }
+  .companyLogos {
+    width: 300px;
+  }
 }

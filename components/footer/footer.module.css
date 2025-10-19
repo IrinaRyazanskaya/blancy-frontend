@@ -1,194 +1,194 @@
 .footer {
-    width: 1600px;
-    color: #222;
+  width: 1600px;
+  color: #222;
 }
 
 .navigation,
 .contacts {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .navigation {
-    padding: 78px 0 71px 0;
-    height: 456px;
-    box-sizing: border-box;
+  padding: 78px 0 71px 0;
+  height: 456px;
+  box-sizing: border-box;
 }
 
 .contacts {
-    padding: 44px 0 39px 0;
-    height: 168px;
-    box-sizing: border-box;
+  padding: 44px 0 39px 0;
+  height: 168px;
+  box-sizing: border-box;
 }
 
 .divider {
-    height: 3px;
-    background: linear-gradient(79.63deg, #d4358f 1.08%, #51a3d6 100%);
+  height: 3px;
+  background: linear-gradient(79.63deg, #d4358f 1.08%, #51a3d6 100%);
 }
 
 .column {
-    width: 234px;
+  width: 234px;
 }
 
 .column + .column {
-    margin-left: 70px;
+  margin-left: 70px;
 }
 
 .column:first-child {
-    margin-right: 70px;
+  margin-right: 70px;
 }
 
 .text {
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
 }
 
 .socialLink + .socialLink {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .header {
-    margin: 18px 0 18px 0;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 800;
+  margin: 18px 0 18px 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 800;
 }
 
 .items {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .item {
-    margin-bottom: 22px;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 300;
+  margin-bottom: 22px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
 }
 
 .itemLink,
 .contact {
-    text-decoration: none;
-    color: #222;
+  text-decoration: none;
+  color: #222;
 }
 
 .itemLink:hover,
 .contact:hover,
 .security:hover {
-    color: #e64592;
+  color: #e64592;
 }
 
 .security,
 .invite {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
 }
 
 .security {
-    display: block;
-    margin: 0 0 14px 0;
-    text-decoration: none;
-    color: #222;
+  display: block;
+  margin: 0 0 14px 0;
+  text-decoration: none;
+  color: #222;
 }
 
 .invite {
-    margin: 0 0 8px 0;
+  margin: 0 0 8px 0;
 }
 
 .contact {
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
 }
 
 @media (max-width: 1600px) {
-    .footer {
-        width: 1380px;
-    }
+  .footer {
+    width: 1380px;
+  }
 
-    .navigation {
-        padding: 70px 0 64px 0;
-        height: 442px;
-    }
+  .navigation {
+    padding: 70px 0 64px 0;
+    height: 442px;
+  }
 
-    .contacts {
-        padding: 40px 0 34px 0;
-        height: 162px;
-    }
+  .contacts {
+    padding: 40px 0 34px 0;
+    height: 162px;
+  }
 }
 
 @media (max-width: 1400px) {
-    .footer {
-        width: 1180px;
-    }
+  .footer {
+    width: 1180px;
+  }
 
-    .column + .column {
-        margin-left: 0;
-    }
+  .column + .column {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 1200px) {
-    .footer {
-        width: 1000px;
-    }
+  .footer {
+    width: 1000px;
+  }
 
-    .navigation {
-        padding: 50px 0 44px 0;
-        height: 414px;
-    }
+  .navigation {
+    padding: 50px 0 44px 0;
+    height: 414px;
+  }
 
-    .contacts {
-        padding: 40px 0 34px 0;
-        height: 162px;
-    }
+  .contacts {
+    padding: 40px 0 34px 0;
+    height: 162px;
+  }
 
-    .column {
-        width: 224px;
-    }
+  .column {
+    width: 224px;
+  }
 
-    .column:first-child {
-        margin-right: 50px;
-    }
+  .column:first-child {
+    margin-right: 50px;
+  }
 
-    .contact {
-        font-size: 19px;
-    }
+  .contact {
+    font-size: 19px;
+  }
 }
 
 @media (max-width: 1024px) {
-    .footer {
-        width: 740px;
-    }
+  .footer {
+    width: 740px;
+  }
 
-    .column {
-        width: 174px;
-    }
+  .column {
+    width: 174px;
+  }
 
-    .item {
-        margin-bottom: 16px;
-    }
+  .item {
+    margin-bottom: 16px;
+  }
 
-    .invite,
-    .text,
-    .item,
-    .contact {
-        font-size: 14px;
-    }
+  .invite,
+  .text,
+  .item,
+  .contact {
+    font-size: 14px;
+  }
 
-    .security {
-        margin-bottom: 10px;
-        font-size: 12px;
-    }
+  .security {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
 
-    .navigation {
-        padding: 36px 0 28px 0;
-        height: 354px;
-    }
+  .navigation {
+    padding: 36px 0 28px 0;
+    height: 354px;
+  }
 
-    .contacts {
-        padding: 34px 0 38px 0;
-    }
+  .contacts {
+    padding: 34px 0 38px 0;
+  }
 }

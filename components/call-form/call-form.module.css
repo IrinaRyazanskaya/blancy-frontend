@@ -1,215 +1,215 @@
 .callForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 52px;
-    width: 585px;
-    height: 350px;
-    background-color: #fff;
-    border-radius: 20px;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 52px;
+  width: 585px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-sizing: border-box;
 }
 
 .inputWrap {
-    display: flex;
-    margin-top: 6px;
-    width: 485px;
-    height: 52px;
-    border-bottom: 1px solid #191919;
+  display: flex;
+  margin-top: 6px;
+  width: 485px;
+  height: 52px;
+  border-bottom: 1px solid #191919;
 }
 
 .imageWrap {
-    height: 21px;
-    margin: 4px 22px 0 0;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  height: 21px;
+  margin: 4px 22px 0 0;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
 }
 
 .field {
-    height: 30px;
-    font-size: 16px;
-    font-family: Circe;
-    color: #222;
-    font-weight: 300;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    -webkit-appearance: none;
+  height: 30px;
+  font-size: 16px;
+  font-family: Circe;
+  color: #222;
+  font-weight: 300;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  -webkit-appearance: none;
 }
 
 .field:focus,
 .field:active {
-    background-color: transparent;
-    outline: none;
+  background-color: transparent;
+  outline: none;
 }
 
 .field:-webkit-autofill,
 .field:-webkit-autofill:hover,
 .field:-webkit-autofill:focus,
 .field:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px white inset !important;
-    box-shadow: 0 0 0 30px white inset !important;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  box-shadow: 0 0 0 30px white inset !important;
 }
 
 .sendButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    width: 300px;
-    height: 66px;
-    font-family: Circe;
-    font-size: 17px;
-    color: #fff;
-    font-weight: 700;
-    background-color: #e64592;
-    border-radius: 36px;
-    box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
-    text-decoration: none;
-    transition: all 0.2s ease-in-out;
-    border: none;
-    cursor: pointer;
-    user-select: none;
-    -webkit-appearance: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  width: 300px;
+  height: 66px;
+  font-family: Circe;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #e64592;
+  border-radius: 36px;
+  box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  -webkit-appearance: none;
 }
 
 @media (hover: none) {
-    .sendButton:active {
-        color: #e64592;
-        background-color: #fff;
-        box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
-    }
+  .sendButton:active {
+    color: #e64592;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
+  }
 }
 
 @media (hover: hover) {
-    .sendButton:hover,
-    .sendButton:active {
-        color: #e64592;
-        background-color: #fff;
-        box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
-    }
+  .sendButton:hover,
+  .sendButton:active {
+    color: #e64592;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
+  }
 }
 
 .text {
-    margin: 24px 0 0 0;
-    width: 426px;
-    font-size: 14px;
-    line-height: 28px;
-    font-weight: 300;
-    color: #191919;
+  margin: 24px 0 0 0;
+  width: 426px;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #191919;
 }
 
 .link {
-    color: #e64592;
-    font-weight: 700;
-    text-decoration: none;
+  color: #e64592;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 @media (max-width: 1400px) {
-    .callForm {
-        width: 530px;
-        height: 318px;
-        padding-left: 47px;
-    }
+  .callForm {
+    width: 530px;
+    height: 318px;
+    padding-left: 47px;
+  }
 
-    .inputWrap {
-        width: 435px;
-    }
+  .inputWrap {
+    width: 435px;
+  }
 
-    .sendButton {
-        margin-top: 30px;
-    }
+  .sendButton {
+    margin-top: 30px;
+  }
 
-    .text {
-        margin: 20px 0 0 0;
-    }
+  .text {
+    margin: 20px 0 0 0;
+  }
 }
 
 @media (max-width: 1200px) {
-    .callForm {
-        width: 434px;
-        height: 280px;
-        padding: 0 0 4px 32px;
-    }
+  .callForm {
+    width: 434px;
+    height: 280px;
+    padding: 0 0 4px 32px;
+  }
 
-    .inputWrap {
-        width: 370px;
-        height: 46px;
-    }
+  .inputWrap {
+    width: 370px;
+    height: 46px;
+  }
 
-    .sendButton {
-        margin-top: 20px;
-        width: 280px;
-        height: 58px;
-    }
+  .sendButton {
+    margin-top: 20px;
+    width: 280px;
+    height: 58px;
+  }
 
-    .text {
-        margin: 14px 0 0 0;
-        width: 375px;
-        font-size: 13px;
-        line-height: 26px;
-    }
+  .text {
+    margin: 14px 0 0 0;
+    width: 375px;
+    font-size: 13px;
+    line-height: 26px;
+  }
 }
 
 @media (max-width: 767px) {
-    .callForm {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 376px;
-        height: 280px;
-        padding: 0;
-    }
+  .callForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 376px;
+    height: 280px;
+    padding: 0;
+  }
 
-    .inputWrap {
-        width: 316px;
-        height: 46px;
-    }
+  .inputWrap {
+    width: 316px;
+    height: 46px;
+  }
 
-    .imageWrap {
-        margin-right: 16px;
-    }
+  .imageWrap {
+    margin-right: 16px;
+  }
 
-    .sendButton {
-        width: 280px;
-        height: 58px;
-    }
+  .sendButton {
+    width: 280px;
+    height: 58px;
+  }
 
-    .text {
-        margin: 16px 0 0 0;
-        width: 314px;
-        font-size: 11px;
-        line-height: 18px;
-    }
+  .text {
+    margin: 16px 0 0 0;
+    width: 314px;
+    font-size: 11px;
+    line-height: 18px;
+  }
 }
 
 @media (max-width: 426px) {
-    .callForm {
-        width: 320px;
-    }
+  .callForm {
+    width: 320px;
+  }
 
-    .inputWrap {
-        width: 254px;
-    }
+  .inputWrap {
+    width: 254px;
+  }
 
-    .sendButton {
-        width: 230px;
-        height: 58px;
-    }
+  .sendButton {
+    width: 230px;
+    height: 58px;
+  }
 
-    .text {
-        margin: 14px 0 0 0;
-        width: 230px;
-        font-size: 10px;
-        line-height: 18px;
-    }
+  .text {
+    margin: 14px 0 0 0;
+    width: 230px;
+    font-size: 10px;
+    line-height: 18px;
+  }
 }
 
 @media (max-width: 374px) {
-    .callForm {
-        width: 280px;
-    }
+  .callForm {
+    width: 280px;
+  }
 
-    .inputWrap {
-        width: 230px;
-    }
+  .inputWrap {
+    width: 230px;
+  }
 }

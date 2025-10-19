@@ -1,90 +1,90 @@
 .menu {
-    position: absolute;
-    padding: 24px 14px;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 18px;
-    font-weight: 700;
-    border-top: 1px solid rgba(208, 208, 208, 0.7);
-    background-color: #fff;
-    transform: translateY(-100%);
-    transition: transform 0.8s cubic-bezier(0.9, 0, 0.33, 1);
-    z-index: 1;
+  position: absolute;
+  padding: 24px 14px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 700;
+  border-top: 1px solid rgba(208, 208, 208, 0.7);
+  background-color: #fff;
+  transform: translateY(-100%);
+  transition: transform 0.8s cubic-bezier(0.9, 0, 0.33, 1);
+  z-index: 1;
 }
 
 .menuOpen {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .navigationOpen,
 .communicationOpen {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .items {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .item {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .itemLink,
 .phoneNumber,
 .email {
-    text-decoration: none;
-    color: #222222;
+  text-decoration: none;
+  color: #222222;
 }
 
 .itemLink:hover,
 .phoneNumber:hover,
 .email:hover {
-    color: #e64592;
+  color: #e64592;
 }
 
 .email {
-    font-size: 16px;
-    font-weight: normal;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .contacts {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .startProject {
-    width: 150px;
-    height: 48px;
-    margin-top: 20px;
-    font-family: Circe;
-    font-size: 15px;
-    color: #fff;
-    font-weight: 700;
-    background-color: #e64592;
-    border-radius: 36px;
-    box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
-    border: none;
-    user-select: none;
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  font-family: Circe;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #e64592;
+  border-radius: 36px;
+  box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
+  border: none;
+  user-select: none;
 }
 
 .labelAnchor {
-    position: relative;
+  position: relative;
 }
 
 .itemLabel {
-    position: absolute;
-    right: -26px;
-    bottom: 12px;
+  position: absolute;
+  right: -26px;
+  bottom: 12px;
 }
 
 .communication {
-    margin-top: 56px;
+  margin-top: 56px;
 }
 
 @media (max-width: 374px) {
-    .communication {
-        margin-top: 30px;
-    }
+  .communication {
+    margin-top: 30px;
+  }
 }

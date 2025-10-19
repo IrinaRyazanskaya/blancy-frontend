@@ -1,95 +1,95 @@
 .articles {
-    width: 1200px;
+  width: 1200px;
 }
 
 .header {
-    margin: 0 0 50px 0;
-    font-size: 60px;
-    line-height: 56px;
-    font-weight: 800;
-    color: #191919;
+  margin: 0 0 50px 0;
+  font-size: 60px;
+  line-height: 56px;
+  font-weight: 800;
+  color: #191919;
 }
 
 .cards {
-    display: flex;
+  display: flex;
 }
 
 .allArticles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    width: 220px;
-    height: 66px;
-    font-size: 17px;
-    color: #fff;
-    font-weight: 700;
-    background-color: #e64592;
-    border-radius: 36px;
-    box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
-    text-decoration: none;
-    transition: all 0.2s ease-in-out;
-    user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  width: 220px;
+  height: 66px;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #e64592;
+  border-radius: 36px;
+  box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
 }
 
 @media (hover: none) {
-    .allArticles:active {
-        color: #e64592;
-        background-color: #fff;
-        box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
-    }
+  .allArticles:active {
+    color: #e64592;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
+  }
 }
 
 @media (hover: hover) {
-    .allArticles:hover,
-    .allArticles:active {
-        color: #e64592;
-        background-color: #fff;
-        box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
-    }
+  .allArticles:hover,
+  .allArticles:active {
+    color: #e64592;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
+  }
 }
 
 @media (max-width: 1400px) {
-    .articles {
-        width: 1000px;
-    }
+  .articles {
+    width: 1000px;
+  }
 }
 
 @media (max-width: 1200px) {
-    .articles {
-        width: 800px;
-    }
+  .articles {
+    width: 800px;
+  }
 }
 
 @media (max-width: 1024px) {
-    .articles {
-        width: 700px;
-    }
+  .articles {
+    width: 700px;
+  }
 
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 767px) {
-    .articles {
-        width: 400px;
-    }
+  .articles {
+    width: 400px;
+  }
 
-    .header {
-        margin: 0 0 26px 0;
-        font-size: 36px;
-    }
+  .header {
+    margin: 0 0 26px 0;
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 426px) {
-    .articles {
-        width: 300px;
-    }
+  .articles {
+    width: 300px;
+  }
 
-    .allArticles {
-        width: 200px;
-        height: 58px;
-    }
+  .allArticles {
+    width: 200px;
+    height: 58px;
+  }
 }

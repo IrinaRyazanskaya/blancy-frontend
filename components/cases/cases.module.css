@@ -1,76 +1,76 @@
 .cases {
-    width: 1200px;
+  width: 1200px;
 }
 
 .header {
-    margin: 0 0 40px 0;
-    font-weight: 800;
-    font-size: 60px;
-    line-height: 56px;
-    color: #191919;
+  margin: 0 0 40px 0;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 56px;
+  color: #191919;
 }
 
 .button {
-    margin-top: 50px;
-    width: 280px;
-    height: 66px;
-    font-family: Circe;
-    font-size: 17px;
-    color: #fff;
-    font-weight: 700;
-    background-color: #e64592;
-    border-radius: 36px;
-    box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
-    border: none;
-    cursor: pointer;
-    user-select: none;
+  margin-top: 50px;
+  width: 280px;
+  height: 66px;
+  font-family: Circe;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #e64592;
+  border-radius: 36px;
+  box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
+  border: none;
+  cursor: pointer;
+  user-select: none;
 }
 
 .button:hover,
 .button:active {
-    background-color: #fff;
-    color: #e64592;
-    box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
+  background-color: #fff;
+  color: #e64592;
+  box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
 }
 
 @media (max-width: 1400px) {
-    .cases {
-        width: 1000px;
-    }
+  .cases {
+    width: 1000px;
+  }
 }
 
 @media (max-width: 1200px) {
-    .cases {
-        width: 800px;
-    }
+  .cases {
+    width: 800px;
+  }
 }
 
 @media (max-width: 1024px) {
-    .cases {
-        width: 700px;
-    }
+  .cases {
+    width: 700px;
+  }
 }
 
 @media (max-width: 767px) {
-    .cases {
-        width: 400px;
-    }
+  .cases {
+    width: 400px;
+  }
 
-    .header {
-        margin: 0 0 10px 0;
-        font-size: 36px;
-    }
+  .header {
+    margin: 0 0 10px 0;
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 426px) {
-    .cases {
-        width: 300px;
-    }
+  .cases {
+    width: 300px;
+  }
 
-    .button {
-        margin-top: 30px;
-        width: 240px;
-        height: 58px;
-        font-size: 16px;
-    }
+  .button {
+    margin-top: 30px;
+    width: 240px;
+    height: 58px;
+    font-size: 16px;
+  }
 }

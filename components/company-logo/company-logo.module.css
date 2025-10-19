@@ -1,29 +1,29 @@
 @media (max-width: 1400px) {
-    .logoWrap {
-        width: 186px;
-    }
+  .logoWrap {
+    width: 186px;
+  }
 }
 
 @media (max-width: 1200px) {
-    .logoWrap {
-        width: 150px;
-    }
+  .logoWrap {
+    width: 150px;
+  }
 }
 
 @media (max-width: 1024px) {
-    .logoWrap {
-        width: 180px;
-    }
+  .logoWrap {
+    width: 180px;
+  }
 }
 
 @media (max-width: 767px) {
-    .logoWrap {
-        width: 132px;
-    }
+  .logoWrap {
+    width: 132px;
+  }
 }
 
 @media (max-width: 426px) {
-    .logoWrap {
-        width: 100px;
-    }
+  .logoWrap {
+    width: 100px;
+  }
 }

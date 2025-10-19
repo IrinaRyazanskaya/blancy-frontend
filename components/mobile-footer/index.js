@@ -1,1 +1,1 @@
-export * from './mobile-footer';
+export * from "./mobile-footer";

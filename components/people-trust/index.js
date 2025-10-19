@@ -1,1 +1,1 @@
-export * from './people-trust';
+export * from "./people-trust";

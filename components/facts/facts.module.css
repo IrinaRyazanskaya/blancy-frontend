@@ -1,84 +1,84 @@
 .fact {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 380px;
-    height: 170px;
-    background-color: #fff;
-    box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.05);
-    border-radius: 20px;
-    z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 170px;
+  background-color: #fff;
+  box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  z-index: 2;
 }
 
 .fact + .fact {
-    margin-top: 12px;
+  margin-top: 12px;
 }
 
 .number {
-    font-size: 48px;
-    line-height: 48px;
-    font-weight: 700;
-    color: #e64592;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #e64592;
 }
 
 .description {
-    margin: 6px 0 0 0;
-    width: 230px;
-    height: 44px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    color: #222222;
-    text-align: center;
-    white-space: break-spaces;
+  margin: 6px 0 0 0;
+  width: 230px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222222;
+  text-align: center;
+  white-space: break-spaces;
 }
 
 @media (max-width: 1200px) {
-    .fact {
-        width: 260px;
-        height: 132px;
-    }
+  .fact {
+    width: 260px;
+    height: 132px;
+  }
 
-    .number {
-        font-size: 44px;
-        line-height: 44px;
-    }
+  .number {
+    font-size: 44px;
+    line-height: 44px;
+  }
 }
 
 @media (max-width: 1024px) {
-    .fact {
-        width: 230px;
-        height: 120px;
-    }
+  .fact {
+    width: 230px;
+    height: 120px;
+  }
 
-    .number {
-        font-size: 38px;
-        line-height: 38px;
-    }
+  .number {
+    font-size: 38px;
+    line-height: 38px;
+  }
 
-    .description {
-        width: 200px;
-        font-size: 14px;
-        line-height: 20px;
-    }
+  .description {
+    width: 200px;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 @media (max-width: 767px) {
-    .fact {
-        width: 300px;
-        height: 170px;
-    }
+  .fact {
+    width: 300px;
+    height: 170px;
+  }
 
-    .number {
-        font-size: 48px;
-        line-height: 48px;
-    }
+  .number {
+    font-size: 48px;
+    line-height: 48px;
+  }
 
-    .description {
-        width: 230px;
-        font-size: 16px;
-        line-height: 22px;
-    }
+  .description {
+    width: 230px;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }

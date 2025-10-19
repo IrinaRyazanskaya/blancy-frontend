@@ -1,20 +1,20 @@
 .headerContainer {
-    position: relative;
+  position: relative;
 }
 
 .header {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 66px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 0 0 14px;
-    z-index: 2;
-    background-color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 66px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0 0 14px;
+  z-index: 2;
+  background-color: #fff;
 }
 
 .home {
-    display: inline-flex;
+  display: inline-flex;
 }

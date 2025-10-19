@@ -1,180 +1,180 @@
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1600px;
-    height: 130px;
-    font-size: 16px;
-    font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1600px;
+  height: 130px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .items {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .item {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 .item:first-child {
-    margin-left: 102px;
+  margin-left: 102px;
 }
 
 .item:last-child {
-    margin-right: 66px;
+  margin-right: 66px;
 }
 
 .itemLink,
 .phoneNumber,
 .email {
-    text-decoration: none;
-    color: #222222;
+  text-decoration: none;
+  color: #222222;
 }
 
 .email {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .itemLink:hover,
 .phoneNumber:hover,
 .email:hover {
-    color: #e64592;
+  color: #e64592;
 }
 
 .contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .startProject {
-    width: 150px;
-    height: 48px;
-    margin-left: 28px;
-    font-family: Circe;
-    font-size: 15px;
-    color: #fff;
-    font-weight: 700;
-    background-color: #e64592;
-    border-radius: 36px;
-    box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
-    border: none;
-    user-select: none;
+  width: 150px;
+  height: 48px;
+  margin-left: 28px;
+  font-family: Circe;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #e64592;
+  border-radius: 36px;
+  box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
+  border: none;
+  user-select: none;
 }
 
 .labelAnchor {
-    position: relative;
+  position: relative;
 }
 
 .itemLabel {
-    position: absolute;
-    right: -15px;
-    bottom: 12px;
+  position: absolute;
+  right: -15px;
+  bottom: 12px;
 }
 
 @media (max-width: 1600px) {
-    .header {
-        width: 1380px;
-    }
+  .header {
+    width: 1380px;
+  }
 }
 
 @media (max-width: 1400px) {
-    .header {
-        width: 1180px;
-        font-size: 15px;
-    }
+  .header {
+    width: 1180px;
+    font-size: 15px;
+  }
 
-    .item:first-child {
-        margin-left: 52px;
-    }
+  .item:first-child {
+    margin-left: 52px;
+  }
 
-    .item {
-        margin-right: 26px;
-    }
+  .item {
+    margin-right: 26px;
+  }
 
-    .item:last-child {
-        margin-right: 48px;
-    }
+  .item:last-child {
+    margin-right: 48px;
+  }
 }
 
 @media (max-width: 1200px) {
-    .header {
-        width: 1000px;
-        font-size: 14px;
-    }
+  .header {
+    width: 1000px;
+    font-size: 14px;
+  }
 
-    .home {
-        width: 150px;
-    }
+  .home {
+    width: 150px;
+  }
 
-    .item:first-child {
-        margin-left: 34px;
-    }
+  .item:first-child {
+    margin-left: 34px;
+  }
 
-    .item {
-        margin-right: 20px;
-    }
+  .item {
+    margin-right: 20px;
+  }
 
-    .item:last-child {
-        margin-right: 30px;
-    }
+  .item:last-child {
+    margin-right: 30px;
+  }
 
-    .startProject {
-        margin-left: 18px;
-        width: 130px;
-        height: 42px;
-        font-size: 14px;
-    }
+  .startProject {
+    margin-left: 18px;
+    width: 130px;
+    height: 42px;
+    font-size: 14px;
+  }
 
-    .itemLabel {
-        width: 36px;
-        right: -10px;
-    }
+  .itemLabel {
+    width: 36px;
+    right: -10px;
+  }
 }
 
 @media (max-width: 1023px) {
-    .header {
-        padding: 30px 0 26px;
-        width: 740px;
-        height: 88px;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-    }
+  .header {
+    padding: 30px 0 26px;
+    width: 740px;
+    height: 88px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
 
-    .home {
-        width: 100px;
-    }
+  .home {
+    width: 100px;
+  }
 
-    .item:first-child {
-        margin-left: 16px;
-    }
+  .item:first-child {
+    margin-left: 16px;
+  }
 
-    .item {
-        margin-right: 16px;
-    }
+  .item {
+    margin-right: 16px;
+  }
 
-    .item:last-child {
-        margin-right: 16px;
-    }
+  .item:last-child {
+    margin-right: 16px;
+  }
 
-    .phoneNumber,
-    .email {
-        font-size: 13px;
-    }
+  .phoneNumber,
+  .email {
+    font-size: 13px;
+  }
 
-    .startProject {
-        margin-left: 0;
-        width: 114px;
-        height: 38px;
-        font-size: 13px;
-    }
+  .startProject {
+    margin-left: 0;
+    width: 114px;
+    height: 38px;
+    font-size: 13px;
+  }
 
-    .itemLabel {
-        width: 32px;
-        right: -6px;
-        bottom: 12px;
-    }
+  .itemLabel {
+    width: 32px;
+    right: -6px;
+    bottom: 12px;
+  }
 }

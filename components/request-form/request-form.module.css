@@ -1,374 +1,374 @@
 .requestForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 0 20px 52px;
-    width: 585px;
-    height: 700px;
-    background-color: #fff;
-    border-radius: 20px;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 20px 52px;
+  width: 585px;
+  height: 700px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-sizing: border-box;
 }
 
 .inputWrap,
 .textareaWrap {
-    display: flex;
-    width: 480px;
-    border-bottom: 1px solid #191919;
+  display: flex;
+  width: 480px;
+  border-bottom: 1px solid #191919;
 }
 
 .inputWrap + .inputWrap {
-    margin-top: 23px;
+  margin-top: 23px;
 }
 
 .inputWrap {
-    padding-bottom: 32px;
-    height: 32px;
+  padding-bottom: 32px;
+  height: 32px;
 }
 
 .textareaWrap {
-    margin-top: 23px;
-    padding-bottom: 13px;
-    height: 50px;
+  margin-top: 23px;
+  padding-bottom: 13px;
+  height: 50px;
 }
 
 .iconWrap {
-    margin-right: 28px;
+  margin-right: 28px;
 }
 
 .flagWrap {
-    height: 20px;
-    margin: 6px 28px 0px 0;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  height: 20px;
+  margin: 6px 28px 0px 0;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
 }
 
 .field {
-    height: 30px;
-    width: 400px;
-    font-size: 16px;
-    font-family: Circe;
-    color: #222;
-    font-weight: 300;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    -webkit-appearance: none;
+  height: 30px;
+  width: 400px;
+  font-size: 16px;
+  font-family: Circe;
+  color: #222;
+  font-weight: 300;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  -webkit-appearance: none;
 }
 
 .field:focus,
 .field:active {
-    background-color: transparent;
-    outline: none;
+  background-color: transparent;
+  outline: none;
 }
 
 .field:-webkit-autofill,
 .field:-webkit-autofill:hover,
 .field:-webkit-autofill:focus,
 .field:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px white inset !important;
-    box-shadow: 0 0 0 30px white inset !important;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  box-shadow: 0 0 0 30px white inset !important;
 }
 
 .comment {
-    width: 400px;
-    font-size: 16px;
-    line-height: 30px;
-    font-family: Circe;
-    color: #222;
-    font-weight: 300;
-    border: none;
-    outline: none;
-    resize: none;
-    -webkit-appearance: none;
+  width: 400px;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: Circe;
+  color: #222;
+  font-weight: 300;
+  border: none;
+  outline: none;
+  resize: none;
+  -webkit-appearance: none;
 }
 
 .fileWrap {
-    display: flex;
-    align-items: center;
-    height: 108px;
+  display: flex;
+  align-items: center;
+  height: 108px;
 }
 
 .fileField {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
 }
 
 .fileTitle {
-    margin-right: 30px;
-    width: 114px;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 300;
-    color: #222;
+  margin-right: 30px;
+  width: 114px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #222;
 }
 
 .fileButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 136px;
-    height: 36px;
-    font-size: 13px;
-    line-height: 13px;
-    color: #222;
-    border: 1px solid #222;
-    border-radius: 6px;
-    cursor: pointer;
-    user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 136px;
+  height: 36px;
+  font-size: 13px;
+  line-height: 13px;
+  color: #222;
+  border: 1px solid #222;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
 }
 
 .sendButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 66px;
-    font-family: Circe;
-    font-size: 17px;
-    color: #fff;
-    font-weight: 700;
-    background-color: #e64592;
-    border-radius: 36px;
-    box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
-    text-decoration: none;
-    transition: all 0.2s ease-in-out;
-    border: none;
-    cursor: pointer;
-    user-select: none;
-    -webkit-appearance: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 66px;
+  font-family: Circe;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #e64592;
+  border-radius: 36px;
+  box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  -webkit-appearance: none;
 }
 
 @media (hover: none) {
-    .sendButton:active {
-        color: #e64592;
-        background-color: #fff;
-        box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
-    }
+  .sendButton:active {
+    color: #e64592;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
+  }
 }
 
 @media (hover: hover) {
-    .sendButton:hover,
-    .sendButton:active {
-        color: #e64592;
-        background-color: #fff;
-        box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
-    }
+  .sendButton:hover,
+  .sendButton:active {
+    color: #e64592;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
+  }
 }
 
 .text {
-    margin: 24px 0 0 0;
-    width: 426px;
-    font-size: 14px;
-    line-height: 28px;
-    font-weight: 300;
-    color: #191919;
+  margin: 24px 0 0 0;
+  width: 426px;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #191919;
 }
 
 .link {
-    color: #e64592;
-    font-weight: 700;
-    text-decoration: none;
+  color: #e64592;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 @media (max-width: 1400px) {
-    .requestForm {
-        padding: 0 0 10px 47px;
-        width: 530px;
-        height: 634px;
-    }
+  .requestForm {
+    padding: 0 0 10px 47px;
+    width: 530px;
+    height: 634px;
+  }
 
-    .inputWrap,
-    .textareaWrap {
-        width: 435px;
-    }
+  .inputWrap,
+  .textareaWrap {
+    width: 435px;
+  }
 
-    .inputWrap {
-        padding-bottom: 18px;
-    }
+  .inputWrap {
+    padding-bottom: 18px;
+  }
 
-    .textareaWrap {
-        height: 46px;
-        margin-top: 20px;
-        padding-bottom: 10px;
-    }
+  .textareaWrap {
+    height: 46px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+  }
 
-    .fileWrap {
-        height: 90px;
-    }
+  .fileWrap {
+    height: 90px;
+  }
 
-    .comment {
-        line-height: 20px;
-        padding-top: 8px;
-    }
+  .comment {
+    line-height: 20px;
+    padding-top: 8px;
+  }
 }
 
 @media (max-width: 1200px) {
-    .requestForm {
-        padding: 0 0 4px 32px;
-        width: 434px;
-        height: 520px;
-    }
+  .requestForm {
+    padding: 0 0 4px 32px;
+    width: 434px;
+    height: 520px;
+  }
 
-    .inputWrap,
-    .textareaWrap {
-        width: 370px;
-    }
+  .inputWrap,
+  .textareaWrap {
+    width: 370px;
+  }
 
-    .field {
-        width: 315px;
-    }
+  .field {
+    width: 315px;
+  }
 
-    .inputWrap {
-        padding-bottom: 12px;
-    }
+  .inputWrap {
+    padding-bottom: 12px;
+  }
 
-    .inputWrap + .inputWrap {
-        margin-top: 14px;
-    }
+  .inputWrap + .inputWrap {
+    margin-top: 14px;
+  }
 
-    .textareaWrap {
-        height: 46px;
-        margin-top: 14px;
-        padding-bottom: 6px;
-    }
+  .textareaWrap {
+    height: 46px;
+    margin-top: 14px;
+    padding-bottom: 6px;
+  }
 
-    .fileWrap {
-        height: 70px;
-    }
+  .fileWrap {
+    height: 70px;
+  }
 
-    .comment {
-        line-height: 20px;
-        padding-top: 8px;
-    }
+  .comment {
+    line-height: 20px;
+    padding-top: 8px;
+  }
 
-    .fileTitle {
-        margin-right: 12px;
-    }
+  .fileTitle {
+    margin-right: 12px;
+  }
 
-    .sendButton {
-        width: 280px;
-        height: 58px;
-    }
+  .sendButton {
+    width: 280px;
+    height: 58px;
+  }
 
-    .text {
-        margin: 14px 0 0 0;
-        width: 375px;
-        font-size: 13px;
-        line-height: 26px;
-    }
+  .text {
+    margin: 14px 0 0 0;
+    width: 375px;
+    font-size: 13px;
+    line-height: 26px;
+  }
 }
 
 @media (max-width: 767px) {
-    .requestForm {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 376px;
-        height: 520px;
-        padding: 0;
-    }
+  .requestForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 376px;
+    height: 520px;
+    padding: 0;
+  }
 
-    .inputWrap,
-    .textareaWrap {
-        width: 316px;
-        height: 46px;
-    }
+  .inputWrap,
+  .textareaWrap {
+    width: 316px;
+    height: 46px;
+  }
 
-    .field,
-    .comment {
-        width: 256px;
-    }
+  .field,
+  .comment {
+    width: 256px;
+  }
 
-    .inputWrap {
-        padding-bottom: 0;
-    }
+  .inputWrap {
+    padding-bottom: 0;
+  }
 
-    .iconWrap,
-    .flagWrap {
-        margin-right: 16px;
-    }
+  .iconWrap,
+  .flagWrap {
+    margin-right: 16px;
+  }
 
-    .inputWrap + .inputWrap {
-        margin-top: 14px;
-    }
+  .inputWrap + .inputWrap {
+    margin-top: 14px;
+  }
 
-    .textareaWrap {
-        height: 46px;
-        margin-top: 14px;
-        padding-bottom: 6px;
-    }
+  .textareaWrap {
+    height: 46px;
+    margin-top: 14px;
+    padding-bottom: 6px;
+  }
 
-    .fileWrap {
-        height: 68px;
-    }
+  .fileWrap {
+    height: 68px;
+  }
 
-    .comment {
-        padding-top: 0;
-    }
+  .comment {
+    padding-top: 0;
+  }
 
-    .fileTitle {
-        margin-right: 12px;
-        margin-bottom: 12px;
-    }
+  .fileTitle {
+    margin-right: 12px;
+    margin-bottom: 12px;
+  }
 
-    .fileWrap {
-        width: 316px;
-        height: 110px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .fileWrap {
+    width: 316px;
+    height: 110px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .text {
-        width: 314px;
-        font-size: 11px;
-        line-height: 18px;
-    }
+  .text {
+    width: 314px;
+    font-size: 11px;
+    line-height: 18px;
+  }
 }
 
 @media (max-width: 426px) {
-    .requestForm {
-        width: 320px;
-        height: 540px;
-    }
+  .requestForm {
+    width: 320px;
+    height: 540px;
+  }
 
-    .inputWrap,
-    .textareaWrap,
-    .fileWrap {
-        width: 254px;
-    }
+  .inputWrap,
+  .textareaWrap,
+  .fileWrap {
+    width: 254px;
+  }
 
-    .field,
-    .comment {
-        width: 176px;
-    }
+  .field,
+  .comment {
+    width: 176px;
+  }
 
-    .sendButton {
-        width: 235px;
-        height: 58px;
-        font-size: 16px;
-    }
+  .sendButton {
+    width: 235px;
+    height: 58px;
+    font-size: 16px;
+  }
 
-    .text {
-        margin: 14px 0 0 0;
-        width: 230px;
-        font-size: 10px;
-    }
+  .text {
+    margin: 14px 0 0 0;
+    width: 230px;
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 374px) {
-    .requestForm {
-        width: 280px;
-    }
+  .requestForm {
+    width: 280px;
+  }
 
-    .inputWrap,
-    .textareaWrap,
-    .fileWrap {
-        width: 230px;
-    }
+  .inputWrap,
+  .textareaWrap,
+  .fileWrap {
+    width: 230px;
+  }
 
-    .field,
-    .comment {
-        width: 170px;
-    }
+  .field,
+  .comment {
+    width: 170px;
+  }
 }

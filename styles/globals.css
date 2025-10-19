@@ -1,38 +1,42 @@
 html,
 body {
-    padding: 0;
-    margin: 0;
-    font-family: Circe, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: Circe, sans-serif;
 }
 
 @font-face {
-    font-family: 'Circe';
-    src: url('/fonts/circe.woff2') format('woff2'),
-        url('/fonts/circe.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Circe";
+  src:
+    url("/fonts/circe.woff2") format("woff2"),
+    url("/fonts/circe.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Circe';
-    src: url('/fonts/circe-light.woff2') format('woff2'),
-        url('/fonts/circe-light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Circe";
+  src:
+    url("/fonts/circe-light.woff2") format("woff2"),
+    url("/fonts/circe-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Circe';
-    src: url('/fonts/circe-bold.woff2') format('woff2'),
-        url('/fonts/circe-bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Circe";
+  src:
+    url("/fonts/circe-bold.woff2") format("woff2"),
+    url("/fonts/circe-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Circe';
-    src: url('/fonts/circe-extrabold.woff2') format('woff2'),
-        url('/fonts/circe-extrabold.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
+  font-family: "Circe";
+  src:
+    url("/fonts/circe-extrabold.woff2") format("woff2"),
+    url("/fonts/circe-extrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
 }

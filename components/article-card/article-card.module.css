@@ -1,168 +1,168 @@
 .cardLink {
-    color: #191919;
-    text-decoration: none;
+  color: #191919;
+  text-decoration: none;
 }
 
 .cardLink + .cardLink {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .card {
-    width: 380px;
-    height: 460px;
-    box-shadow: 0px 0px 70px rgba(216, 216, 216, 0.3);
-    border-radius: 20px;
+  width: 380px;
+  height: 460px;
+  box-shadow: 0px 0px 70px rgba(216, 216, 216, 0.3);
+  border-radius: 20px;
 }
 
 .category {
-    display: inline-flex;
-    margin: 24px 0 0 28px;
-    padding: 2px 28px 0;
-    align-items: center;
-    height: 32px;
-    background-color: rgba(230, 69, 146, 0.2);
-    border-radius: 36px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #e64592;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 12px;
+  display: inline-flex;
+  margin: 24px 0 0 28px;
+  padding: 2px 28px 0;
+  align-items: center;
+  height: 32px;
+  background-color: rgba(230, 69, 146, 0.2);
+  border-radius: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e64592;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
 }
 
 .title {
-    margin: 24px 0 36px 28px;
-    width: 298px;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 32px;
+  margin: 24px 0 36px 28px;
+  width: 298px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
 }
 
 .wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 19px;
 }
 
 .date,
 .readingTime {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-    color: rgba(34, 34, 34, 0.5);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(34, 34, 34, 0.5);
 }
 
 .iconWrap {
-    margin: 4px 6px 0 0;
+  margin: 4px 6px 0 0;
 }
 
 .readingTimeWrap {
-    display: flex;
-    align-items: center;
-    margin-right: 28px;
+  display: flex;
+  align-items: center;
+  margin-right: 28px;
 }
 
 .date {
-    margin-left: 28px;
+  margin-left: 28px;
 }
 
 @media (max-width: 1400px) {
-    .cardLink + .cardLink {
-        margin-left: 20px;
-    }
+  .cardLink + .cardLink {
+    margin-left: 20px;
+  }
 
-    .card {
-        width: 320px;
-        height: 420px;
-    }
+  .card {
+    width: 320px;
+    height: 420px;
+  }
 
-    .category {
-        margin: 24px 0 0 24px;
-    }
+  .category {
+    margin: 24px 0 0 24px;
+  }
 
-    .title {
-        margin: 24px 0 36px 24px;
-        width: 280px;
-    }
+  .title {
+    margin: 24px 0 36px 24px;
+    width: 280px;
+  }
 }
 
 @media (max-width: 1200px) {
-    .cardLink + .cardLink {
-        margin-left: 12px;
-    }
+  .cardLink + .cardLink {
+    margin-left: 12px;
+  }
 
-    .card {
-        width: 258px;
-        height: 366px;
-    }
+  .card {
+    width: 258px;
+    height: 366px;
+  }
 
-    .category {
-        margin: 18px 0 0 20px;
-    }
+  .category {
+    margin: 18px 0 0 20px;
+  }
 
-    .title {
-        margin: 20px 0 18px 20px;
-        width: 238px;
-        height: 80px;
-        font-size: 20px;
-        line-height: 26px;
-    }
+  .title {
+    margin: 20px 0 18px 20px;
+    width: 238px;
+    height: 80px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 @media (max-width: 1024px) {
-    .cardLink + .cardLink {
-        margin: 20px 0 0 0;
-    }
+  .cardLink + .cardLink {
+    margin: 20px 0 0 0;
+  }
 
-    .card {
-        width: 380px;
-        height: 460px;
-    }
+  .card {
+    width: 380px;
+    height: 460px;
+  }
 
-    .category {
-        margin: 24px 0 0 28px;
-    }
+  .category {
+    margin: 24px 0 0 28px;
+  }
 
-    .title {
-        margin: 24px 0 24px 28px;
-        width: 298px;
-        font-size: 22px;
-        line-height: 32px;
-    }
+  .title {
+    margin: 24px 0 24px 28px;
+    width: 298px;
+    font-size: 22px;
+    line-height: 32px;
+  }
 }
 
 @media (max-width: 767px) {
-    .card {
-        width: 320px;
-        height: 420px;
-    }
+  .card {
+    width: 320px;
+    height: 420px;
+  }
 
-    .category {
-        margin: 24px 0 0 24px;
-    }
+  .category {
+    margin: 24px 0 0 24px;
+  }
 
-    .title {
-        margin: 24px 0 18px 24px;
-        width: 280px;
-    }
+  .title {
+    margin: 24px 0 18px 24px;
+    width: 280px;
+  }
 }
 
 @media (max-width: 426px) {
-    .card {
-        width: 300px;
-        height: 400px;
-    }
+  .card {
+    width: 300px;
+    height: 400px;
+  }
 
-    .category {
-        margin: 26px 0 0 18px;
-    }
+  .category {
+    margin: 26px 0 0 18px;
+  }
 
-    .title {
-        margin: 14px 0 18px 18px;
-        width: 260px;
-        height: 76px;
-        font-size: 20;
-        line-height: 26px;
-    }
+  .title {
+    margin: 14px 0 18px 18px;
+    width: 260px;
+    height: 76px;
+    font-size: 20;
+    line-height: 26px;
+  }
 }
