@@ -2,9 +2,9 @@ import cn from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "./mobile-menu.module.css";
+import { mobileMenuNewLabel } from "../../assets/images";
 
-const MOBILE_MENU_NEW_LABEL_SRC = "/images/mobile-menu/new-label.svg";
+import styles from "./mobile-menu.module.css";
 
 type MobileMenuProps = {
   isOpen: boolean;
@@ -40,7 +40,7 @@ const MobileMenu = ({ isOpen }: MobileMenuProps) => {
               <div className={styles.itemLabel}>
                 <Image
                   className={styles.newLabel}
-                  src={MOBILE_MENU_NEW_LABEL_SRC}
+                  src={mobileMenuNewLabel}
                   alt="new"
                   width={42}
                   height={26}

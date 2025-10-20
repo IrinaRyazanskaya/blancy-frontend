@@ -2,12 +2,14 @@ import cn from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "./footer.module.css";
+import {
+  footerFacebookLogo,
+  footerInstagramLogo,
+  footerLogo,
+  footerVkLogo,
+} from "../../assets/images";
 
-const FOOTER_LOGO_SRC = "/images/footer/logo.svg";
-const FOOTER_INST_SRC = "/images/footer/instagram.svg";
-const FOOTER_VK_SRC = "/images/footer/vk.svg";
-const FOOTER_FB_SRC = "/images/footer/facebook.svg";
+import styles from "./footer.module.css";
 
 type FooterProps = {
   className?: string;
@@ -21,7 +23,7 @@ const Footer = ({ className }: FooterProps) => {
           <div className={styles.logoWrap}>
             <Image
               className={styles.logo}
-              src={FOOTER_LOGO_SRC}
+              src={footerLogo}
               alt="Логотип blancy"
               width={186}
               height={44}
@@ -37,7 +39,7 @@ const Footer = ({ className }: FooterProps) => {
             >
               <Image
                 className={styles.socialIcon}
-                src={FOOTER_INST_SRC}
+                src={footerInstagramLogo}
                 alt="Иконка Instagram"
                 width={19}
                 height={20}
@@ -51,7 +53,7 @@ const Footer = ({ className }: FooterProps) => {
             >
               <Image
                 className={styles.socialIcon}
-                src={FOOTER_VK_SRC}
+                src={footerVkLogo}
                 alt="Иконка VK"
                 width={25}
                 height={15}
@@ -65,7 +67,7 @@ const Footer = ({ className }: FooterProps) => {
             >
               <Image
                 className={styles.socialIcon}
-                src={FOOTER_FB_SRC}
+                src={footerFacebookLogo}
                 alt="Иконка Facebook"
                 width={11}
                 height={21}

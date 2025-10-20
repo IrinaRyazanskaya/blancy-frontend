@@ -1,0 +1,20 @@
+import { basePath } from "./common";
+
+export const arrowImage = `${basePath}/images/case/arrow.svg`;
+export const clockIcon = `${basePath}/images/article-card/clock-icon.svg`;
+export const footerFacebookLogo = `${basePath}/images/footer/facebook.svg`;
+export const footerInstagramLogo = `${basePath}/images/footer/instagram.svg`;
+export const footerLogo = `${basePath}/images/footer/logo.svg`;
+export const footerVkLogo = `${basePath}/images/footer/vk.svg`;
+export const headerLogo = `${basePath}/images/header/logo.svg`;
+export const headerNewLabel = `${basePath}/images/header/new-label.svg`;
+export const mobileFooterArrow = `${basePath}/images/mobile-footer/arrow.svg`;
+export const mobileFooterFacebook = `${basePath}/images/mobile-footer/facebook.svg`;
+export const mobileFooterInstagram = `${basePath}/images/mobile-footer/instagram.svg`;
+export const mobileFooterLogo = `${basePath}/images/mobile-footer/logo.svg`;
+export const mobileFooterVk = `${basePath}/images/mobile-footer/vk.svg`;
+export const mobileHeaderLogo = `${basePath}/images/mobile-header/mobile-logo.svg`;
+export const mobileMenuNewLabel = `${basePath}/images/mobile-menu/new-label.svg`;
+export const requestFormChatIcon = `${basePath}/images/request-form/chat.svg`;
+export const requestFormEmailIcon = `${basePath}/images/request-form/email.svg`;
+export const requestFormUserIcon = `${basePath}/images/request-form/user.svg`;

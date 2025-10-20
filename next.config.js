@@ -9,6 +9,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  env: {
+    BASE_PATH: "/blancy-frontend",
+  },
 };
 
 export default nextConfig;

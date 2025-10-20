@@ -2,10 +2,9 @@ import cn from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "./header.module.css";
+import { headerLogo, headerNewLabel } from "../../assets/images";
 
-const HEADER_LOGO_SRC = "/images/header/logo.svg";
-const HEADER_NEW_LABEL_SRC = "/images/header/new-label.svg";
+import styles from "./header.module.css";
 
 type HeaderProps = {
   className?: string;
@@ -15,7 +14,7 @@ const Header = ({ className }: HeaderProps) => {
   return (
     <header className={cn(styles.header, className)}>
       <Link href="#" className={styles.home}>
-        <Image className={styles.logo} src={HEADER_LOGO_SRC} alt="blancy" width={171} height={40} />
+        <Image className={styles.logo} src={headerLogo} alt="blancy" width={171} height={40} />
       </Link>
       <nav className={styles.navigation}>
         <ul className={styles.items}>
@@ -44,7 +43,7 @@ const Header = ({ className }: HeaderProps) => {
               <div className={styles.itemLabel}>
                 <Image
                   className={styles.newLabel}
-                  src={HEADER_NEW_LABEL_SRC}
+                  src={headerNewLabel}
                   alt="new"
                   width={42}
                   height={26}

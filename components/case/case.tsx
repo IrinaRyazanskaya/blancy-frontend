@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import type { StaticImageData } from "next/image";
 
+import { arrowImage } from "../../assets/images";
+
 import styles from "./case.module.css";
 
 type CaseProps = {
@@ -24,7 +26,7 @@ const Case = ({ header, description, link, caseImageSrc }: CaseProps) => {
             <span className={styles.linkText}>Посмотреть кейс</span>
             <Image
               className={styles.arrow}
-              src="/images/case/arrow.svg"
+              src={arrowImage}
               alt="Стрелка"
               width={16}
               height={16}
