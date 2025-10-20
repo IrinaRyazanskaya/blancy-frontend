@@ -3,11 +3,9 @@ import Head from "next/head";
 
 import { Header } from "../components/header";
 
-import styles from "../styles/contacts.module.css";
-
 const Contacts: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Контакты</title>
         <meta name="viewport" content="width=device-width,initial-scale=1" />

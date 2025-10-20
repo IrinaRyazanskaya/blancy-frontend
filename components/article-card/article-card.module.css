@@ -10,47 +10,51 @@
 .card {
   width: 380px;
   height: 460px;
-  box-shadow: 0px 0px 70px rgba(216, 216, 216, 0.3);
   border-radius: 20px;
+  box-shadow: 0 0 70px rgb(216 216 216 / 30%);
 }
 
 .category {
   display: inline-flex;
+  align-items: center;
+
+  height: 32px;
   margin: 24px 0 0 28px;
   padding: 2px 28px 0;
-  align-items: center;
-  height: 32px;
-  background-color: rgba(230, 69, 146, 0.2);
   border-radius: 36px;
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  color: #e64592;
   text-align: center;
   text-transform: uppercase;
-  color: #e64592;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 12px;
+
+  background-color: rgb(230 69 146 / 20%);
 }
 
 .title {
-  margin: 24px 0 36px 28px;
   width: 298px;
-  font-weight: 700;
+  margin: 24px 0 36px 28px;
+
   font-size: 22px;
+  font-weight: 700;
   line-height: 32px;
 }
 
 .wrap {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   height: 19px;
 }
 
 .date,
 .readingTime {
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 14px;
-  color: rgba(34, 34, 34, 0.5);
+  color: rgb(34 34 34 / 50%);
 }
 
 .iconWrap {
@@ -67,7 +71,7 @@
   margin-left: 28px;
 }
 
-@media (max-width: 1400px) {
+@media (width <= 1400px) {
   .cardLink + .cardLink {
     margin-left: 20px;
   }
@@ -82,12 +86,12 @@
   }
 
   .title {
-    margin: 24px 0 36px 24px;
     width: 280px;
+    margin: 24px 0 36px 24px;
   }
 }
 
-@media (max-width: 1200px) {
+@media (width <= 1200px) {
   .cardLink + .cardLink {
     margin-left: 12px;
   }
@@ -102,17 +106,18 @@
   }
 
   .title {
-    margin: 20px 0 18px 20px;
     width: 238px;
     height: 80px;
+    margin: 20px 0 18px 20px;
+
     font-size: 20px;
     line-height: 26px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (width <= 1024px) {
   .cardLink + .cardLink {
-    margin: 20px 0 0 0;
+    margin: 20px 0 0;
   }
 
   .card {
@@ -125,14 +130,14 @@
   }
 
   .title {
-    margin: 24px 0 24px 28px;
     width: 298px;
+    margin: 24px 0 24px 28px;
     font-size: 22px;
     line-height: 32px;
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .card {
     width: 320px;
     height: 420px;
@@ -143,12 +148,12 @@
   }
 
   .title {
-    margin: 24px 0 18px 24px;
     width: 280px;
+    margin: 24px 0 18px 24px;
   }
 }
 
-@media (max-width: 426px) {
+@media (width <= 426px) {
   .card {
     width: 300px;
     height: 400px;
@@ -159,10 +164,11 @@
   }
 
   .title {
-    margin: 14px 0 18px 18px;
     width: 260px;
     height: 76px;
-    font-size: 20;
+    margin: 14px 0 18px 18px;
+
+    font-size: 20px;
     line-height: 26px;
   }
 }

@@ -7,8 +7,6 @@ import { MobileHeader } from "../components/mobile-header";
 import { Footer } from "../components/footer";
 import { MobileFooter } from "../components/mobile-footer";
 
-import styles from "../styles/about.module.css";
-
 type AboutProps = {
   userAgent: string | null;
 };
@@ -19,25 +17,25 @@ const About: NextPage<AboutProps> = ({ userAgent }) => {
   const { isMobile } = useUserAgent(userAgentString);
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>О компании</title>
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {isMobile ? <MobileHeader /> : <Header className={styles.header} />}
-      <section className={styles.descriptions}>
-        <p className={styles.description}>
+      {isMobile ? <MobileHeader /> : <Header />}
+      <section>
+        <p>
           C 2015 года помогаем клиентам создавать стильные веб проекты и увеличивать прибыль на
           динамично развивающемся рынке диджитал в России.
         </p>
-        <p className={styles.description}>
+        <p>
           Мы создаем проекты, от которых ваши потенциальные клиенты будут в восторге и самое главное
           - мы делаем это в срок ⚡
         </p>
       </section>
-      {isMobile ? <MobileFooter /> : <Footer className={styles.footer} />}
+      {isMobile ? <MobileFooter /> : <Footer />}
     </div>
   );
 };

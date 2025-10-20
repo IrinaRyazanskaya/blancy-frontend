@@ -10,15 +10,15 @@
 }
 
 .navigation {
-  padding: 78px 0 71px 0;
-  height: 456px;
   box-sizing: border-box;
+  height: 456px;
+  padding: 78px 0 71px;
 }
 
 .contacts {
-  padding: 44px 0 39px 0;
-  height: 168px;
   box-sizing: border-box;
+  height: 168px;
+  padding: 44px 0 39px;
 }
 
 .divider {
@@ -40,8 +40,8 @@
 
 .text {
   font-size: 16px;
-  line-height: 30px;
   font-weight: 300;
+  line-height: 30px;
 }
 
 .socialLink + .socialLink {
@@ -49,10 +49,10 @@
 }
 
 .header {
-  margin: 18px 0 18px 0;
+  margin: 18px 0;
   font-size: 24px;
-  line-height: 24px;
   font-weight: 800;
+  line-height: 24px;
 }
 
 .items {
@@ -64,14 +64,38 @@
 .item {
   margin-bottom: 22px;
   font-size: 18px;
-  line-height: 24px;
   font-weight: 300;
+  line-height: 24px;
 }
 
 .itemLink,
 .contact {
-  text-decoration: none;
   color: #222;
+  text-decoration: none;
+}
+
+.security,
+.invite {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.security {
+  display: block;
+  margin: 0 0 14px;
+  color: #222;
+  text-decoration: none;
+}
+
+.contact {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.invite {
+  margin: 0 0 8px;
 }
 
 .itemLink:hover,
@@ -80,47 +104,23 @@
   color: #e64592;
 }
 
-.security,
-.invite {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 300;
-}
-
-.security {
-  display: block;
-  margin: 0 0 14px 0;
-  text-decoration: none;
-  color: #222;
-}
-
-.invite {
-  margin: 0 0 8px 0;
-}
-
-.contact {
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 700;
-}
-
-@media (max-width: 1600px) {
+@media (width <= 1600px) {
   .footer {
     width: 1380px;
   }
 
   .navigation {
-    padding: 70px 0 64px 0;
     height: 442px;
+    padding: 70px 0 64px;
   }
 
   .contacts {
-    padding: 40px 0 34px 0;
     height: 162px;
+    padding: 40px 0 34px;
   }
 }
 
-@media (max-width: 1400px) {
+@media (width <= 1400px) {
   .footer {
     width: 1180px;
   }
@@ -130,19 +130,19 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (width <= 1200px) {
   .footer {
     width: 1000px;
   }
 
   .navigation {
-    padding: 50px 0 44px 0;
     height: 414px;
+    padding: 50px 0 44px;
   }
 
   .contacts {
-    padding: 40px 0 34px 0;
     height: 162px;
+    padding: 40px 0 34px;
   }
 
   .column {
@@ -158,7 +158,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (width <= 1024px) {
   .footer {
     width: 740px;
   }
@@ -184,11 +184,11 @@
   }
 
   .navigation {
-    padding: 36px 0 28px 0;
     height: 354px;
+    padding: 36px 0 28px;
   }
 
   .contacts {
-    padding: 34px 0 38px 0;
+    padding: 34px 0 38px;
   }
 }

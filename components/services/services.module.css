@@ -11,13 +11,14 @@
 .header {
   margin: 0;
   font-size: 60px;
-  line-height: 56px;
   font-weight: 800;
+  line-height: 56px;
 }
 
 .caption {
-  margin: 0 0 0 120px;
   width: 600px;
+  margin: 0 0 0 120px;
+
   font-size: 36px;
   font-weight: 300;
   line-height: 48px;
@@ -29,32 +30,32 @@
   justify-content: space-between;
 }
 
-@media (max-width: 1400px) {
+@media (width <= 1400px) {
   .services {
     width: 1000px;
   }
 }
 
-@media (max-width: 1200px) {
+@media (width <= 1200px) {
   .services {
     width: 800px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (width <= 1024px) {
   .services {
     width: 700px;
   }
 
   .caption {
-    margin: 0 0 0 40px;
     width: 448px;
+    margin: 0 0 0 40px;
     font-size: 32px;
     line-height: 46px;
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .services {
     width: 400px;
   }
@@ -70,8 +71,8 @@
   }
 
   .caption {
-    margin: 0;
     width: 300px;
+    margin: 0;
     font-size: 18px;
     line-height: 30px;
   }
@@ -81,7 +82,7 @@
   }
 }
 
-@media (max-width: 426px) {
+@media (width <= 426px) {
   .services {
     width: 300px;
   }

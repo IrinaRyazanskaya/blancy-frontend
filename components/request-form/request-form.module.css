@@ -2,12 +2,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 0 20px 52px;
+
+  box-sizing: border-box;
   width: 585px;
   height: 700px;
-  background-color: #fff;
+  padding: 0 0 20px 52px;
   border-radius: 20px;
-  box-sizing: border-box;
+
+  background-color: #fff;
 }
 
 .inputWrap,
@@ -17,19 +19,19 @@
   border-bottom: 1px solid #191919;
 }
 
+.inputWrap {
+  height: 32px;
+  padding-bottom: 32px;
+}
+
 .inputWrap + .inputWrap {
   margin-top: 23px;
 }
 
-.inputWrap {
-  padding-bottom: 32px;
-  height: 32px;
-}
-
 .textareaWrap {
+  height: 50px;
   margin-top: 23px;
   padding-bottom: 13px;
-  height: 50px;
 }
 
 .iconWrap {
@@ -38,21 +40,23 @@
 
 .flagWrap {
   height: 20px;
-  margin: 6px 28px 0px 0;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  margin: 6px 28px 0 0;
+  box-shadow: 0 0 2px rgb(0 0 0 / 15%);
 }
 
 .field {
-  height: 30px;
   width: 400px;
-  font-size: 16px;
-  font-family: Circe;
-  color: #222;
-  font-weight: 300;
+  height: 30px;
   border: none;
-  outline: none;
+
+  font-family: Circe, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #222;
+
+  appearance: none;
   background-color: transparent;
-  -webkit-appearance: none;
+  outline: none;
 }
 
 .field:focus,
@@ -65,21 +69,23 @@
 .field:-webkit-autofill:hover,
 .field:-webkit-autofill:focus,
 .field:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px white inset !important;
   box-shadow: 0 0 0 30px white inset !important;
 }
 
 .comment {
-  width: 400px;
-  font-size: 16px;
-  line-height: 30px;
-  font-family: Circe;
-  color: #222;
-  font-weight: 300;
-  border: none;
-  outline: none;
   resize: none;
-  -webkit-appearance: none;
+
+  width: 400px;
+  border: none;
+
+  font-family: Circe, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #222;
+
+  appearance: none;
+  outline: none;
 }
 
 .fileWrap {
@@ -89,61 +95,70 @@
 }
 
 .fileField {
-  opacity: 0;
-  visibility: hidden;
   position: absolute;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .fileTitle {
-  margin-right: 30px;
   width: 114px;
+  margin-right: 30px;
+
   font-size: 14px;
-  line-height: 24px;
   font-weight: 300;
+  line-height: 24px;
   color: #222;
 }
 
 .fileButton {
+  cursor: pointer;
+  user-select: none;
+
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
   width: 136px;
   height: 36px;
+  border: 1px solid #222;
+  border-radius: 6px;
+
   font-size: 13px;
   line-height: 13px;
   color: #222;
-  border: 1px solid #222;
-  border-radius: 6px;
-  cursor: pointer;
-  user-select: none;
 }
 
 .sendButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 66px;
-  font-family: Circe;
-  font-size: 17px;
-  color: #fff;
-  font-weight: 700;
-  background-color: #e64592;
-  border-radius: 36px;
-  box-shadow: 0px 4px 4px rgba(227, 104, 163, 0.2);
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-  border: none;
   cursor: pointer;
   user-select: none;
-  -webkit-appearance: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 300px;
+  height: 66px;
+  border: none;
+  border-radius: 36px;
+
+  font-family: Circe, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+
+  appearance: none;
+  background-color: #e64592;
+  box-shadow: 0 4px 4px rgb(227 104 163 / 20%);
+
+  transition: all 0.2s ease-in-out;
 }
 
 @media (hover: none) {
   .sendButton:active {
     color: #e64592;
     background-color: #fff;
-    box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
+    box-shadow: 0 0 20px rgb(227 104 163 / 30%);
   }
 }
 
@@ -152,30 +167,31 @@
   .sendButton:active {
     color: #e64592;
     background-color: #fff;
-    box-shadow: 0px 0px 20px rgba(227, 104, 163, 0.3);
+    box-shadow: 0 0 20px rgb(227 104 163 / 30%);
   }
 }
 
 .text {
-  margin: 24px 0 0 0;
   width: 426px;
+  margin: 24px 0 0;
+
   font-size: 14px;
-  line-height: 28px;
   font-weight: 300;
+  line-height: 28px;
   color: #191919;
 }
 
 .link {
-  color: #e64592;
   font-weight: 700;
+  color: #e64592;
   text-decoration: none;
 }
 
-@media (max-width: 1400px) {
+@media (width <= 1400px) {
   .requestForm {
-    padding: 0 0 10px 47px;
     width: 530px;
     height: 634px;
+    padding: 0 0 10px 47px;
   }
 
   .inputWrap,
@@ -198,16 +214,16 @@
   }
 
   .comment {
-    line-height: 20px;
     padding-top: 8px;
+    line-height: 20px;
   }
 }
 
-@media (max-width: 1200px) {
+@media (width <= 1200px) {
   .requestForm {
-    padding: 0 0 4px 32px;
     width: 434px;
     height: 520px;
+    padding: 0 0 4px 32px;
   }
 
   .inputWrap,
@@ -238,8 +254,8 @@
   }
 
   .comment {
-    line-height: 20px;
     padding-top: 8px;
+    line-height: 20px;
   }
 
   .fileTitle {
@@ -252,18 +268,19 @@
   }
 
   .text {
-    margin: 14px 0 0 0;
     width: 375px;
+    margin: 14px 0 0;
     font-size: 13px;
     line-height: 26px;
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .requestForm {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     width: 376px;
     height: 520px;
     padding: 0;
@@ -299,10 +316,6 @@
     padding-bottom: 6px;
   }
 
-  .fileWrap {
-    height: 68px;
-  }
-
   .comment {
     padding-top: 0;
   }
@@ -313,10 +326,10 @@
   }
 
   .fileWrap {
-    width: 316px;
-    height: 110px;
     flex-direction: column;
     align-items: flex-start;
+    width: 316px;
+    height: 110px;
   }
 
   .text {
@@ -326,7 +339,7 @@
   }
 }
 
-@media (max-width: 426px) {
+@media (width <= 426px) {
   .requestForm {
     width: 320px;
     height: 540px;
@@ -350,13 +363,13 @@
   }
 
   .text {
-    margin: 14px 0 0 0;
     width: 230px;
+    margin: 14px 0 0;
     font-size: 10px;
   }
 }
 
-@media (max-width: 374px) {
+@media (width <= 374px) {
   .requestForm {
     width: 280px;
   }

@@ -1,8 +1,5 @@
-import cn from "classnames";
 import Link from "next/link";
 import type { ReactNode } from "react";
-
-import styles from "./simple-banner.module.css";
 
 type BreadCrumb = {
   title: string;
@@ -22,10 +19,8 @@ const SimpleBanner = ({ header, className, breadCrumbs }: SimpleBannerProps) => 
     const breadCrumb = breadCrumbs[i];
 
     breadCrumbElements.push(
-      <li key={breadCrumb.title} className={styles.breadCrumb}>
-        <Link href={breadCrumb.href} className={styles.link}>
-          {breadCrumb.title}
-        </Link>
+      <li key={breadCrumb.title}>
+        <Link href={breadCrumb.href}>{breadCrumb.title}</Link>
       </li>,
     );
 
@@ -35,9 +30,9 @@ const SimpleBanner = ({ header, className, breadCrumbs }: SimpleBannerProps) => 
   }
 
   return (
-    <div className={cn(styles.banner, className)}>
-      <ul className={styles.links}>{breadCrumbElements}</ul>
-      <h1 className={styles.header}>{header}</h1>
+    <div className={className}>
+      <ul>{breadCrumbElements}</ul>
+      <h1>{header}</h1>
     </div>
   );
 };
