@@ -10,7 +10,7 @@
 npm-debug.log*
 
 # Artifacts
-/dist/
+/out/
 /.next/
 
 # Dependencies

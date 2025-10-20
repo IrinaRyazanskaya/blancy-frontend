@@ -3,7 +3,6 @@
  */
 const nextConfig = {
   output: "export",
-  distDir: "./dist",
   basePath: "/blancy-frontend",
   reactStrictMode: true,
   images: {

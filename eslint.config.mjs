@@ -8,7 +8,7 @@ import nextPlugin from "@next/eslint-plugin-next";
 
 export default defineConfig([
   {
-    ignores: [".next/**", "dist/**", "*.config.{js,cjs,mjs}"],
+    ignores: [".next/**", "out/**", "*.config.{js,cjs,mjs}"],
   },
   {
     files: ["**/*.{js,cjs,mjs}"],
