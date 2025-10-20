@@ -23,13 +23,7 @@ const MobileHeader = () => {
     <div className={styles.headerContainer}>
       <header className={styles.header}>
         <Link href="#" className={styles.home}>
-          <Image
-            className={styles.logo}
-            src={mobileLogoSrc}
-            alt="blancy"
-            width={123}
-            height={29}
-          />
+          <Image className={styles.logo} src={mobileLogoSrc} alt="blancy" width={123} height={29} />
         </Link>
         <BurgerButton
           size={22}

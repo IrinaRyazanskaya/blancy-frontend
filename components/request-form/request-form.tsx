@@ -16,7 +16,13 @@ type RequestFormProps = {
   comment?: string;
 };
 
-const RequestForm = ({ className, clientName, clientPhone, clientEmail, comment }: RequestFormProps) => {
+const RequestForm = ({
+  className,
+  clientName,
+  clientPhone,
+  clientEmail,
+  comment,
+}: RequestFormProps) => {
   return (
     <form className={cn(className, styles.requestForm)}>
       <div className={styles.inputWrap}>
