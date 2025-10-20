@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import logoSrc from "./logo.svg";
-import arrowSrc from "./arrow.svg";
-import instIconSrc from "./instagram.svg";
-import vkIconSrc from "./vk.svg";
-import fbIconSrc from "./facebook.svg";
 import styles from "./mobile-footer.module.css";
+
+const MOBILE_FOOTER_LOGO_SRC = "/images/mobile-footer/logo.svg";
+const MOBILE_FOOTER_ARROW_SRC = "/images/mobile-footer/arrow.svg";
+const MOBILE_FOOTER_INST_SRC = "/images/mobile-footer/instagram.svg";
+const MOBILE_FOOTER_VK_SRC = "/images/mobile-footer/vk.svg";
+const MOBILE_FOOTER_FB_SRC = "/images/mobile-footer/facebook.svg";
 
 const MobileFooter = () => {
   return (
@@ -15,7 +16,7 @@ const MobileFooter = () => {
         <div className={styles.imageWrap}>
           <Image
             className={styles.logo}
-            src={logoSrc}
+            src={MOBILE_FOOTER_LOGO_SRC}
             alt="Логотип blancy"
             width={123}
             height={29}
@@ -30,7 +31,7 @@ const MobileFooter = () => {
                 <div className={styles.arrowWrap}>
                   <Image
                     className={styles.arrow}
-                    src={arrowSrc}
+                    src={MOBILE_FOOTER_ARROW_SRC}
                     alt="Стрелка вниз"
                     width={16}
                     height={8}
@@ -40,7 +41,7 @@ const MobileFooter = () => {
                 <div className={styles.arrowWrap}>
                   <Image
                     className={styles.arrow}
-                    src={arrowSrc}
+                    src={MOBILE_FOOTER_ARROW_SRC}
                     alt="Стрелка вниз"
                     width={16}
                     height={8}
@@ -79,7 +80,7 @@ const MobileFooter = () => {
                 <div className={styles.arrowWrap}>
                   <Image
                     className={styles.arrow}
-                    src={arrowSrc}
+                    src={MOBILE_FOOTER_ARROW_SRC}
                     alt="Стрелка вниз"
                     width={16}
                     height={8}
@@ -89,7 +90,7 @@ const MobileFooter = () => {
                 <div className={styles.arrowWrap}>
                   <Image
                     className={styles.arrow}
-                    src={arrowSrc}
+                    src={MOBILE_FOOTER_ARROW_SRC}
                     alt="Стрелка вниз"
                     width={16}
                     height={8}
@@ -138,7 +139,7 @@ const MobileFooter = () => {
                 <div className={styles.arrowWrap}>
                   <Image
                     className={styles.arrow}
-                    src={arrowSrc}
+                    src={MOBILE_FOOTER_ARROW_SRC}
                     alt="Стрелка вниз"
                     width={16}
                     height={8}
@@ -148,7 +149,7 @@ const MobileFooter = () => {
                 <div className={styles.arrowWrap}>
                   <Image
                     className={styles.arrow}
-                    src={arrowSrc}
+                    src={MOBILE_FOOTER_ARROW_SRC}
                     alt="Стрелка вниз"
                     width={16}
                     height={8}
@@ -182,7 +183,7 @@ const MobileFooter = () => {
                 <div className={styles.arrowWrap}>
                   <Image
                     className={styles.arrow}
-                    src={arrowSrc}
+                    src={MOBILE_FOOTER_ARROW_SRC}
                     alt="Стрелка вниз"
                     width={16}
                     height={8}
@@ -192,7 +193,7 @@ const MobileFooter = () => {
                 <div className={styles.arrowWrap}>
                   <Image
                     className={styles.arrow}
-                    src={arrowSrc}
+                    src={MOBILE_FOOTER_ARROW_SRC}
                     alt="Стрелка вниз"
                     width={16}
                     height={8}
@@ -237,7 +238,7 @@ const MobileFooter = () => {
         >
           <Image
             className={styles.socialIcon}
-            src={instIconSrc}
+            src={MOBILE_FOOTER_INST_SRC}
             alt="Иконка Instagram"
             width={16}
             height={17}
@@ -251,7 +252,7 @@ const MobileFooter = () => {
         >
           <Image
             className={styles.socialIcon}
-            src={vkIconSrc}
+            src={MOBILE_FOOTER_VK_SRC}
             alt="Иконка VK"
             width={22}
             height={13}
@@ -265,7 +266,7 @@ const MobileFooter = () => {
         >
           <Image
             className={styles.socialIcon}
-            src={fbIconSrc}
+            src={MOBILE_FOOTER_FB_SRC}
             alt="Иконка Facebook"
             width={10}
             height={18}

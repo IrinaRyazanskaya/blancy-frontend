@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 import styles from "./mobile-menu.module.css";
-import newLabelSrc from "./new-label.svg";
+
+const MOBILE_MENU_NEW_LABEL_SRC = "/images/mobile-menu/new-label.svg";
 
 type MobileMenuProps = {
   isOpen: boolean;
@@ -39,7 +40,7 @@ const MobileMenu = ({ isOpen }: MobileMenuProps) => {
               <div className={styles.itemLabel}>
                 <Image
                   className={styles.newLabel}
-                  src={newLabelSrc}
+                  src={MOBILE_MENU_NEW_LABEL_SRC}
                   alt="new"
                   width={42}
                   height={26}

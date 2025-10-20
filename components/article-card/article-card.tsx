@@ -3,7 +3,6 @@ import { format } from "date-fns";
 import Image from "next/image";
 import type { StaticImageData } from "next/image";
 
-import clockIconSrc from "./clock-icon.svg";
 import styles from "./article-card.module.css";
 
 type ArticleCardProps = {
@@ -49,7 +48,7 @@ const ArticleCard = ({
             <div className={styles.iconWrap}>
               <Image
                 className={styles.clockIcon}
-                src={clockIconSrc}
+                src="/images/article-card/clock-icon.svg"
                 alt="Иконка часов"
                 width={19}
                 height={19}

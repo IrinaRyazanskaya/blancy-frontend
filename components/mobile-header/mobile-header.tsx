@@ -6,7 +6,8 @@ import { MobileMenu } from "../mobile-menu";
 import { BurgerButton } from "../burger-button";
 
 import styles from "./mobile-header.module.css";
-import mobileLogoSrc from "./mobile-logo.svg";
+
+const MOBILE_HEADER_LOGO_SRC = "/images/mobile-header/mobile-logo.svg";
 
 const MobileHeader = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -23,7 +24,13 @@ const MobileHeader = () => {
     <div className={styles.headerContainer}>
       <header className={styles.header}>
         <Link href="#" className={styles.home}>
-          <Image className={styles.logo} src={mobileLogoSrc} alt="blancy" width={123} height={29} />
+          <Image
+            className={styles.logo}
+            src={MOBILE_HEADER_LOGO_SRC}
+            alt="blancy"
+            width={123}
+            height={29}
+          />
         </Link>
         <BurgerButton
           size={22}

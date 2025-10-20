@@ -2,10 +2,7 @@ import cn from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 
-import userIconSrc from "./user.svg";
 import flagIconSrc from "./flag.png";
-import emailIconSrc from "./email.svg";
-import chatIconSrc from "./chat.svg";
 import styles from "./request-form.module.css";
 
 type RequestFormProps = {
@@ -29,7 +26,7 @@ const RequestForm = ({
         <div className={styles.iconWrap}>
           <Image
             className={styles.icon}
-            src={userIconSrc}
+            src="/images/request-form/user.svg"
             alt="Иконка человек"
             width={32}
             height={32}
@@ -67,7 +64,7 @@ const RequestForm = ({
         <div className={styles.iconWrap}>
           <Image
             className={styles.icon}
-            src={emailIconSrc}
+            src="/images/request-form/email.svg"
             alt="Иконка конверт"
             width={32}
             height={32}
@@ -86,7 +83,7 @@ const RequestForm = ({
         <div className={styles.iconWrap}>
           <Image
             className={styles.icon}
-            src={chatIconSrc}
+            src="/images/request-form/chat.svg"
             alt="Иконка чат"
             width={32}
             height={32}

@@ -3,8 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 import styles from "./header.module.css";
-import logoSrc from "./logo.svg";
-import newLabelSrc from "./new-label.svg";
+
+const HEADER_LOGO_SRC = "/images/header/logo.svg";
+const HEADER_NEW_LABEL_SRC = "/images/header/new-label.svg";
 
 type HeaderProps = {
   className?: string;
@@ -14,7 +15,7 @@ const Header = ({ className }: HeaderProps) => {
   return (
     <header className={cn(styles.header, className)}>
       <Link href="#" className={styles.home}>
-        <Image className={styles.logo} src={logoSrc} alt="blancy" width={171} height={40} />
+        <Image className={styles.logo} src={HEADER_LOGO_SRC} alt="blancy" width={171} height={40} />
       </Link>
       <nav className={styles.navigation}>
         <ul className={styles.items}>
@@ -43,7 +44,7 @@ const Header = ({ className }: HeaderProps) => {
               <div className={styles.itemLabel}>
                 <Image
                   className={styles.newLabel}
-                  src={newLabelSrc}
+                  src={HEADER_NEW_LABEL_SRC}
                   alt="new"
                   width={42}
                   height={26}

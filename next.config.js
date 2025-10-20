@@ -1,13 +1,11 @@
-import withImages from "next-images";
-
 /**
  * @type {import('next').NextConfig}
  */
-const nextConfig = withImages({
+const nextConfig = {
   reactStrictMode: true,
   images: {
-    disableStaticImages: true,
+    dangerouslyAllowSVG: true,
   },
-});
+};
 
 export default nextConfig;

@@ -3,7 +3,6 @@ import Link from "next/link";
 import type { StaticImageData } from "next/image";
 
 import styles from "./case.module.css";
-import arrowSrc from "./arrow.svg";
 
 type CaseProps = {
   header: string;
@@ -23,7 +22,13 @@ const Case = ({ header, description, link, caseImageSrc }: CaseProps) => {
           <p className={styles.description}>{description}</p>
           <Link href={link} className={styles.link}>
             <span className={styles.linkText}>Посмотреть кейс</span>
-            <Image className={styles.arrow} src={arrowSrc} alt="Стрелка" width={16} height={16} />
+            <Image
+              className={styles.arrow}
+              src="/images/case/arrow.svg"
+              alt="Стрелка"
+              width={16}
+              height={16}
+            />
           </Link>
         </div>
         <div className={styles.image} style={{ backgroundImage: `url(${imageUrl})` }} />
