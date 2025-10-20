@@ -4,7 +4,11 @@ import Image from "next/image";
 import styles from "./home-banner.module.css";
 import homeBannerImageSrc from "./home-banner-image.png";
 
-function HomeBanner({ className }) {
+type HomeBannerProps = {
+  className?: string;
+};
+
+const HomeBanner = ({ className }: HomeBannerProps) => {
   return (
     <div className={cn(className, styles.banner)}>
       <div className={styles.content}>
@@ -26,6 +30,6 @@ function HomeBanner({ className }) {
       </div>
     </div>
   );
-}
+};
 
 export { HomeBanner };

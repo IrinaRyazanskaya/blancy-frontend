@@ -1,11 +1,24 @@
 import Link from "next/link";
 import { format } from "date-fns";
 import Image from "next/image";
+import type { StaticImageData } from "next/image";
 
 import clockIconSrc from "./clock-icon.svg";
 import styles from "./article-card.module.css";
 
-function ArticleCard({
+type ArticleCardProps = {
+  href: string;
+  articleImageSrc: StaticImageData | string;
+  articleImageAlt: string;
+  width: number;
+  height: number;
+  category: string;
+  title: string;
+  readingTime: string;
+  date: string;
+};
+
+const ArticleCard = ({
   href,
   articleImageSrc,
   articleImageAlt,
@@ -15,7 +28,7 @@ function ArticleCard({
   title,
   readingTime,
   date, // '2021-11-09T16:51:05.767Z' (ISO8601)
-}) {
+}: ArticleCardProps) => {
   return (
     <Link href={href} className={styles.cardLink}>
       <div className={styles.card}>
@@ -49,6 +62,6 @@ function ArticleCard({
       </div>
     </Link>
   );
-}
+};
 
 export { ArticleCard };

@@ -8,7 +8,11 @@ import vkIconSrc from "./vk.svg";
 import fbIconSrc from "./facebook.svg";
 import styles from "./footer.module.css";
 
-function Footer({ className }) {
+type FooterProps = {
+  className?: string;
+};
+
+const Footer = ({ className }: FooterProps) => {
   return (
     <footer className={cn(className, styles.footer)}>
       <section className={styles.navigation}>
@@ -185,6 +189,6 @@ function Footer({ className }) {
       </section>
     </footer>
   );
-}
+};
 
 export { Footer };

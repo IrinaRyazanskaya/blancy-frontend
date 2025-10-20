@@ -9,7 +9,11 @@ import veterinaryClinicSrc from "./veterinary-clinic.png";
 import lawFirmSrc from "./law-firm.png";
 import robinaniSrc from "./robinani.png";
 
-function Cases({ className }) {
+type CasesProps = {
+  className?: string;
+};
+
+const Cases = ({ className }: CasesProps) => {
   return (
     <section className={cn(className, styles.cases)}>
       <h2 className={styles.header}>Кейсы</h2>
@@ -58,6 +62,6 @@ function Cases({ className }) {
       <button className={styles.button}>Посмотреть все работы →</button>
     </section>
   );
-}
+};
 
 export { Cases };

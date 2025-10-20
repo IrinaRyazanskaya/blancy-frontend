@@ -1,4 +1,3 @@
-import cn from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,7 +8,7 @@ import vkIconSrc from "./vk.svg";
 import fbIconSrc from "./facebook.svg";
 import styles from "./mobile-footer.module.css";
 
-function MobileFooter() {
+const MobileFooter = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.logo}>
@@ -285,6 +284,6 @@ function MobileFooter() {
       </div>
     </footer>
   );
-}
+};
 
 export { MobileFooter };

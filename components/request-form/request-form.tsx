@@ -8,7 +8,15 @@ import emailIconSrc from "./email.svg";
 import chatIconSrc from "./chat.svg";
 import styles from "./request-form.module.css";
 
-function RequestForm({ className, clientName, clientPhone, clientEmail, comment }) {
+type RequestFormProps = {
+  className?: string;
+  clientName?: string;
+  clientPhone?: string;
+  clientEmail?: string;
+  comment?: string;
+};
+
+const RequestForm = ({ className, clientName, clientPhone, clientEmail, comment }: RequestFormProps) => {
   return (
     <form className={cn(className, styles.requestForm)}>
       <div className={styles.inputWrap}>
@@ -83,7 +91,7 @@ function RequestForm({ className, clientName, clientPhone, clientEmail, comment 
           name="comment"
           id="comment"
           placeholder="Краткое описание проекта (цели, задачи)"
-          rows="2"
+          rows={2}
           value={comment}
         ></textarea>
       </div>
@@ -105,6 +113,6 @@ function RequestForm({ className, clientName, clientPhone, clientEmail, comment 
       </p>
     </form>
   );
-}
+};
 
 export { RequestForm };

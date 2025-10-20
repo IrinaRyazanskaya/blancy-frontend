@@ -6,7 +6,11 @@ import styles from "./header.module.css";
 import logoSrc from "./logo.svg";
 import newLabelSrc from "./new-label.svg";
 
-function Header({ className }) {
+type HeaderProps = {
+  className?: string;
+};
+
+const Header = ({ className }: HeaderProps) => {
   return (
     <header className={cn(styles.header, className)}>
       <Link href="#" className={styles.home}>
@@ -71,6 +75,6 @@ function Header({ className }) {
       <button className={styles.startProject}>Начать проект</button>
     </header>
   );
-}
+};
 
 export { Header };

@@ -5,7 +5,12 @@ import styles from "./people-says.module.css";
 import ruwardLogoSrc from "./ruward-logo.png";
 import ardaLogoSrc from "./arda-logo.png";
 
-function PeopleSays({ isPhone, className }) {
+type PeopleSaysProps = {
+  isPhone: boolean;
+  className?: string;
+};
+
+const PeopleSays = ({ isPhone, className }: PeopleSaysProps) => {
   return (
     <section className={cn(className, styles.peopleSays)}>
       <div className={styles.wrap}>
@@ -36,6 +41,6 @@ function PeopleSays({ isPhone, className }) {
       </div>
     </section>
   );
-}
+};
 
 export { PeopleSays };

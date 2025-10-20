@@ -7,7 +7,13 @@ import secondArticleSrc from "./second-article.png";
 import thirdArticleSrc from "./third-article.png";
 import styles from "./articles.module.css";
 
-function Articles({ title, linkText, className }) {
+type ArticlesProps = {
+  title: string;
+  linkText?: string;
+  className?: string;
+};
+
+const Articles = ({ title, linkText, className }: ArticlesProps) => {
   return (
     <section className={cn(styles.articles, className)}>
       <h2 className={styles.header}>{title}</h2>
@@ -53,6 +59,6 @@ function Articles({ title, linkText, className }) {
       ) : null}
     </section>
   );
-}
+};
 
 export { Articles };

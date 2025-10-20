@@ -4,7 +4,11 @@ import Link from "next/link";
 import flagIconSrc from "./flag.png";
 import styles from "./call-form.module.css";
 
-function CallForm({ clientPhone }) {
+type CallFormProps = {
+  clientPhone?: string;
+};
+
+const CallForm = ({ clientPhone }: CallFormProps) => {
   return (
     <form className={styles.callForm}>
       <div className={styles.inputWrap}>
@@ -38,6 +42,6 @@ function CallForm({ clientPhone }) {
       </p>
     </form>
   );
-}
+};
 
 export { CallForm };

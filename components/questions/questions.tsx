@@ -1,8 +1,15 @@
 import cn from "classnames";
+import type { ReactNode } from "react";
 import { CallForm } from "../call-form/call-form";
 import styles from "./questions.module.css";
 
-function Questions({ question, description, className }) {
+type QuestionsProps = {
+  question: string;
+  description: ReactNode;
+  className?: string;
+};
+
+const Questions = ({ question, description, className }: QuestionsProps) => {
   return (
     <section className={cn(className, styles.questions)}>
       <div className={styles.content}>
@@ -12,6 +19,6 @@ function Questions({ question, description, className }) {
       <CallForm />
     </section>
   );
-}
+};
 
 export { Questions };

@@ -3,7 +3,13 @@ import { ServiceCard } from "../service-card";
 
 import styles from "./services.module.css";
 
-function Services({ title, caption, className }) {
+type ServicesProps = {
+  title: string;
+  caption?: string;
+  className?: string;
+};
+
+const Services = ({ title, caption, className }: ServicesProps) => {
   return (
     <section className={cn(styles.services, className)}>
       <div className={styles.headerWrap}>
@@ -49,6 +55,6 @@ function Services({ title, caption, className }) {
       </div>
     </section>
   );
-}
+};
 
 export { Services };

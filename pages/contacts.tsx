@@ -1,10 +1,11 @@
+import type { NextPage } from "next";
 import Head from "next/head";
 
 import { Header } from "../components/header";
 
 import styles from "../styles/contacts.module.css";
 
-function Contacts() {
+const Contacts: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -17,6 +18,6 @@ function Contacts() {
       <main>Страница контактов</main>
     </div>
   );
-}
+};
 
 export default Contacts;

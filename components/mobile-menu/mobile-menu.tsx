@@ -5,7 +5,11 @@ import Link from "next/link";
 import styles from "./mobile-menu.module.css";
 import newLabelSrc from "./new-label.svg";
 
-function MobileMenu({ isOpen }) {
+type MobileMenuProps = {
+  isOpen: boolean;
+};
+
+const MobileMenu = ({ isOpen }: MobileMenuProps) => {
   return (
     <div className={cn(styles.menu, { [styles.menuOpen]: isOpen })}>
       <nav className={cn(styles.navigation, { [styles.navigationOpen]: isOpen })}>
@@ -73,6 +77,6 @@ function MobileMenu({ isOpen }) {
       </div>
     </div>
   );
-}
+};
 
 export { MobileMenu };

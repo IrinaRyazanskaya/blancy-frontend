@@ -3,7 +3,18 @@ import Link from "next/link";
 
 import styles from "./service-card.module.css";
 
-function ServiceCard({ lines, header, services }) {
+type ServiceItem = {
+  title: string;
+  href: string;
+};
+
+type ServiceCardProps = {
+  lines: 1 | 2 | 3 | 4;
+  header: string;
+  services: ServiceItem[];
+};
+
+const ServiceCard = ({ lines, header, services }: ServiceCardProps) => {
   return (
     <div
       className={cn(styles.card, {
@@ -27,6 +38,6 @@ function ServiceCard({ lines, header, services }) {
       </ul>
     </div>
   );
-}
+};
 
 export { ServiceCard };

@@ -1,8 +1,16 @@
 import Image from "next/image";
+import type { StaticImageData } from "next/image";
 
 import styles from "./review.module.css";
 
-function Review({ name, reviewImageSrc, reviewImageAlt, isPhone }) {
+type ReviewProps = {
+  name: string;
+  reviewImageSrc: StaticImageData | string;
+  reviewImageAlt: string;
+  isPhone: boolean;
+};
+
+const Review = ({ name, reviewImageSrc, reviewImageAlt, isPhone }: ReviewProps) => {
   return (
     <div className={styles.review}>
       <div className={styles.logoWrap}>
@@ -27,6 +35,6 @@ function Review({ name, reviewImageSrc, reviewImageAlt, isPhone }) {
       <p className={styles.name}>{name}</p>
     </div>
   );
-}
+};
 
 export { Review };

@@ -1,6 +1,22 @@
+import type { CSSProperties, MouseEventHandler } from "react";
+
 const area = 48;
 
-function BurgerButton({
+type BurgerButtonProps = {
+  label: string;
+  className?: string;
+  hideOutline?: boolean;
+  size?: number;
+  color?: string;
+  lines?: number;
+  easing?: string;
+  duration?: number;
+  distance?: "sm" | "md" | "lg";
+  isToggled: boolean;
+  onToggle: MouseEventHandler<HTMLDivElement>;
+};
+
+const BurgerButton = ({
   label,
   className,
   hideOutline = true,
@@ -12,7 +28,7 @@ function BurgerButton({
   distance = "md",
   isToggled,
   onToggle,
-}) {
+}: BurgerButtonProps) => {
   const width = Math.max(12, Math.min(area, size));
   const room = Math.round((area - width) / 2);
 
@@ -28,7 +44,7 @@ function BurgerButton({
 
   const time = Math.max(0, duration);
 
-  const burgerStyles = {
+  const burgerStyles: CSSProperties = {
     height: `${area}px`,
     position: "relative",
     transition: `${time}s ${easing}`,
@@ -38,7 +54,7 @@ function BurgerButton({
     WebkitTapHighlightColor: "rgba(0, 0, 0, 0)",
   };
 
-  const barStyles = {
+  const barStyles: CSSProperties = {
     background: color,
     height: `${barHeight}px`,
     left: `${room}px`,
@@ -47,7 +63,7 @@ function BurgerButton({
   };
 
   if (hideOutline) {
-    burgerStyles["outline"] = "none";
+    burgerStyles.outline = "none";
   }
 
   return (
@@ -111,6 +127,6 @@ function BurgerButton({
       </div>
     </div>
   );
-}
+};
 
 export { BurgerButton };

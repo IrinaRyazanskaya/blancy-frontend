@@ -1,10 +1,22 @@
 import cn from "classnames";
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 import styles from "./simple-banner.module.css";
 
-function SimpleBanner({ breadCrumbs, header, className }) {
-  const breadCrumbElements = [];
+type BreadCrumb = {
+  title: string;
+  href: string;
+};
+
+type SimpleBannerProps = {
+  header: string;
+  className?: string;
+  breadCrumbs: BreadCrumb[];
+};
+
+const SimpleBanner = ({ header, className, breadCrumbs }: SimpleBannerProps) => {
+  const breadCrumbElements: ReactNode[] = [];
 
   for (let i = 0; i < breadCrumbs.length; i++) {
     const breadCrumb = breadCrumbs[i];
@@ -28,6 +40,6 @@ function SimpleBanner({ breadCrumbs, header, className }) {
       <h1 className={styles.header}>{header}</h1>
     </div>
   );
-}
+};
 
 export { SimpleBanner };

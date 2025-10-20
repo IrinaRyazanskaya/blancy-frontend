@@ -12,7 +12,11 @@ import panoramaLogoSrc from "./panorama-logo.png";
 import damiDomoLogoSrc from "./dami-domo-logo.png";
 import gaLogoSrc from "./ga-logo.png";
 
-function PeopleTrust({ className }) {
+type PeopleTrustProps = {
+  className?: string;
+};
+
+const PeopleTrust = ({ className }: PeopleTrustProps) => {
   return (
     <section className={cn(className, styles.peopleTrust)}>
       <h2 className={styles.header}>Нам доверяют</h2>
@@ -88,6 +92,6 @@ function PeopleTrust({ className }) {
       </div>
     </section>
   );
-}
+};
 
 export { PeopleTrust };

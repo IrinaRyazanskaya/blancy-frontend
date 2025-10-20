@@ -6,7 +6,11 @@ import { RequestForm } from "../request-form";
 import employeeSrc from "./employee.png";
 import styles from "./partnership-proposal.module.css";
 
-function PartnershipProposal({ className }) {
+type PartnershipProposalProps = {
+  className?: string;
+};
+
+const PartnershipProposal = ({ className }: PartnershipProposalProps) => {
   return (
     <section className={cn(styles.proposal, className)}>
       <div className={styles.content}>
@@ -24,6 +28,6 @@ function PartnershipProposal({ className }) {
       <RequestForm className={styles.form} />
     </section>
   );
-}
+};
 
 export { PartnershipProposal };

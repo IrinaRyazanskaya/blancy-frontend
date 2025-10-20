@@ -1,4 +1,3 @@
-import cn from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -9,7 +8,7 @@ import { BurgerButton } from "../burger-button";
 import styles from "./mobile-header.module.css";
 import mobileLogoSrc from "./mobile-logo.svg";
 
-function MobileHeader({}) {
+const MobileHeader = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -43,6 +42,6 @@ function MobileHeader({}) {
       <MobileMenu isOpen={isMenuOpen} />
     </div>
   );
-}
+};
 
 export { MobileHeader };
