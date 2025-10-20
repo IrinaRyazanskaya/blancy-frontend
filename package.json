@@ -6,7 +6,7 @@
   "scripts": {
     "start": "next dev",
     "build": "next build --no-lint",
-    "preview": "serve ./out",
+    "preview": "serve ./dist",
     "format": "prettier --write .",
     "lint": "npm run lint:ts && npm run lint:styles",
     "lint:ts": "eslint .",

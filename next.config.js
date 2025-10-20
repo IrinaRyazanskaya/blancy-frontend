@@ -3,6 +3,7 @@
  */
 const nextConfig = {
   output: "export",
+  distDir: "./dist",
   reactStrictMode: true,
   images: {
     unoptimized: true,
