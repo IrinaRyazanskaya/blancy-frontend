@@ -32,8 +32,8 @@ function CallForm({ clientPhone }) {
       </div>
       <p className={styles.text}>
         Нажимая на кнопку, я даю согласие на обработку персональных данных в соответствии с&nbsp;
-        <Link href="#" passHref={true}>
-          <a className={styles.link}>Политикой конфиденциальности</a>
+        <Link href="#" className={styles.link}>
+          Политикой конфиденциальности
         </Link>
       </p>
     </form>

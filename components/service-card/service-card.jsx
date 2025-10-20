@@ -17,11 +17,11 @@ function ServiceCard({ lines, header, services }) {
       <ul className={styles.services}>
         {services.map((service) => {
           return (
-            <Link key={service.title} href={service.href} passHref={true}>
-              <a className={styles.link}>
-                <li className={styles.service}>{service.title}</li>
-              </a>
-            </Link>
+            <li key={service.title} className={styles.service}>
+              <Link href={service.href} className={styles.link}>
+                {service.title}
+              </Link>
+            </li>
           );
         })}
       </ul>

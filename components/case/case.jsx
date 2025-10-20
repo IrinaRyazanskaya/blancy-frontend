@@ -11,11 +11,9 @@ function Case({ header, description, link, caseImageSrc }) {
       <div className={styles.content}>
         <div className={styles.wrap}>
           <p className={styles.description}>{description}</p>
-          <Link href={link} passHref={true}>
-            <a className={styles.link}>
-              <span className={styles.linkText}>Посмотреть кейс</span>
-              <Image className={styles.arrow} src={arrowSrc} alt="Стрелка" width={16} height={16} />
-            </a>
+          <Link href={link} className={styles.link}>
+            <span className={styles.linkText}>Посмотреть кейс</span>
+            <Image className={styles.arrow} src={arrowSrc} alt="Стрелка" width={16} height={16} />
           </Link>
         </div>
         <div className={styles.image} style={{ backgroundImage: `url(${caseImageSrc})` }} />

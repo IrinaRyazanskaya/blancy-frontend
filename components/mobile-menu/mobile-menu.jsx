@@ -11,49 +11,47 @@ function MobileMenu({ isOpen }) {
       <nav className={cn(styles.navigation, { [styles.navigationOpen]: isOpen })}>
         <ul className={styles.items}>
           <li className={styles.item}>
-            <Link href="#" passHref={true}>
-              <a className={styles.itemLink}>О компании</a>
+            <Link href="#" className={styles.itemLink}>
+              О компании
             </Link>
           </li>
           <li className={styles.item}>
-            <Link href="#" passHref={true}>
-              <a className={styles.itemLink}>Услуги</a>
+            <Link href="#" className={styles.itemLink}>
+              Услуги
             </Link>
           </li>
           <li className={styles.item}>
-            <Link href="#" passHref={true}>
-              <a className={styles.itemLink}>Кейсы</a>
+            <Link href="#" className={styles.itemLink}>
+              Кейсы
             </Link>
           </li>
           <li className={styles.item}>
-            <Link href="#" passHref={true}>
-              <a className={styles.itemLink}>Вакансии</a>
+            <Link href="#" className={styles.itemLink}>
+              Вакансии
             </Link>
           </li>
           <li className={styles.item}>
-            <Link href="#" passHref={true}>
-              <a className={cn(styles.itemLink, styles.labelAnchor)}>
-                <div className={styles.itemLabel}>
-                  <Image
-                    className={styles.newLabel}
-                    src={newLabelSrc}
-                    alt="new"
-                    width={42}
-                    height={26}
-                  />
-                </div>
-                Онлайн-школа
-              </a>
+            <Link href="#" className={cn(styles.itemLink, styles.labelAnchor)}>
+              <div className={styles.itemLabel}>
+                <Image
+                  className={styles.newLabel}
+                  src={newLabelSrc}
+                  alt="new"
+                  width={42}
+                  height={26}
+                />
+              </div>
+              Онлайн-школа
             </Link>
           </li>
           <li className={styles.item}>
-            <Link href="#" passHref={true}>
-              <a className={styles.itemLink}>Блог</a>
+            <Link href="#" className={styles.itemLink}>
+              Блог
             </Link>
           </li>
           <li className={styles.item}>
-            <Link href="#" passHref={true}>
-              <a className={styles.itemLink}>Контакты</a>
+            <Link href="#" className={styles.itemLink}>
+              Контакты
             </Link>
           </li>
         </ul>
