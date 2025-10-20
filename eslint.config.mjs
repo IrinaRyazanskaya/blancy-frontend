@@ -36,6 +36,9 @@ export default defineConfig([
   },
   {
     files: ["**/*.{jsx,tsx}"],
+    plugins: {
+      "@next/next": nextPlugin,
+    },
     extends: [
       reactPlugin.configs.flat.recommended,
       reactHooksPlugin.configs.flat["recommended-latest"],
@@ -44,19 +47,11 @@ export default defineConfig([
       "react/prop-types": "off",
       "react/jsx-uses-react": "off",
       "react/react-in-jsx-scope": "off",
+      ...nextPlugin.configs.recommended.rules,
+      ...nextPlugin.configs["core-web-vitals"].rules,
     },
     settings: {
       react: { version: "detect" },
-    },
-  },
-  {
-    files: ["**/*.{js,cjs,mjs,jsx,ts,tsx}"],
-    plugins: {
-      "@next/next": nextPlugin,
-    },
-    rules: {
-      ...nextPlugin.configs.recommended.rules,
-      ...nextPlugin.configs["core-web-vitals"].rules,
     },
   },
   {
