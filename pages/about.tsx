@@ -1,6 +1,6 @@
-import type { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 import { useUserAgent } from "next-useragent";
+import type { GetServerSideProps, NextPage } from "next";
 
 import { Header } from "../components/header";
 import { MobileHeader } from "../components/mobile-header";
