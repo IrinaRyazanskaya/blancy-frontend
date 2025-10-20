@@ -40,3 +40,21 @@ body {
     url("/fonts/circe-extrabold.woff2") format("woff2"),
     url("/fonts/circe-extrabold.woff") format("woff");
 }
+
+.mobileOnly {
+  display: none;
+}
+
+.desktopOnly {
+  display: block;
+}
+
+@media (width <= 1023px) {
+  .mobileOnly {
+    display: block;
+  }
+
+  .desktopOnly {
+    display: none;
+  }
+}

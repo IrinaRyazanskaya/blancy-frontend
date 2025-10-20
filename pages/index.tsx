@@ -19,7 +19,7 @@ import { useDeviceInfo } from "../hooks/device-info";
 import styles from "../styles/home.module.css";
 
 const Home: NextPage = () => {
-  const { isPhone, isMobile } = useDeviceInfo();
+  const { isPhone } = useDeviceInfo();
 
   return (
     <div className={styles.container}>
@@ -29,7 +29,12 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {isMobile ? <MobileHeader /> : <Header className={styles.header} />}
+      <div className="mobileOnly">
+        <MobileHeader />
+      </div>
+      <div className="desktopOnly">
+        <Header className={styles.header} />
+      </div>
 
       <HomeBanner className={styles.banner} />
       <Cases className={styles.cases} />
@@ -54,7 +59,12 @@ const Home: NextPage = () => {
       <Articles title="Полезные статьи" linkText="Все статьи →" className={styles.articles} />
       <PartnershipProposal className={styles.proposal} />
 
-      {isMobile ? <MobileFooter /> : <Footer className={styles.footer} />}
+      <div className="mobileOnly">
+        <MobileFooter />
+      </div>
+      <div className="desktopOnly">
+        <Footer className={styles.footer} />
+      </div>
     </div>
   );
 };
