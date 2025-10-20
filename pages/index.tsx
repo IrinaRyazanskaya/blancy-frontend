@@ -1,6 +1,5 @@
-import type { GetServerSideProps, NextPage } from "next";
+import type { NextPage } from "next";
 import Head from "next/head";
-import { useUserAgent } from "next-useragent";
 
 import { Header } from "../components/header";
 import { MobileHeader } from "../components/mobile-header";
@@ -15,18 +14,12 @@ import { Questions } from "../components/questions";
 import { PartnershipProposal } from "../components/partnership-proposal";
 import { Footer } from "../components/footer";
 import { MobileFooter } from "../components/mobile-footer";
+import { useDeviceInfo } from "../hooks/device-info";
 
 import styles from "../styles/home.module.css";
 
-type HomeProps = {
-  userAgent: string | null;
-};
-
-const Home: NextPage<HomeProps> = ({ userAgent }) => {
-  const userAgentString =
-    userAgent ?? (typeof window !== "undefined" ? window.navigator.userAgent : "");
-  const { isMobile, isTablet } = useUserAgent(userAgentString);
-  const isPhone = isMobile && !isTablet;
+const Home: NextPage = () => {
+  const { isPhone, isMobile } = useDeviceInfo();
 
   return (
     <div className={styles.container}>
@@ -64,14 +57,6 @@ const Home: NextPage<HomeProps> = ({ userAgent }) => {
       {isMobile ? <MobileFooter /> : <Footer className={styles.footer} />}
     </div>
   );
-};
-
-export const getServerSideProps: GetServerSideProps<HomeProps> = async ({ req }) => {
-  return {
-    props: {
-      userAgent: req?.headers["user-agent"] ?? null,
-    },
-  };
 };
 
 export default Home;
