@@ -1,10 +1,14 @@
-const withImages = require('next-images');
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  output: "export",
+  distDir: "./dist",
+  basePath: "/blancy-frontend",
+  reactStrictMode: true,
+  images: {
+    unoptimized: true,
+  },
+};
 
-module.exports = withImages({
-    reactStrictMode: true,
-    inlineImageLimit: false,
-    fileExtensions: ["png", "svg", "jpeg"],
-    images: {
-        disableStaticImages: true
-    }
-});
+export default nextConfig;

@@ -1,145 +1,149 @@
 .card {
-    margin-bottom: 30px;
-    width: 585px;
-    color: #222;
-    background-color: #fff;
-    box-shadow: 0px 0px 70px rgba(216, 216, 216, 0.3);
-    border-radius: 20px;
+  width: 585px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+
+  color: #222;
+
+  background-color: #fff;
+  box-shadow: 0 0 70px rgb(216 216 216 / 30%);
 }
 
 .cardLines2 {
-    height: 260px;
+  height: 260px;
 }
 
 .cardLines4 {
-    height: 340px;
+  height: 340px;
 }
 
 .header {
-    margin: 51px 0 10px 66px;
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 48px;
+  margin: 51px 0 10px 66px;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 48px;
 }
 
 .services {
-    padding: 0;
-    margin: 0 0 0 66px;
-    list-style: none;
+  margin: 0 0 0 66px;
+  padding: 0;
+  list-style: none;
 }
 
 .link {
-    display: block;
-    margin-bottom: 12px;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 36px;
-    text-decoration: none;
-    color: #222;
+  display: block;
+
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 36px;
+  color: #222;
+  text-decoration: none;
 }
 
 .link:hover {
-    color: #e64592;
+  color: #e64592;
 }
 
-@media (max-width: 1400px) {
-    .card {
-        width: 485px;
-    }
+@media (width <= 1400px) {
+  .card {
+    width: 485px;
+  }
 }
 
-@media (max-width: 1200px) {
-    .card {
-        width: 390px;
-        margin-bottom: 20px;
-    }
+@media (width <= 1200px) {
+  .card {
+    width: 390px;
+    margin-bottom: 20px;
+  }
 
-    .cardLines4 {
-        height: 310px;
-    }
+  .cardLines4 {
+    height: 310px;
+  }
 
-    .cardLines2 {
-        height: 230px;
-    }
+  .cardLines2 {
+    height: 230px;
+  }
 
-    .header {
-        margin: 42px 0 10px 36px;
-    }
+  .header {
+    margin: 42px 0 10px 36px;
+  }
 
-    .services {
-        margin: 0 0 0 36px;
-    }
+  .services {
+    margin: 0 0 0 36px;
+  }
 
-    .link {
-        font-size: 18px;
-        line-height: 32px;
-    }
+  .link {
+    font-size: 18px;
+    line-height: 32px;
+  }
 }
 
-@media (max-width: 1024px) {
-    .card {
-        width: 340px;
-        margin-bottom: 18px;
-    }
+@media (width <= 1024px) {
+  .card {
+    width: 340px;
+    margin-bottom: 18px;
+  }
 
-    .cardLines4 {
-        height: 300px;
-    }
+  .cardLines4 {
+    height: 300px;
+  }
 
-    .header {
-        margin: 20px 0 6px 30px;
-    }
+  .header {
+    margin: 20px 0 6px 30px;
+  }
 
-    .services {
-        margin: 0 0 0 30px;
-    }
+  .services {
+    margin: 0 0 0 30px;
+  }
 
-    .link {
-        width: 300px;
-        margin-bottom: 8px;
-    }
+  .link {
+    width: 300px;
+    margin-bottom: 8px;
+  }
 }
 
-@media (max-width: 767px) {
-    .card {
-        margin-bottom: 20px;
-    }
+@media (width <= 767px) {
+  .card {
+    margin-bottom: 20px;
+  }
 
-    .card:last-child {
-        margin-bottom: 0;
-    }
+  .card:last-child {
+    margin-bottom: 0;
+  }
 
-    .cardLines4 {
-        height: 270px;
-    }
+  .cardLines4 {
+    height: 270px;
+  }
 
-    .cardLines2 {
-        height: 230px;
-    }
+  .cardLines2 {
+    height: 230px;
+  }
 
-    .header {
-        margin: 38px 0 10px 36px;
-        font-size: 24px;
-        line-height: 30px;
-    }
+  .header {
+    margin: 38px 0 10px 36px;
+    font-size: 24px;
+    line-height: 30px;
+  }
 
-    .services {
-        margin: 0 0 0 36px;
-    }
+  .services {
+    margin: 0 0 0 36px;
+  }
 
-    .link {
-        width: 242px;
-        margin-bottom: 12px;
-        line-height: 24px;
-    }
+  .link {
+    width: 242px;
+    margin-bottom: 12px;
+    line-height: 24px;
+  }
 }
 
-@media (max-width: 426px) {
-    .card {
-        width: 300px;
-    }
+@media (width <= 426px) {
+  .card {
+    width: 300px;
+  }
 
-    .header {
-        margin: 42px 0 10px 36px;
-    }
+  .header {
+    margin: 42px 0 10px 36px;
+  }
 }
