@@ -23,7 +23,14 @@ const PartnershipProposal = ({ className }: PartnershipProposalProps) => {
         </p>
       </div>
       <div className={styles.imageWrap}>
-        <Image src={employeeSrc} alt="Мужчина в очках Memoji" width={656} height={626} />
+        <Image
+          className={styles.image}
+          src={employeeSrc}
+          alt="Мужчина в очках Memoji"
+          width={656}
+          height={626}
+          sizes="(max-width: 1200px) 60vw, (max-width: 1600px) 40vw, 656px"
+        />
       </div>
       <RequestForm className={styles.form} />
     </section>

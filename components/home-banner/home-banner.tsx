@@ -24,6 +24,7 @@ const HomeBanner = ({ className }: HomeBannerProps) => {
           src={homeBannerImageSrc}
           alt="Сотрудники digital-агенства"
           loading="eager"
+          sizes="(max-width: 600px) 80vw, (max-width: 1024px) 60vw, (max-width: 1600px) 40vw, 560px"
           width={561}
           height={479}
         />

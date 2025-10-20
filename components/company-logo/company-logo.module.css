@@ -1,29 +1,44 @@
+.logoWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 229px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 @media (width <= 1400px) {
   .logoWrap {
-    width: 186px;
+    max-width: 186px;
   }
 }
 
 @media (width <= 1200px) {
   .logoWrap {
-    width: 150px;
+    max-width: 150px;
   }
 }
 
 @media (width <= 1024px) {
   .logoWrap {
-    width: 180px;
+    max-width: 180px;
   }
 }
 
 @media (width <= 767px) {
   .logoWrap {
-    width: 132px;
+    max-width: 132px;
   }
 }
 
 @media (width <= 426px) {
   .logoWrap {
-    width: 100px;
+    max-width: 100px;
   }
 }

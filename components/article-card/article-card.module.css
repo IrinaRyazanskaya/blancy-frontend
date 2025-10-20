@@ -14,6 +14,20 @@
   box-shadow: 0 0 70px rgb(216 216 216 / 30%);
 }
 
+.imageWrap {
+  overflow: hidden;
+  aspect-ratio: 380 / 220;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .category {
   display: inline-flex;
   align-items: center;
